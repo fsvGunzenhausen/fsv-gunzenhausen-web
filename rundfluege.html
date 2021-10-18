@@ -1,373 +1,524 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html lang="de" xml:lang="de" xmlns="http://www.w3.org/1999/xhtml">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <link rel="stylesheet" href="css/bootstrap.min.css">
-  <link rel="stylesheet" href="css/fsv.css">
-  <link rel="shortcut icon" href="img/favicon.png">
-  <title>FSV-Gunzenhausen - Rundfl&uuml;ge</title>
-</head>
-<body>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/fsv.css" />
+    <link rel="shortcut icon" href="img/favicon.png" />
+    <title>FSV-Gunzenhausen - Rundfl&uuml;ge</title>
+  </head>
+  <body>
+    <!-- Navigation start -->
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand" href="/"><img src="img/fsvlogo180x60.png" /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarCollapse1"
+          aria-controls="navbarCollapse"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse1">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle disabled"
+                href="#"
+                id="dropdown01"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+                >Flugplatz</a
+              >
+              <div class="dropdown-menu" aria-labelledby="dropdown01">
+                <a class="dropdown-item" href="informationen.html"
+                  >Informationen</a
+                >
+                <a class="dropdown-item" href="webcam_ost.html">Webcam Ost</a>
+                <a class="dropdown-item" href="webcam_sued.html"
+                  >Webcam S&uuml;d</a
+                >
+              </div>
+            </li>
+            <li class="nav-item dropdown active">
+              <a
+                class="nav-link dropdown-toggle disabled"
+                href="#"
+                id="dropdown02"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+                >FSV Gunzenhausen</a
+              >
+              <div class="dropdown-menu" aria-labelledby="dropdown02">
+                <a class="dropdown-item" href="flugausbildung.html"
+                  >Flugausbildung</a
+                >
+                <a class="dropdown-item active" href="rundfluege.html"
+                  >Rundfl&uuml;ge</a
+                >
+                <a class="dropdown-item" href="flugzeuge.html">Flugzeuge</a>
+                <a class="dropdown-item" href="fotos.html">Fotos</a>
+                <a class="dropdown-item" href="kontakt.html">Kontakt</a>
+                <a class="dropdown-item" href="chronik.html">Chronik</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Navigation End -->
 
-<!-- Navigation start -->
-<nav class="navbar navbar-expand-md navbar-dark bg-dark">
-  <div class="container">
-    <a class="navbar-brand" href="/"><img src="img/fsvlogo180x60.png"></a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse1" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarCollapse1">
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle disabled" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Flugplatz</a>
-          <div class="dropdown-menu" aria-labelledby="dropdown01">
-            <a class="dropdown-item" href="informationen.html">Informationen</a> 
-            <a class="dropdown-item" href="webcam_ost.html">Webcam Ost</a>
-            <a class="dropdown-item" href="webcam_sued.html">Webcam S&uuml;d</a>
+    <!-- Caption Start -->
+    <div class="jumbotron">
+      <div class="container">
+        <h1 class="text-black-50">Rundfl&uuml;ge</h1>
+        <h4 class="text-black-50">
+          Gerne fliegen unsere erfahrenen Piloten zu Zielen in der n&auml;heren
+          oder weiteren Umgebung.
+        </h4>
+      </div>
+    </div>
+    <!-- Caption End -->
+
+    <!-- Content Start -->
+    <div class="alert alert-danger mb-4" role="alert">
+      <div class="container">
+        Aufgrund aktueller Bestimmungen können wir Rundfl&uuml;ge leider nur
+        unter Einhaltung der 3G-Regel (geimpft, genesen oder getestet) und
+        Tragen einer Maske durchführen.<br \ />
+        <ul>
+          <li>Test: Mindestens Schnelltest</li>
+          <li>Maske: Mindestens OP-Maske</li>
+        </ul>
+      </div>
+    </div>
+    <main role="main">
+      <div class="container mb-4">
+        <img src="img/rundfluege/rundflugrouten_flach.jpg" width="100%" />
+      </div>
+
+      <div class="container mb-0">
+        <div class="row text-center">
+          <div class="col-sm-12 col-md-6 col-lg-4">
+            <div class="card d-block mb-4 shadow">
+              <div class="card-header">
+                <h4 class="my-0 font-weight-normal">Kleiner Seenrundflug</h4>
+              </div>
+              <div class="card-body">
+                <h1 class="card-title pricing-card-title">
+                  30 &euro; <small class="text-muted">pro P.</small>
+                </h1>
+                <ul class="list-unstyled mt-3 mb-4">
+                  <li>Altm&uuml;hlsee</li>
+                  <li>Brombachsee Vorsperre</li>
+                  <li>&nbsp;</li>
+                  <li>&nbsp;</li>
+                  <li>ca 15 Minuten</li>
+                </ul>
+              </div>
+            </div>
           </div>
-        </li>
-        <li class="nav-item dropdown active">
-          <a class="nav-link dropdown-toggle disabled" href="#" id="dropdown02" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">FSV Gunzenhausen</a>
-          <div class="dropdown-menu" aria-labelledby="dropdown02">
-            <a class="dropdown-item" href="flugausbildung.html">Flugausbildung</a>
-            <a class="dropdown-item active" href="rundfluege.html">Rundfl&uuml;ge</a>
-            <a class="dropdown-item" href="flugzeuge.html">Flugzeuge</a>
-		    <a class="dropdown-item" href="fotos.html">Fotos</a>
-		    <a class="dropdown-item" href="kontakt.html">Kontakt</a>
-		    <a class="dropdown-item" href="chronik.html">Chronik</a>
+          <div class="col-sm-12 col-md-6 col-lg-4">
+            <div class="card d-block mb-4 shadow">
+              <div class="card-header">
+                <h4 class="my-0 font-weight-normal">
+                  Gro&szlig;er Seenrundflug
+                </h4>
+              </div>
+              <div class="card-body">
+                <h1 class="card-title pricing-card-title">
+                  35 &euro; <small class="text-muted">pro P.</small>
+                </h1>
+                <ul class="list-unstyled mt-3 mb-4">
+                  <li>Altm&uuml;hlsee</li>
+                  <li>Brombachsee Hauptsperre</li>
+                  <li>&nbsp;</li>
+                  <li>&nbsp;</li>
+                  <li>ca 20 Minuten</li>
+                </ul>
+              </div>
+            </div>
           </div>
-        </li>
-      </ul>
-    </div>
-  </div>
-</nav>
-<!-- Navigation End -->
+          <div class="col-sm-12 col-md-12 col-lg-4">
+            <div class="card d-block mb-4 shadow">
+              <div class="card-header">
+                <h4 class="my-0 font-weight-normal">Drei-Seenrundflug</h4>
+              </div>
+              <div class="card-body">
+                <h1 class="card-title pricing-card-title">
+                  50 &euro; <small class="text-muted">pro P.</small>
+                </h1>
+                <ul class="list-unstyled mt-3 mb-4">
+                  <li>Altm&uuml;hlsee</li>
+                  <li>Brombachsee</li>
+                  <li>Rothsee</li>
+                  <li>&nbsp;</li>
+                  <li>ca 30 Minuten</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
 
-<!-- Caption Start -->
-<div class="jumbotron">
-  <div class="container">
-    <h1 class="text-black-50">Rundfl&uuml;ge</h1>
-	<h4 class="text-black-50">Gerne fliegen unsere erfahrenen Piloten zu Zielen in der n&auml;heren oder weiteren Umgebung.</h4>
-  </div>
-</div>
-<!-- Caption End -->
+        <div class="row text-center">
+          <div class="col-sm-12 col-md-6 d-flex align-items-stretch">
+            <div class="card d-block mb-4 shadow">
+              <div class="card-header">
+                <h4 class="my-0 font-weight-normal">Familienangebot</h4>
+              </div>
+              <div class="card-body">
+                <div class="mb-3 text-muted">
+                  Den kleinen Seenrundflug bieten wir auch als Familienangebot
+                  an. Ab der dritten Person (Kinder bis 14 Jahren) bezahlen Sie
+                  nur noch &euro; 25,-
+                </div>
+                <table class="table">
+                  <tbody>
+                    <tr>
+                      <td>3-K&ouml;pfige Familie</td>
+                      <td>2 Erw. 1 Kind</td>
+                      <td>&euro; 85,-</td>
+                    </tr>
+                    <tr>
+                      <td>4-K&ouml;pfige Familie</td>
+                      <td>2 Erw. 2 Kinder <small>(2 Fl&uuml;ge)</small></td>
+                      <td>&euro; 110,-</td>
+                    </tr>
+                    <tr>
+                      <td>5-K&ouml;pfige Familie</td>
+                      <td>2 Erw. 3 Kinder <small>(2 Fl&uuml;ge)</small></td>
+                      <td>&euro; 135,-</td>
+                    </tr>
+                    <tr>
+                      <td>6-K&ouml;pfige Familie</td>
+                      <td>2 Erw. 4 Kinder <small>(2 Fl&uuml;ge)</small></td>
+                      <td>&euro; 160,-</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-6 d-flex align-items-stretch">
+            <div class="card d-block mb-4 shadow">
+              <div class="card-header">
+                <h4 class="my-0 font-weight-normal">Segelfliegen</h4>
+              </div>
+              <div class="card-body">
+                <div class="mb-1 text-muted">
+                  Das Spiel mit dem Wind mit einem unserer erfahrenen Piloten in
+                  einem zweisitzigen Segelflugzeug erleben!
+                </div>
+                <div class="mb-3 text-muted">Wir machen es m&ouml;glich!</div>
+                <table class="table">
+                  <tbody>
+                    <tr>
+                      <td>Windenstart</td>
+                      <td>inkl. Flugzeit 5-10 min</td>
+                      <td>&euro; 10,-</td>
+                    </tr>
+                    <tr>
+                      <td>Flugzeug Schleppstart</td>
+                      <td>inkl. Flugzeit 20-30 min</td>
+                      <td>&euro; 50,-</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
 
-<!-- Content Start -->
-<main role="main">
+        <div
+          class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center"
+        >
+          <h1 class="display-4 word-wrap">Maschinengesamtpreise</h1>
+          <p class="lead">
+            Bei Fl&uuml;gen &uuml;ber einer Stunde zu ihrem Wunschziel berechnen
+            wir auf Basis der voraussichtlichen Gesamtflugzeit einen von der
+            Anzahl der Personen unabh&auml;ngigen Maschinengesamtpreis.
+          </p>
+        </div>
 
-<div class="container mb-4">
+        <div class="row text-center">
+          <div class="col-sm-12 col-md-6 col-lg-4 d-flex align-items-stretch">
+            <div class="card d-block mb-4 shadow">
+              <a href="flugzeuge_deewg.html">
+                <div class="view overlay">
+                  <img
+                    class="card-img-top"
+                    src="img/rundfluege/cessna_prev.jpg"
+                  />
+                </div>
+              </a>
+              <div class="card-body">
+                <a href="flugzeuge_deewg.html">
+                  <h3 class="mb-0 text-dark">Cessna 172</h3>
+                  <div class="mb-1 text-muted">D-EEWG</div>
+                </a>
+                <h1 class="card-title pricing-card-title text-primary">
+                  210 &euro; <small class="text-muted">pro Stunde</small>
+                </h1>
+                <ul class="list-unstyled mt-3 mb-4 card-text">
+                  <li>Bis zu drei Passagiere</li>
+                  <li>Motorflugzeug der Echo-Klasse</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-4 d-flex align-items-stretch">
+            <div class="card d-block mb-4 shadow">
+              <a href="flugzeuge_degun.html">
+                <div class="view overlay">
+                  <img
+                    class="card-img-top"
+                    src="img/rundfluege/robin_prev.jpg"
+                  />
+                </div>
+              </a>
+              <div class="card-body">
+                <a href="flugzeuge_degun.html">
+                  <h3 class="mb-0 text-dark">Robin DR-400</h3>
+                  <div class="mb-1 text-muted">D-EGUN</div>
+                </a>
+                <h1 class="card-title pricing-card-title text-primary">
+                  210 &euro; <small class="text-muted">pro Stunde</small>
+                </h1>
+                <ul class="list-unstyled mt-3 mb-4 card-text">
+                  <li>Bis zu drei Passagiere</li>
+                  <li>Motorflugzeug der Echo-Klasse</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-12 col-lg-4 d-flex align-items-stretch">
+            <div class="card d-block mb-4 shadow">
+              <a href="flugzeuge_dmfgb.html">
+                <div class="view overlay">
+                  <img
+                    class="card-img-top"
+                    src="img/rundfluege/pioneer_prev.jpg"
+                  />
+                </div>
+              </a>
+              <div class="card-body">
+                <a href="flugzeuge_dmfgb.html">
+                  <h3 class="mb-0 text-dark">Pioneer 200</h3>
+                  <div class="mb-1 text-muted">D-MFGB</div>
+                </a>
+                <h1 class="card-title pricing-card-title text-success">
+                  99 &euro; <small class="text-muted">pro Stunde</small>
+                </h1>
+                <ul class="list-unstyled mt-3 mb-4 card-text">
+                  <li>Ein Passagier</li>
+                  <li>Ultraleicht-Flugzeug</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
 
-<img src="img/rundfluege/rundflugrouten_flach.jpg" width="100%"/>
+        <div
+          class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center"
+        >
+          <h1 class="display-4 word-wrap">Flugroutenvorschl&auml;ge</h1>
+        </div>
 
-</div>
+        <div class="row text-center">
+          <div class="col-sm-12 col-md-6 d-flex align-items-stretch">
+            <div class="card d-block mb-4 shadow">
+              <div class="view overlay">
+                <img
+                  class="card-img-top"
+                  src="img/rundfluege/wuelzburg_prev.jpg"
+                />
+              </div>
+              <div class="card-body">
+                <h3 class="mb-0 text-dark">S&uuml;dliches Mittelfranken</h3>
+                <div class="mb-1 text-muted">
+                  Brombachsee, W&uuml;lzburg, Altm&uuml;hltal, Burg Pappenheim,
+                  N&ouml;rdlingen, Dinkelsb&uuml;hl, Hesselberg, Altm&uuml;hlsee
+                </div>
+                <ul class="list-unstyled mt-3 mb-4 card-text">
+                  <li class="text-primary">
+                    Dauer ca. 1:00h &euro; 210,- (Motorflugzeug)
+                  </li>
+                  <li class="text-success">
+                    Dauer ca. 1:10h &euro; 115,- (Ultraleicht-Flugzeug)
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-6 d-flex align-items-stretch">
+            <div class="card d-block mb-4 shadow">
+              <div class="view overlay">
+                <img
+                  class="card-img-top"
+                  src="img/rundfluege/weltenburg_prev.jpg"
+                />
+              </div>
+              <div class="card-body">
+                <h3 class="mb-0 text-dark">Kloster Weltenburg</h3>
+                <div class="mb-1 text-muted">
+                  Hinflug &uuml;ber Brombachsee, Rothsee, Main-Donau-Kanal zur
+                  Befreiungshalle bei Kehlheim, Kloster Weltenburg,
+                  Donaudurchbruch
+                </div>
+                <div class="mb-1 text-muted">
+                  R&uuml;ckflug &uuml;ber das Altm&uuml;hltal
+                </div>
+                <ul class="list-unstyled mt-3 mb-4 card-text">
+                  <li class="text-primary">
+                    Dauer ca. 1:20h &euro; 280,- (Motorflugzeug)
+                  </li>
+                  <li class="text-success">
+                    Dauer ca. 1:30h &euro; 148,- (Ultraleicht-Flugzeug)
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-6 d-flex align-items-stretch">
+            <div class="card d-block mb-4 shadow">
+              <div class="view overlay">
+                <img
+                  class="card-img-top"
+                  src="img/rundfluege/zugspitze_prev.jpg"
+                />
+              </div>
+              <div class="card-body">
+                <h3 class="mb-0 text-dark">Alpenflug</h3>
+                <div class="mb-1 text-muted">Wettersteingebirge, Zugspitze</div>
+                <div class="mb-1 text-muted">
+                  auf Wunsch mit Zwischenlandung (Kaffee) in Leutkirch
+                </div>
+                <ul class="list-unstyled mt-3 mb-4 card-text">
+                  <li class="text-primary">
+                    Dauer ca. 2:30h &euro; 525,- (Motorflugzeug)
+                  </li>
+                  <li class="text-success">
+                    Dauer ca. 3:00h &euro; 297,- (Ultraleicht-Flugzeug)
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-6 d-flex align-items-stretch">
+            <div class="card d-block mb-4 shadow">
+              <div class="view overlay">
+                <img
+                  class="card-img-top"
+                  src="img/rundfluege/neuschwanstein_prev.jpg"
+                />
+              </div>
+              <div class="card-body">
+                <h3 class="mb-0 text-dark">K&ouml;nig Ludwig Tour</h3>
+                <div class="mb-1 text-muted">
+                  Donaudurchbruch/Befreiungshalle, Schloss Herrenchiemsee,
+                  Schloss Linderhof, Schloss Neuschwanstein
+                </div>
+                <ul class="list-unstyled mt-3 mb-4 card-text">
+                  <li class="text-primary">
+                    Dauer ca. 3:00h &euro; 630,- (Motorflugzeug)
+                  </li>
+                  <li class="text-success"></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
 
+        <div
+          class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center"
+        >
+          <a id="Gutscheine"><h1 class="display-4 word-wrap">Gutscheine</h1></a>
+        </div>
 
-<div class="container mb-0">
-
-<div class="row text-center">
-  <div class="col-sm-12 col-md-6 col-lg-4">
-    <div class="card d-block mb-4 shadow">
-      <div class="card-header">
-        <h4 class="my-0 font-weight-normal">Kleiner Seenrundflug</h4>
-      </div>
-      <div class="card-body">
-        <h1 class="card-title pricing-card-title">30 &euro; <small class="text-muted">pro P.</small></h1>
-        <ul class="list-unstyled mt-3 mb-4">
-          <li>Altm&uuml;hlsee</li>
-          <li>Brombachsee Vorsperre</li>
-          <li>&nbsp;</li>
-          <li>&nbsp;</li>
-          <li>ca 15 Minuten</li>
-        </ul>
-      </div>
-    </div>
-  </div>
-  <div class="col-sm-12 col-md-6 col-lg-4">
-    <div class="card d-block mb-4 shadow">
-      <div class="card-header">
-        <h4 class="my-0 font-weight-normal">Gro&szlig;er Seenrundflug</h4>
-      </div>
-      <div class="card-body">
-        <h1 class="card-title pricing-card-title">35 &euro; <small class="text-muted">pro P.</small></h1>
-        <ul class="list-unstyled mt-3 mb-4">
-          <li>Altm&uuml;hlsee</li>
-          <li>Brombachsee Hauptsperre</li>
-          <li>&nbsp;</li>
-          <li>&nbsp;</li>
-          <li>ca 20 Minuten</li>
-        </ul>
-      </div>
-    </div>
-  </div>
-  <div class="col-sm-12 col-md-12 col-lg-4">
-    <div class="card d-block mb-4 shadow">
-      <div class="card-header">
-        <h4 class="my-0 font-weight-normal">Drei-Seenrundflug</h4>
-      </div>
-      <div class="card-body">
-        <h1 class="card-title pricing-card-title">50 &euro; <small class="text-muted">pro P.</small></h1>
-        <ul class="list-unstyled mt-3 mb-4">
-          <li>Altm&uuml;hlsee</li>
-          <li>Brombachsee</li>
-          <li>Rothsee</li>
-          <li>&nbsp;</li>
-          <li>ca 30 Minuten</li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="row text-center">
-  <div class="col-sm-12 col-md-6 d-flex align-items-stretch">
-    <div class="card d-block mb-4 shadow">
-      <div class="card-header">
-        <h4 class="my-0 font-weight-normal">Familienangebot</h4>
-      </div>
-      <div class="card-body">
-        <div class="mb-3 text-muted">Den kleinen Seenrundflug bieten wir auch als Familienangebot an. Ab der dritten Person (Kinder bis 14 Jahren) bezahlen Sie nur noch &euro; 25,-</div>
         <table class="table">
-	      <tbody>
-		    <tr>
-  		    <td>3-K&ouml;pfige Familie</td>
-			  <td>2 Erw. 1 Kind</td>
-			  <td>&euro; 85,-</td>
-		    </tr>
-		    <tr>
-  		    <td>4-K&ouml;pfige Familie</td>
-			  <td>2 Erw. 2 Kinder <small>(2 Fl&uuml;ge)</small></td>
-			  <td>&euro; 110,-</td>
-		    </tr>
-		    <tr>
-  		    <td>5-K&ouml;pfige Familie</td>
-			  <td>2 Erw. 3 Kinder <small>(2 Fl&uuml;ge)</small></td>
-			  <td>&euro; 135,-</td>
-		    </tr>
-		    <tr>
-  		    <td>6-K&ouml;pfige Familie</td>
-			  <td>2 Erw. 4 Kinder <small>(2 Fl&uuml;ge)</small></td>
-			  <td>&euro; 160,-</td>
-		    </tr>
-		  </tbody>
-	    </table>
-      </div>
-    </div>
-  </div>
-  <div class="col-sm-12 col-md-6 d-flex align-items-stretch">
-    <div class="card d-block mb-4 shadow">
-      <div class="card-header">
-        <h4 class="my-0 font-weight-normal">Segelfliegen</h4>
-      </div>
-      <div class="card-body">
-      <div class="mb-1 text-muted">Das Spiel mit dem Wind mit einem unserer erfahrenen Piloten in einem zweisitzigen Segelflugzeug erleben!</div>
-      <div class="mb-3 text-muted">Wir machen es m&ouml;glich!</div>
-      <table class="table">
-	      <tbody>
-		    <tr>
-  		    <td>Windenstart</td>
-			    <td>inkl. Flugzeit 5-10 min</td>
-			    <td>&euro; 10,-</td>
-		    </tr>
-		    <tr>
-  		    <td>Flugzeug Schleppstart</td>
-			    <td>inkl. Flugzeit 20-30 min</td>
-			    <td>&euro; 50,-</td>
-        </tr>
-		  </tbody>
-	    </table>
-      </div>
-    </div>
-  </div>
-</div>
+          <tbody>
+            <tr>
+              <td class="text-center">
+                Ein Rundfluggutschein ist das besondere Geschenk f&uuml;r
+                Geburtstage, Firmenjubil&auml;en, Hochzeit usw.<br />F&uuml;r
+                alle unsere hier beschriebenen Rundfl&uuml;ge k&ouml;nnen
+                Gutscheine erworben werden.<br />Dar&uuml;ber hinaus beraten wir
+                Sie gerne um einen individuellen Flug zusammenzustellen.
+              </td>
+            </tr>
+            <tr>
+              <td class="text-center">
+                Informationen zu Rundfl&uuml;gen und Gutscheinverkauf bekommen
+                Sie an Wochenenden<br />auf dem Flugplatz (09831-2728), unter
+                Telefonnummer 09831-881304 oder per E-Mail unter
+                <a
+                  href="mailto:&#103;&#117;&#116;&#115;&#099;&#104;&#101;&#105;&#110;&#101;&#064;&#102;&#115;&#118;&#045;&#103;&#117;&#110;&#122;&#101;&#110;&#104;&#097;&#117;&#115;&#101;&#110;&#046;&#100;&#101;"
+                  >&#103;&#117;&#116;&#115;&#099;&#104;&#101;&#105;&#110;&#101;&#064;&#102;&#115;&#118;&#045;&#103;&#117;&#110;&#122;&#101;&#110;&#104;&#097;&#117;&#115;&#101;&#110;&#046;&#100;&#101;</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td>&nbsp;</td>
+            </tr>
+          </tbody>
+        </table>
 
-<div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
-  <h1 class="display-4 word-wrap">Maschinengesamtpreise</h1>
-  <p class="lead">Bei Fl&uuml;gen &uuml;ber einer Stunde zu ihrem Wunschziel berechnen wir auf Basis der voraussichtlichen Gesamtflugzeit einen von der Anzahl der Personen unabh&auml;ngigen Maschinengesamtpreis.</p>
-</div>
+        <small
+          ><p class="text-muted text-center">
+            Alle Flugpreise verstehen sich als Selbstkostenpreise mit dem Ziel,
+            Ihnen unseren Sport n&auml;her zu bringen.<br />Gerne informieren
+            wir Sie &uuml;ber eine Mitgliedschaft und die
+            Ausbildungsm&ouml;glichkeiten in unserem Verein.
+          </p></small
+        >
+      </div>
+    </main>
+    <!-- Content End -->
 
-<div class="row text-center">
-  <div class="col-sm-12 col-md-6 col-lg-4 d-flex align-items-stretch">
-    <div class="card d-block mb-4 shadow">
-      <a href="flugzeuge_deewg.html">
-        <div class="view overlay">
-          <img class="card-img-top" src="img/rundfluege/cessna_prev.jpg">
-        </div>
-      </a>
-      <div class="card-body">
-        <a href="flugzeuge_deewg.html">
-          <h3 class="mb-0 text-dark">Cessna 172</h3>
-          <div class="mb-1 text-muted">D-EEWG</div>
-        </a>
-        <h1 class="card-title pricing-card-title text-primary">210 &euro; <small class="text-muted">pro Stunde</small></h1>
-        <ul class="list-unstyled mt-3 mb-4 card-text">
-          <li>Bis zu drei Passagiere</li>
-          <li>Motorflugzeug der Echo-Klasse</li>
+    <!-- Footer Start -->
+    <nav class="navbar navbar-expand navbar-dark bg-dark">
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarCollapse2"
+        aria-controls="navbarCollapse"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div
+        class="collapse navbar-collapse justify-content-md-center small"
+        id="navbarCollapse"
+      >
+        <ul class="navbar-nav">
+          <li class="nav-link disabled">
+            &copy; 2020 Flugsportvereinigung "Gelbe B&uuml;rg" Gunzenhausen e.V.
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="kontakt.html">Impressum</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="datenschutz.html">Datenschutz</a>
+          </li>
         </ul>
       </div>
-    </div>
-  </div>
-  <div class="col-sm-12 col-md-6 col-lg-4 d-flex align-items-stretch">
-    <div class="card d-block mb-4 shadow">
-      <a href="flugzeuge_degun.html">
-        <div class="view overlay">
-          <img class="card-img-top" src="img/rundfluege/robin_prev.jpg">
-        </div>
-      </a>
-      <div class="card-body">
-        <a href="flugzeuge_degun.html">
-          <h3 class="mb-0 text-dark">Robin DR-400</h3>
-          <div class="mb-1 text-muted">D-EGUN</div>
-        </a>
-        <h1 class="card-title pricing-card-title text-primary">210 &euro; <small class="text-muted">pro Stunde</small></h1>
-        <ul class="list-unstyled mt-3 mb-4 card-text">
-          <li>Bis zu drei Passagiere</li>
-          <li>Motorflugzeug der Echo-Klasse</li>
-        </ul>
-      </div>
-    </div>  
-  </div>
-  <div class="col-sm-12 col-md-12 col-lg-4 d-flex align-items-stretch">
-    <div class="card d-block mb-4 shadow">
-      <a href="flugzeuge_dmfgb.html">
-        <div class="view overlay">
-          <img class="card-img-top" src="img/rundfluege/pioneer_prev.jpg">
-        </div>
-      </a>
-      <div class="card-body">
-        <a href="flugzeuge_dmfgb.html">
-          <h3 class="mb-0 text-dark">Pioneer 200</h3>
-          <div class="mb-1 text-muted">D-MFGB</div>
-        </a>
-        <h1 class="card-title pricing-card-title text-success">99 &euro; <small class="text-muted">pro Stunde</small></h1>
-        <ul class="list-unstyled mt-3 mb-4 card-text">
-          <li>Ein Passagier</li>
-          <li>Ultraleicht-Flugzeug</li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</div>
+    </nav>
+    <!-- Footer End -->
 
-<div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
-  <h1 class="display-4 word-wrap">Flugroutenvorschl&auml;ge</h1>
-</div>
-
-
-<div class="row text-center">
-  <div class="col-sm-12 col-md-6 d-flex align-items-stretch">
-    <div class="card d-block mb-4 shadow">
-      <div class="view overlay">
-	    <img class="card-img-top" src="img/rundfluege/wuelzburg_prev.jpg">
-	  </div>
-      <div class="card-body">
-      <h3 class="mb-0 text-dark">S&uuml;dliches Mittelfranken</h3>
-        <div class="mb-1 text-muted">Brombachsee, W&uuml;lzburg, Altm&uuml;hltal, Burg Pappenheim, N&ouml;rdlingen, Dinkelsb&uuml;hl, Hesselberg, Altm&uuml;hlsee</div>
-        <ul class="list-unstyled mt-3 mb-4 card-text">
-          <li class="text-primary">Dauer ca. 1:00h &euro; 210,- (Motorflugzeug)</li>
-          <li class="text-success">Dauer ca. 1:10h &euro; 115,- (Ultraleicht-Flugzeug)</li>
-        </ul>
-      </div>
-    </div>
-  </div>
-  <div class="col-sm-12 col-md-6 d-flex align-items-stretch">
-    <div class="card d-block mb-4 shadow">
-      <div class="view overlay">
-	    <img class="card-img-top" src="img/rundfluege/weltenburg_prev.jpg">
-	  </div>
-      <div class="card-body">
-        <h3 class="mb-0 text-dark">Kloster Weltenburg</h3>
-        <div class="mb-1 text-muted">Hinflug &uuml;ber Brombachsee, Rothsee, Main-Donau-Kanal zur Befreiungshalle bei Kehlheim, Kloster Weltenburg, Donaudurchbruch</div>
-	    <div class="mb-1 text-muted">R&uuml;ckflug &uuml;ber das Altm&uuml;hltal</div>
-        <ul class="list-unstyled mt-3 mb-4 card-text">
-          <li class="text-primary">Dauer ca. 1:20h &euro; 280,- (Motorflugzeug)</li>
-          <li class="text-success">Dauer ca. 1:30h &euro; 148,- (Ultraleicht-Flugzeug)</li>
-        </ul>
-      </div>
-    </div>
-  </div>
-  <div class="col-sm-12 col-md-6 d-flex align-items-stretch">
-    <div class="card d-block mb-4 shadow">
-      <div class="view overlay">
-	    <img class="card-img-top" src="img/rundfluege/zugspitze_prev.jpg">
-	  </div>
-      <div class="card-body">
-      <h3 class="mb-0 text-dark">Alpenflug</h3>
-        <div class="mb-1 text-muted">Wettersteingebirge, Zugspitze</div>
-	    <div class="mb-1 text-muted">auf Wunsch mit Zwischenlandung (Kaffee) in Leutkirch</div>
-        <ul class="list-unstyled mt-3 mb-4 card-text">
-          <li class="text-primary">Dauer ca. 2:30h &euro; 525,- (Motorflugzeug)</li>
-          <li class="text-success">Dauer ca. 3:00h &euro; 297,- (Ultraleicht-Flugzeug)</li>
-        </ul>
-      </div>
-    </div>
-  </div>
-  <div class="col-sm-12 col-md-6 d-flex align-items-stretch">
-    <div class="card d-block mb-4 shadow">
-      <div class="view overlay">
-	    <img class="card-img-top" src="img/rundfluege/neuschwanstein_prev.jpg">
-	  </div>
-      <div class="card-body">
-        <h3 class="mb-0 text-dark">K&ouml;nig Ludwig Tour</h3>
-        <div class="mb-1 text-muted">Donaudurchbruch/Befreiungshalle, Schloss Herrenchiemsee, Schloss Linderhof, Schloss Neuschwanstein</div>
-        <ul class="list-unstyled mt-3 mb-4 card-text">
-          <li class="text-primary">Dauer ca. 3:00h &euro; 630,- (Motorflugzeug)</li>
-          <li class="text-success"></li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-
-
-<div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
-    <a id="Gutscheine"><h1 class="display-4 word-wrap">Gutscheine</h1></a>
-</div>
-
-<table class="table">
-  <tbody>
-    <tr>
-      <td class="text-center">Ein Rundfluggutschein ist das besondere Geschenk f&uuml;r Geburtstage, Firmenjubil&auml;en, Hochzeit usw.<br/>F&uuml;r alle unsere hier beschriebenen Rundfl&uuml;ge k&ouml;nnen Gutscheine erworben werden.<br/>Dar&uuml;ber hinaus beraten wir Sie gerne um einen individuellen Flug zusammenzustellen.</td>
-    </tr>
-    <tr>
-      <td class="text-center">Informationen zu Rundfl&uuml;gen und Gutscheinverkauf bekommen Sie an Wochenenden<br/>auf dem Flugplatz (09831-2728), unter Telefonnummer 09831-881304 oder per E-Mail unter <a href="mailto:&#103;&#117;&#116;&#115;&#099;&#104;&#101;&#105;&#110;&#101;&#064;&#102;&#115;&#118;&#045;&#103;&#117;&#110;&#122;&#101;&#110;&#104;&#097;&#117;&#115;&#101;&#110;&#046;&#100;&#101;">&#103;&#117;&#116;&#115;&#099;&#104;&#101;&#105;&#110;&#101;&#064;&#102;&#115;&#118;&#045;&#103;&#117;&#110;&#122;&#101;&#110;&#104;&#097;&#117;&#115;&#101;&#110;&#046;&#100;&#101;</a></td>
-    </tr>
-	<tr>
-	  <td>&nbsp;</td>
-	</tr>
-  </tbody>
-</table>
-
-<small><p class="text-muted text-center">Alle Flugpreise verstehen sich als Selbstkostenpreise mit dem Ziel, Ihnen unseren Sport n&auml;her zu bringen.<br/>Gerne informieren wir Sie &uuml;ber eine Mitgliedschaft und die Ausbildungsm&ouml;glichkeiten in unserem Verein.</p></small>
-
-</div>
-
-</main>
-<!-- Content End -->
-
-<!-- Footer Start -->
-<nav class="navbar navbar-expand navbar-dark bg-dark">
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse2" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse justify-content-md-center small" id="navbarCollapse">
-    <ul class="navbar-nav">
-      <li class="nav-link disabled">&copy; 2020 Flugsportvereinigung "Gelbe B&uuml;rg" Gunzenhausen e.V.</li>
-      <li class="nav-item">
-        <a class="nav-link" href="kontakt.html">Impressum</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="datenschutz.html">Datenschutz</a>
-      </li>
-    </ul>
-  </div>
-</nav>
-<!-- Footer End -->
-
-<script src="js/jquery-3.3.1.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/fsv.js"></script>
-</body>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/fsv.js"></script>
+  </body>
 </html>
