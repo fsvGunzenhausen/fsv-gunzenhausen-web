@@ -1,3 +1,17 @@
+# FSV Gunzenhausen Website
+
+# Execute locally
+  - npm run dev
+
+# Create new component
+   - create component tsx in components
+   - add images or assets accordingly
+
+# Add new images or assets 
+  - add to assets
+  - extend images.ts
+
+
 # React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.

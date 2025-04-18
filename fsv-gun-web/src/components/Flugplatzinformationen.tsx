@@ -1,4 +1,3 @@
-// src/components/SubHeader.tsx
 // This component is used to display information about the airfield, including its ICAO identifier, operator, location, and other relevant details.
 import trafficPatternOSM from '../assets/components/flugplatzinformationen/Platzrunde.png';
 

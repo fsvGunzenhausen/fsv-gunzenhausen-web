@@ -2,6 +2,8 @@ import React from 'react';
 import { ROUTES } from './routes';
 
 import Flugplatzinformationen from './components/Flugplatzinformationen'; // Import the information component
+import Kontakt from './components/Kontakt';
+import Fotos from './components/Fotos';
 
 // Define types for the route content
 type RouteContent = {
@@ -82,7 +84,7 @@ export const ROUTE_CONFIG: Array<{path:string; routeContent: RouteContent}> =
       routeContent: {   
         title: 'Fotos',
         subHeader: undefined,
-        component: undefined
+        component: <Fotos />
       },
     },
     {
@@ -90,7 +92,7 @@ export const ROUTE_CONFIG: Array<{path:string; routeContent: RouteContent}> =
       routeContent: {   
         title: 'Kontakt / Impressum',
         subHeader: undefined,
-        component: undefined
+        component: <Kontakt />
       },
     },
     {
@@ -118,7 +120,7 @@ export const ROUTE_CONFIG: Array<{path:string; routeContent: RouteContent}> =
       routeContent: {   
         title: 'Kontakt / Impressum',
         subHeader: undefined,
-        component: undefined
+        component: <Kontakt />
       },
     },
 ];
