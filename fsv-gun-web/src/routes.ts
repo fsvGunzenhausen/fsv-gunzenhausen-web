@@ -6,7 +6,7 @@ export const ROUTES = {
     FLUGZEUGE: '/flugzeuge',
     RUNDFLUEGE: '/rundfluege',
     FOTOS: '/fotos',
-    IMPRESSUM: '/impressum',
+    IMPRESSUM: '/kontakt',
     KONTAKT: '/kontakt',
     DATENSCHUTZ: '/datenschutz',
     WEBCAM_OST: '/webcam-ost',

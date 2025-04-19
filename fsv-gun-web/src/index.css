@@ -195,5 +195,116 @@ img.zoom {
   z-index: 998; /* Sicherstellen, dass das Thumbnail über anderen Inhalten liegt */
 }
 
+/* src/components/Timeline.css */
+
+.timeline-container {
+  overflow-x: hidden;
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth; /* Smooth scrolling */
+}
+
+.timeline {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.timeline-item {
+  margin-bottom: 2rem;
+}
+
+.timeline-body,
+.timeline-content,
+.card {
+  max-width: 100%;
+  overflow-wrap: break-word;
+  word-break: break-word;
+}
 
 
+.timeline-item {
+  position: relative;
+  margin-bottom: 30px;
+  padding-left: 30px;
+  scroll-snap-align: start; /* Snaps to top of the container */
+  display: flex;
+  align-items: flex-start;
+}
+
+.timeline-item:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 4px;
+  height: 100%;
+  background-color: #007bff; /* Blue line for timeline */
+  border-radius: 4px;
+}
+
+.timeline-body {
+  width: 100%;
+}
+
+.timeline-content {
+  background: #f8f9fa;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+  max-width: 95%;
+}
+
+.timeline-content:hover {
+  transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+.timeline-content h5 {
+  color: #6c757d; /* Subtitle color */
+  font-size: 1.1rem;
+}
+
+.timeline-content h2 {
+  color: #007bff; /* Title color */
+  font-size: 1.5rem;
+}
+
+.timeline-content p {
+  font-size: 1rem;
+  color: #495057;
+}
+
+/* Styling for the timeline card */
+.card-body {
+  padding: 0;
+}
+
+/* Add spacing between items and ensure responsiveness */
+@media (max-width: 768px) {
+  .timeline-item {
+    margin-bottom: 20px;
+  }
+
+  .timeline-content h2 {
+    font-size: 1.2rem;
+  }
+
+  .timeline-content p {
+    font-size: 0.9rem;
+  }
+  
+}
+
+.no-bg-hover {
+  background-color: transparent !important;
+  color: #0d6efd; /* Set your default text color */
+}
+
+.no-bg-hover:hover,
+.no-bg-hover:focus,
+.no-bg-hover:active {
+  background-color: transparent !important; /* Prevent background change */
+  color: #0056b3 !important; /* Keep or change hover/click text color */
+  text-decoration: underline;
+  box-shadow: none; /* Remove Bootstrap's focus outline if needed */
+}

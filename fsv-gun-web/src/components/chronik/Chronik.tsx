@@ -1,40 +1,61 @@
-import  { useState } from 'react';
-import images from '../shared/images/images';
+import { useState } from "react";
+import chronikDaten from "./Chronikdaten"; // Import the data file
+import Chronikkarte from "./Chronikkarte";
 
-function Fotos() {
+import imageStore from './Images.index';
+
+function convertImageStoreToArray(imageStore: { [key: string]: { full: any, preview: any } }) {
+  return Object.values(imageStore);
+}
+
+
+function Chronik() {
+
+  const imageStoreArray = convertImageStoreToArray(imageStore);
+  // State to manage the expanded card
+  const [expanded, setExpanded] = useState<string | null>(null);
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
+
 
   // Open modal with full image
   const openModal = (image: string) => setSelectedImage(image);
   const closeModal = () => setSelectedImage(null);
 
   const navigateImage = (direction: "prev" | "next") => {
-    const currentIndex = images.findIndex((img) => img.full === selectedImage);
+    const currentIndex = imageStoreArray.findIndex((img) => img.full === selectedImage);
     let newIndex = direction === "next"
-      ? (currentIndex + 1) % images.length
-      : (currentIndex - 1 + images.length) % images.length;
+      ? (currentIndex + 1) % imageStoreArray.length
+      : (currentIndex - 1 + imageStoreArray.length) % imageStoreArray.length;
   
-    setSelectedImage(images[newIndex].full);
+    setSelectedImage(imageStoreArray[newIndex].full);
   };
 
   return (
-    <div className='container mb-4'>
-      <div className="row">
-        {images.map((img, index) => (
-          <div key={index} className="col-xs-12 col-sm-6 col-md-4 col-lg-3 thumb">
-            <a
-              className="thumbnail"
-              href="#"
-              onClick={(e) => {
-                e.preventDefault();
-                openModal(img.full); // Open modal with full image
-              }}
-            >
-              <img className="img-fluid zoom" src={img.preview} alt={`Thumbnail ${index + 1}`} />
-            </a>
-          </div>
-        ))}
+    <div className="container py-5">
+      <div className="timeline-container">
+        <ul className="timeline">
+          {chronikDaten.map((era, index) => (
+            <li key={index} className="timeline-item">
+              <div className="timeline-body">
+                <div className="timeline-content">
+                      <Chronikkarte
+                        year={era.year}
+                        title={era.title} 
+                        description={era.description}
+                        images={era.images}
+                        expanded={expanded}
+                        setExpanded={setExpanded}
+                        openModal={openModal}
+                      />
+                </div>
+              </div>
+            </li>
+          ))}
+        </ul>
       </div>
+      <p className="small fw-light">Dank sagt die FSV an dieser Stelle all ihren Förderern, insbesondere der Stadt Gunzenhausen, die den Belangen des Flugsports immer aufgeschlossen gegen&uuml;berstand.</p>      
+      <p className="small fw-light text-center">Text und Bilder 1951-2001: Hans-Peter Lautner, November 2001<br/>Text und Bilder 2002-2015: FSV-Gunzenhausen</p>      
+    
       {selectedImage && (
   <>
     {/* Backdrop */}
@@ -58,7 +79,7 @@ function Fotos() {
         <div className="modal-content"
               style={{ maxHeight: '100vh', display: 'flex', flexDirection: 'column' }}>
           <div className="modal-header">
-            <h5 className="modal-title" id="imageModalLabel">Fotos</h5>
+            <h5 className="modal-title" id="imageModalLabel">Chronik</h5>
             <button
               type="button"
               className="btn-close"
@@ -108,9 +129,9 @@ function Fotos() {
   </>
 )}
 
-
     </div>
+    
   );
 }
 
-export default Fotos;
+export default Chronik;

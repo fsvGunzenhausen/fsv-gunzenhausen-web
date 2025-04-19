@@ -1,9 +1,11 @@
 import React from 'react';
 import { ROUTES } from './routes';
 
-import Flugplatzinformationen from './components/Flugplatzinformationen'; // Import the information component
-import Kontakt from './components/Kontakt';
-import Fotos from './components/Fotos';
+import Flugplatzinformationen from './components/flugplatzinformationen/Flugplatzinformationen'; // Import the information component
+import Kontakt from './components/kontakt/Kontakt';
+import Fotos from './components/fotos/Fotos';
+import Chronik from './components/chronik/Chronik';
+import Datenschutz from './components/datenschutz/Datenschutz';
 
 // Define types for the route content
 type RouteContent = {
@@ -104,7 +106,7 @@ export const ROUTE_CONFIG: Array<{path:string; routeContent: RouteContent}> =
           <h4 className="text-black-50">1951-2015 - 64 Jahre Flugsportvereinigung "Gelbe Bürg"</h4>
           </>
         ),
-        component: undefined
+        component: <Chronik />
       },
     },
     {
@@ -112,7 +114,7 @@ export const ROUTE_CONFIG: Array<{path:string; routeContent: RouteContent}> =
       routeContent: {   
         title: 'Datenschutz',
         subHeader: undefined,
-        component: undefined
+        component: <Datenschutz />
       },
     },
     {
