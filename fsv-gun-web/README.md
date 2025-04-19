@@ -1,16 +1,22 @@
 # FSV Gunzenhausen Website
 
+This is the Website of FSV Gunzenhausen.
+
+# Install packages
+  - npm ci
+
 # Execute locally
   - npm run dev
 
 # Create new component
    - create component tsx in components
-   - add images or assets accordingly
+   - add routing to routes.ts
+   - add page configuration in routes.config.tsx. Here you bind your route to your component and provide subheader.
+   - add assets to corresponding component folder
+   - create Images.index.ts for more complex use (arrays of images)
 
-# Add new images or assets 
-  - add to assets
-  - extend images.ts
-
+# Lint
+  Use Linter with care. Legacy static html pages needs that Chronikdaten.tsx is not allowed to lint in a strict way (\n needed). Otherwise formatting gets dirty. If u wish to introduce pretty linter (recommended - do it!) then consider refatoring description in Chronikdaten.tsx.
 
 # React + TypeScript + Vite
 

@@ -25,7 +25,7 @@ function Kontakt() {
             2. Vorsitzender: Johannes Kern</p>
             <br/>
             <h3 className="text-black-50">Gutscheinverkauf</h3>
-            <p className='fw-light'>Details auf unserer Seite für <a href={ROUTES.RUNDFLUEGE}>Rundflüge</a></p>
+            <p className='fw-light'>Details auf unserer Seite für <a href={ROUTES.GUTSCHEINE}>Rundflüge</a></p>
         </div>
   );
 }

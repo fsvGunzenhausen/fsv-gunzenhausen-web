@@ -1,3 +1,6 @@
+  // do not lint this file
+  // This file contains the chronik data for the FSV Gunzenhausen website
+  
   const chronikDaten =  [
     {
       year: "1951-1956",

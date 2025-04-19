@@ -5,6 +5,7 @@ export const ROUTES = {
     CHRONIK: '/chronik',
     FLUGZEUGE: '/flugzeuge',
     RUNDFLUEGE: '/rundfluege',
+    GUTSCHEINE: '/rundfluege#gutscheine',
     FOTOS: '/fotos',
     IMPRESSUM: '/kontakt',
     KONTAKT: '/kontakt',

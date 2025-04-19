@@ -6,6 +6,7 @@ import Kontakt from './components/kontakt/Kontakt';
 import Fotos from './components/fotos/Fotos';
 import Chronik from './components/chronik/Chronik';
 import Datenschutz from './components/datenschutz/Datenschutz';
+import Rundfluege from './components/rundfluege/Rundfluege';
 
 // Define types for the route content
 type RouteContent = {
@@ -54,7 +55,7 @@ export const ROUTE_CONFIG: Array<{path:string; routeContent: RouteContent}> =
             </h4>
           </>
         ),
-        component: undefined
+        component: <Rundfluege />
       },
     },
     {
