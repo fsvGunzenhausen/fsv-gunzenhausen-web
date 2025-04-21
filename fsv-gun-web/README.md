@@ -8,6 +8,11 @@ This is the Website of FSV Gunzenhausen.
 # Execute locally
   - npm run dev
 
+  # Execute dist for testing
+  - npm run build
+  - serve -s dist
+  - will run usually on port 3000
+
 # Create new component
    - create component tsx in components
    - add routing to routes.ts

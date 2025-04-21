@@ -8,6 +8,9 @@ import Chronik from './components/chronik/Chronik';
 import Datenschutz from './components/datenschutz/Datenschutz';
 import Rundfluege from './components/rundfluege/Rundfluege';
 import Flugausbildung from './components/flugausbildung/Flugausbildung';
+import Motorflug from './components/flugausbildung/Motorflug';
+import Ultraleicht from './components/flugausbildung/Ultraleicht';
+import Segelflug from './components/flugausbildung/Segelflug';
 
 // Define types for the route content
 type RouteContent = {
@@ -34,6 +37,38 @@ export const ROUTE_CONFIG: Array<{path:string; routeContent: RouteContent}> =
         title: 'Flugplatzinformationen',
         subHeader: undefined,
         component: <Flugplatzinformationen />
+      },
+    },
+    {
+      path: ROUTES.FLUGAUSBILDUNG,
+      routeContent: {   
+        title: 'Flugausbildung',
+        subHeader: undefined,
+        component: <Flugausbildung />
+      },
+    },
+    {
+      path: ROUTES.MOTORFLUG,
+      routeContent: {   
+        title: 'Flugausbildung',
+        subHeader: undefined,
+        component: <Motorflug />
+      },
+    },
+    {
+      path: ROUTES.ULTRALEICHTFLUG,
+      routeContent: {   
+        title: 'Flugausbildung',
+        subHeader: undefined,
+        component: <Ultraleicht />
+      },
+    },
+    {
+      path: ROUTES.SEGELFLUG,
+      routeContent: {   
+        title: 'Flugausbildung',
+        subHeader: undefined,
+        component: <Segelflug />
       },
     },
     {

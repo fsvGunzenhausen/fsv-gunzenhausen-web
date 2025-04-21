@@ -1,15 +1,16 @@
 
 import ausbildung from '../../assets/components/ausbildung/013.jpg';
-import cockpit from '../../assets/components/ausbildung/011_prev.jpg';
-import cessna from '../../assets/components/ausbildung/010_prev.jpg';
-import robin from '../../assets/components/ausbildung/009_prev.jpg';
+import cockpit from '../../assets/components/ausbildung/014_prev.jpg';
+import dynamic from '../../assets/components/ausbildung/015_prev.jpg';
+import pioneer from '../../assets/components/ausbildung/003_prev.jpg';
 import Intro from './Intro';
 import BoldBlueCheckmark from '../../shared/checkmark/BoldCheckmark';
 import { ROUTES } from '../../routes';
 
-const textIntro = ["Erfülle Dir den Traum vom Fliegen!"];
+const textIntro = ["Erobere unbeschwert den Himmel!"];
 
-function Motorflug() {
+
+function Ultraleicht() {
 
   return (
     <>
@@ -17,9 +18,13 @@ function Motorflug() {
         {/* Main Content */}
         <Intro 
           text={textIntro} />
-          <h2 className="text-left text-black-50 mb-4">Motorflug PPL(A) / LAPL(A)</h2>
+          <h2 className="text-left text-black-50 mb-4">Ultraleicht Sport Pilot Licence</h2>
           <p className="lead mt-2">
-          Die PPL(A)-Lizenz beinhaltet die Erlaubnis, einmotorige Kleinflugzeuge bis 2 Tonnen (maximales Abfluggewicht) bei guten Sichtflugbedingungen am Tag zu fliegen. Sie dient als Grundlizenz für alle weiteren Ausbildungen bis hin zum Verkehrsflugzeugführer. <br/> Alternativ bieten wir auch die LAPL(A)-Lizenz an – ideal für den freizeitlich orientierten Piloten mit reduziertem Ausbildungsumfang. Beide Lizenzen können bei uns erworben werden.
+          Das Ultraleichtfliegen ist nicht nur kosteneffizient, sondern auch
+          der Flugtrend der Zukunft. Nutze die Chance, Teil unserer
+          aufstrebenden Fliegergemeinschaft zu werden und erlebe das
+          moderne Fliegen in einem dynamischen Umfeld. Starte bei uns
+          durch und werde ein Pionier des Ultraleichtfliegens!
           </p>
           <div className="container mt-4 mb-0 p-0">
           <div className="row">
@@ -32,9 +37,9 @@ function Motorflug() {
                         <div className="card-body mt-0">
                               <div>
                                   <img className="img-fluid w-100 " 
-                                        style={{ objectFit: 'cover', maxHeight: "250px" }}  src={cockpit} alt='Voraussetzungen' />
+                                        style={{ objectFit: 'cover', maxHeight: "285px" }}  src={cockpit} alt='Voraussetzungen' />
                                 </div>
-                              <ul className="mb-4 fw-light list-unstyled mx-4 mt-2">
+                              <ul className="mb-4 fw-light list-unstyled mx-4 mt-2 mb-2">
                                 <li className="mb-2">
                                   <div className="d-flex">
                                     <div className="me-2 mt-1"><BoldBlueCheckmark /></div>
@@ -44,7 +49,13 @@ function Motorflug() {
                                 <li className="mb-2">
                                   <div className="d-flex">
                                     <div className="me-2 mt-1"><BoldBlueCheckmark /></div>
-                                    <div>Medizinische Flugtauglichkeit: Klasse 2 oder LAPL Medical</div>
+                                    <div>Medizinische Flugtauglichkeit: LAPL Medical</div>
+                                  </div>
+                                </li>
+                                <li className="mb-2">
+                                  <div className="d-flex">
+                                    <div className="me-2 mt-1"><BoldBlueCheckmark /></div>
+                                    <div>Maximales Körpergewicht aufgrund begrenzter Maximalzuladung etwa 85kg</div>
                                   </div>
                                 </li>
                                 <li className="mb-2">
@@ -65,25 +76,10 @@ function Motorflug() {
                                     <div>Aktive Vereinsmitgliedschaft erforderlich</div>
                                   </div>
                                 </li>
-                                <li className="mb-2">
-                                  <div className="d-flex">
-                                    <div className="me-2 mt-1"><BoldBlueCheckmark /></div>
-                                    <div>Zuverlässigkeitsüberprüfung ("ZÜP")</div>
-                                  </div>
-                                </li>
-                                <li className="mb-2">
-                                  <div className="d-flex">
-                                    <div className="me-2 mt-1"><BoldBlueCheckmark /></div>
-                                    <div>Polizeiliches Führungszeugnis der Belegart 0</div>
-                                  </div>
-                                </li>
-                                <li className="mb-2">
-                                  <div className="d-flex">
-                                    <div className="me-2 mt-1"><BoldBlueCheckmark /></div>
-                                    <div>Auszug aus dem Verkehrszentralregister (Flensburg)</div>
-                                  </div>
-                                </li>
                               </ul>
+                              <p className="fw-light mx-3 mb-4">Günstige Flugpreise sind in Vereinen nur möglich, wenn alle
+                                                        Mitglieder auch ihre sonstigen (Berufs)Qualitäten zum Gelingen
+                                                        des Ganzen beisteuern. </p>
                         </div>
                     </div>
               </section >
@@ -96,7 +92,7 @@ function Motorflug() {
                     <div className="card-body mt-0">
                         <div>
                           <img className="img-fluid w-100 " 
-                                style={{ objectFit: 'cover', maxHeight: "279px" }}  src={robin} alt='Vorteile' />
+                                style={{ objectFit: 'cover', maxHeight: "279px" }}  src={pioneer} alt='Vorteile' />
                         </div>
                       <ul className="mb-4 fw-light list-unstyled mx-4 mt-2">
                         <li className="mb-2">
@@ -111,22 +107,31 @@ function Motorflug() {
                           <div className="d-flex">
                             <div className="me-2 mt-1"><BoldBlueCheckmark /></div>
                             <div><strong>Erschwingliche Ausbildung:</strong> <br/>
-                            Je nach Art des Flugscheins ist mit Ausbildungskosten von ca.
-                            7.000 € bis 8.500 € zu rechnen, verteilt über die Ausbildungszeit.
+                            Eine realistische Größenordnung für den Erwerb der UL-Lizenz im
+                            Verein inklusive Nebenkosten liegt bei etwa 4.000 € - 4.500 €.
                             
                             </div>
                           </div>
                         </li>
                         <li className="mb-2">
-                          <div className="d-flex mb-4">
+                          <div className="d-flex mb-2">
                             <div className="me-2 mt-1"><BoldBlueCheckmark /></div>
-                            <div><strong>Vielfältige und aufregende Ausflugsziele:</strong> <br/>
-                            Als Teil unserer Fliegergemeinschaft hast Du die Möglichkeit,
-                            gemeinsam mit anderen Piloten Flugerlebnisse zu genießen
-                            und von ihren Erfahrungen für Deine eigenen Flüge zu profitieren.
+                            <div><strong>Vielfältige Gemeinschaft:</strong> <br/>
+                                         Werde Teil unserer engagierten Fliegergemeinschaft und genieße
+                                          den Austausch mit Gleichgesinnten sowie gemeinsame Events
+                                         und Ausflüge.
                             </div>
                           </div>
-                        </li>         
+                        </li>    
+                        <li className="mb-2">
+                          <div className="d-flex mb-2">
+                            <div className="me-2 mt-1"><BoldBlueCheckmark /></div>
+                            <div><strong>Kosteneffizienz:</strong> <br/>
+                            Ultraleichtflugzeuge sind im Betrieb günstiger als herkömmliche
+                            Flugzeuge.
+                            </div>
+                          </div>
+                        </li>      
                       </ul>
                     </div>
                   </div>
@@ -143,60 +148,27 @@ function Motorflug() {
                                 style={{ objectFit: 'cover', maxHeight: "250px" }}  src={ausbildung} alt='ausbildung' />
                               </div>
                           <p className="lead mx-3 mt-2">
-                            Die Ausbildung zum Motorflugzeugführer umfasst einen praktischen und einen theoretischen Teil.
+                            Die Ausbildung zum Luftsportgeräteführer umfasst einen praktischen und einen theoretischen Teil.
                           </p>
                           <h5 className='mx-3 mb-2'>Praxis</h5>
                           <p className="mx-3 mb-2">Die praktische Ausbildung umfasst unter anderem folgende Mindestanforderungen:</p>
                           <ul className="mb-4 fw-light list-unstyled mx-4">
-                                  <li className="mb-2">
-                                    <BoldBlueCheckmark /> Flugstunden:
-                                    <ul className="ms-4">
-                                      <li>LAPL: mindestens 30 Stunden</li>
-                                      <li>PPL: mindestens 45 Stunden</li>
-                                    </ul>
-                                  </li>
-                                  <li className="mb-2">
-                                    <BoldBlueCheckmark /> Davon mit Fluglehrer:
-                                    <ul className="ms-4">
-                                      <li>LAPL: mindestens 15 Stunden</li>
-                                      <li>PPL: mindestens 25 Stunden</li>
-                                    </ul>
-                                  </li>
-                                  <li className="mb-2">
-                                    <BoldBlueCheckmark /> Alleinflug:
-                                    <ul className="ms-4">
-                                      <li>LAPL: mindestens 6 Stunden</li>
-                                      <li>PPL: mindestens 10 Stunden</li>
-                                    </ul>
-                                  </li>
+                            <li className="mb-2"><BoldBlueCheckmark /> Mindestens 30 Flugstunden</li> 
+                            <li className="mb-2"><BoldBlueCheckmark /> Davon mindestens 5 Flugstunden Alleinflug</li>   
+                            <li className="mb-2"><BoldBlueCheckmark /> Starts- und Landungen auf verschiedenen Flugplätzen</li>
+                            <li className="mb-2"><BoldBlueCheckmark /> Mindestens zwei Überlandflüge mit Fluglehrer</li>
+                            <li className="mb-2"><BoldBlueCheckmark /> Mindestens drei Solo-Überlandflüge über jeweils 50 km</li>
                           </ul>
                           <h5 className='mx-3 mb-2'>Theorie</h5>
                           <ul className="mb-4 fw-light list-unstyled mx-4">
-                            <li className="mb-2"><BoldBlueCheckmark /> Grundlagen des Fliegens</li> 
-                            <li className="mb-2"><BoldBlueCheckmark /> Allgemeine Luftfahrzeugkunde (Technik)</li> 
-                            <li className="mb-2"><BoldBlueCheckmark /> Luftrecht</li>   
-                            <li className="mb-2"><BoldBlueCheckmark /> Kommunikation (Flugfunk)</li>
+                            <li className="mb-2"><BoldBlueCheckmark /> Allgemeine Luftfahrzeugkunde</li> 
+                            <li className="mb-2"><BoldBlueCheckmark /> Luftrecht und Flugfunk</li>   
                             <li className="mb-2"><BoldBlueCheckmark /> Menschliches Leistungsvermögen</li>
                             <li className="mb-2"><BoldBlueCheckmark /> Meteorologie</li>
-                            <li className="mb-2"><BoldBlueCheckmark /> Allgemeine Navigation</li>
-                            <li className="mb-2"><BoldBlueCheckmark /> Flugleistung und Flugplanung</li>
-                            <li className="mb-2"><BoldBlueCheckmark /> Allgemeine Betriebsverfahren</li>  
+                            <li className="mb-2"><BoldBlueCheckmark /> Navigation</li>
+                            <li className="mb-2"><BoldBlueCheckmark /> Pyrotechnische Einweisung</li>
+                            <li className="mb-2"><BoldBlueCheckmark /> Verhalten in besonderen Fällen</li>  
                           </ul> 
-                          <h5 className='mx-3 mb-2'>Sprechfunkzeugnis / Sprachprüfung</h5>
-                          <ul className="mb-4 fw-light list-unstyled mx-4">
-                            <li className="mb-2">
-                              <div className="d-flex">
-                                <div className="me-2 mt-1"><BoldBlueCheckmark /></div>
-                                <div>BZF I bzw. BZF II</div>
-                              </div>
-                            </li>
-                            <li className="mb-2">
-                              <div className="d-flex">
-                                <div className="me-2 mt-1"><BoldBlueCheckmark /></div>
-                                <div>ICAO Sprachprüfung (Sofern englisch gefunkt werden soll)</div>
-                              </div>
-                            </li>
-                          </ul>
                       </div>
                   </div>
               </section>
@@ -209,36 +181,39 @@ function Motorflug() {
                             <div className="card-body">
                                 <div>
                                   <img className="img-fluid w-100 " 
-                                        style={{ objectFit: 'cover', maxHeight: "200px" }}  src={cessna} alt='Flugzeugpark' />
+                                        style={{ objectFit: 'cover', maxHeight: "250px" }}  src={dynamic} alt='Flugzeugpark' />
                                 </div>
                                 <p className="lead mx-3 mt-2">
-                                Hier im mittelfränkischen Gunzenhausen schulen wir auf der bewährten und in aller Welt bekannten Cessna 172.
+                                Hier im mittelfränkischen Gunzenhausen schulen wir aktuell auf unserer Pioneer 200.
                                 </p>
                                 <p className="mx-3 mb-4">
-                                Wir verfügen über eine moderne Flotte an Motorflugzeugen:</p>
+                                Wir verfügen über eine moderne Flotte an Ultraleichtflugzeugen:</p>
                                 <ul className="mb-4 fw-light list-unstyled mx-4 mt-2">
                                 <li className="mb-2">
                                   <div className="d-flex">
                                     <div className="me-2 mt-1"><BoldBlueCheckmark /></div>
-                                    <div>Cessna 172 – 4-sitziges Reise- und Schulflugzeug</div>
+                                    <div>Dynamic WT-9 – 2-sitziges Ultraleichtflugzeug</div>
                                   </div>
                                 </li>
                                 <li className="mb-2">
                                   <div className="d-flex">
                                     <div className="me-2 mt-1"><BoldBlueCheckmark /></div>
-                                    <div>Robin DR400 – 4-sitziges Reise-, Schlepp- und Schulflugzeug</div>
+                                    <div>Pioneer 200 – 2-sitziges Ultraleichtflugzeug</div>
                                   </div>
                                 </li>                  
                               </ul>
-                              <p className="mx-3 mb-4">Nach einer entsprechenden Umschulung kannst du auch unsere Utraleichtflugzeuge fliegen.</p>
+                              <p className="mx-3 mb-4">Mit diesen fortschrittlichen Flugzeugen erheben wir uns mühelos
+                                                      in luftige Höhen und können schnell weite Strecken überbrücken
+                                                      – Geschwindigkeiten von 200 km/h und mehr sind problemlos
+                                                      möglich.</p>
                               <p className="mx-3 mb-4">👉 Die komplette Flotte findest Du <a href={ROUTES.FLUGZEUGE}>hier</a>.</p>
                             </div>
                 </div>
                 <div className='d-block mb-4 p-0 mx-3 pt-2'>
-                    <p className=' lead fw-light'>  Unser Ziel ist es Dich sicher und professionell zum Privatpiloten
-                        auszubilden. Egal ob Du den Himmel erobern möchtest oder Deine
-                        fliegerischen Fähigkeiten verbessern willst, wir begleiten Dich auf
-                        Deinem Weg. 
+                    <p className=' lead fw-light'> Unser Ziel ist es Dich sicher und professionell zum
+Luftsportgeräteführer auszubilden. Egal ob Du den Himmel erobern
+möchtest oder Deine fliegerischen Fähigkeiten verbessern willst,
+wir begleiten Dich auf Deinem Weg.
                      </p>
                      <p  className=' lead fw-light'>
                      Unsere Fluglehrer geben gerne Auskunft über weitere Einzelheiten
@@ -248,9 +223,10 @@ function Motorflug() {
                     
                      </p>
                       <p className=' lead fw-light'>
-                      Mit dem Erwerb der Motorflugpilotenlizenz genießt Du die Freiheit,
-                        selbständig einmotorige Kolbenmotorflugzeuge zu steuern und
-                        wunderschöne Landschaften aus der Vogelperspektive zu erleben.
+                      Mit dem Erwerb des Luftfahrerscheins für Luftsportgeräteführer
+                      genießt Du die Freiheit, selbständig Luftsportgeräte zu steuern
+                      und wunderschöne Landschaften aus der Vogelperspektive zu
+                      erleben.
                       </p>
                       <p className=' lead fw-light'>
                       Wir informieren Dich sehr gerne und freuen uns auf Dich.
@@ -269,5 +245,5 @@ function Motorflug() {
   );
 };
 
-export default Motorflug;
+export default Ultraleicht;
 

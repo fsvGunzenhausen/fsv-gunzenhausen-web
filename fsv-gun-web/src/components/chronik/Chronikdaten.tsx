@@ -132,7 +132,7 @@ Eines der ersten in Serie hergestellten Ultraleichtflugzeuge, eine Ikarus C22, w
       title: "Flotte vergrößert",
       description: `Unsere Flotte ist seit dem 21.01.2025 gewachsen! Wir haben nun als Vereinsflugzeug für alle Mitglieder eine Aerospool Dynamic WT9 600 mit dem Kennzeichen D-MFVG zur Verfügung. Wir freuen uns riesig über das neue Flugzeug und auf viele schöne Flugerlebnisse!
                     
-      Damit besitzt die Flugsportvereinigung einen Flugzeugpark mit 4 Segelflugzeugen, 2 Ultraleichtflugzeugen und 2 Motormaschinen.`,
+      Damit besitzt die Flugsportvereinigung einen Flugzeugpark mit 3 Segelflugzeugen, 2 Ultraleichtflugzeugen und 2 Motormaschinen.`,
       images: [
                         'pic016'
       ]
