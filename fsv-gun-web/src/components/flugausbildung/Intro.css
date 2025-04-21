@@ -1,0 +1,31 @@
+/* Fly-in text animation */
+.fly-in-text {
+    animation: flyInLeft 2s ease-out forwards;
+    white-space: normal; /* Allow wrapping at spaces */
+    word-wrap: break-word; /* Break words only when necessary */
+    word-break: break-word; /* Ensure no word breaks in the middle */
+    hyphens: none; /* Prevent hyphenation (no - at line break) */
+}
+
+@keyframes flyInLeft {
+    0% {
+        transform: translateX(-100%); /* Start off-screen (left) */
+        opacity: 0; /* Invisible at the start */
+    }
+    50% {
+        transform: translateX(10%); /* Slightly shifted */
+        opacity: 0.7; /* Partially visible */
+    }
+    100% {
+        transform: translateX(0); /* In the center */
+        opacity: 1; /* Fully visible */
+    }
+}
+
+/* "Stay" class to make sure the text does not animate after it has finished */
+.stay {
+    animation: none !important; /* Stop animation after it has finished */
+    opacity: 1 !important; /* Ensure the text remains visible */
+}
+
+/* Optional: You can add other styles as needed */

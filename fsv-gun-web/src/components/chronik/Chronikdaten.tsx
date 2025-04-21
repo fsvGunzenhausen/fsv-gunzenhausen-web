@@ -123,9 +123,19 @@ Eines der ersten in Serie hergestellten Ultraleichtflugzeuge, eine Ikarus C22, w
     },
     {
       year: "2015",
-      title: "Letzter Stand",
+      title: "Zwischenbilanz",
       description: `Stand November 2015 besitzt die Flugsportvereinigung einen Flugzeugpark mit 4 Segelflugzeugen, einem Ultraleichtflugzeug und 2 Motormaschinen. Flugsport betreiben etwa 80 aktive Mitglieder, in Ausbildung befinden sich 8 Schüler, von einer großen Zahl fördernder Mitglieder wird die Vereinigung dankenswerter Weise unterstützt. Der auf gesunden finanziellen Beinen stehende Verein kann optimistisch in die Zukunft blicken.`,
       images: []
+    },
+    {
+      year: "2025",
+      title: "Flotte vergrößert",
+      description: `Unsere Flotte ist seit dem 21.01.2025 gewachsen! Wir haben nun als Vereinsflugzeug für alle Mitglieder eine Aerospool Dynamic WT9 600 mit dem Kennzeichen D-MFVG zur Verfügung. Wir freuen uns riesig über das neue Flugzeug und auf viele schöne Flugerlebnisse!
+                    
+      Damit besitzt die Flugsportvereinigung einen Flugzeugpark mit 4 Segelflugzeugen, 2 Ultraleichtflugzeugen und 2 Motormaschinen.`,
+      images: [
+                        'pic016'
+      ]
     },
   ];
 

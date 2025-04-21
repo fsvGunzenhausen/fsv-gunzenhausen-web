@@ -308,3 +308,7 @@ img.zoom {
   text-decoration: underline;
   box-shadow: none; /* Remove Bootstrap's focus outline if needed */
 }
+
+.check-icon {
+  color: #007bff;  /* Setzt die Farbe des Häkchens auf Blau */
+}

@@ -29,6 +29,8 @@ import pic014 from '../../assets/components/chronik/05-02.jpg';
 import pic014Prev from '../../assets/components/chronik/05-02_prev.jpg';
 import pic015 from '../../assets/components/chronik/06-01.jpg';
 import pic015Prev from '../../assets/components/chronik/06-01_prev.jpg';
+import pic016 from '../../assets/components/chronik/07-01.jpg';
+import pic016Prev from '../../assets/components/chronik/07-01_prev.jpg';
 
 const imageStore = {
   // Image store with full and preview images}
@@ -47,6 +49,7 @@ const imageStore = {
   pic013: { full: pic013, preview: pic013Prev },
   pic014: { full: pic014, preview: pic014Prev },
   pic015: { full: pic015, preview: pic015Prev },
+  pic016: { full: pic016, preview: pic016Prev },
   // Add more images as needed
   // pic016: { full: pic016, preview: pic016Prev },
 };

@@ -7,6 +7,7 @@ import Fotos from './components/fotos/Fotos';
 import Chronik from './components/chronik/Chronik';
 import Datenschutz from './components/datenschutz/Datenschutz';
 import Rundfluege from './components/rundfluege/Rundfluege';
+import Flugausbildung from './components/flugausbildung/Flugausbildung';
 
 // Define types for the route content
 type RouteContent = {
@@ -40,7 +41,7 @@ export const ROUTE_CONFIG: Array<{path:string; routeContent: RouteContent}> =
       routeContent: {   
         title: 'Flugausbildung',
         subHeader: undefined,
-        component: undefined
+        component: <Flugausbildung />
       },
     },
     {
