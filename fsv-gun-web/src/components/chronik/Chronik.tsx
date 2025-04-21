@@ -31,7 +31,7 @@ function Chronik() {
   };
 
   return (
-    <div className="container py-5">
+    <div className="container pb-5 pt-0">
       <div className="timeline-container">
         <ul className="timeline">
           {chronikDaten.map((era, index) => (

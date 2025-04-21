@@ -19,7 +19,7 @@ function Flugausbildung() {
             <div className="card-body d-flex flex-column">
               <div>
               <img className="img-fluid w-100" 
-                                style={{ objectFit: 'cover', maxHeight: "220px" }}  src={motorflugImg} alt='Motorflug' />
+                                style={{ objectFit: 'cover', height: "220px" }}  src={motorflugImg} alt='Motorflug' />
               </div>
               <p className="card-text mx-4 mt-2">
                 Fliegen mit Kolbenmotorflugzeugen – professionell ausgebildet mit PPL(A) oder LAPL(A).
@@ -40,7 +40,7 @@ function Flugausbildung() {
             <div className="card-body d-flex flex-column">
               <div>
                                <img className="img-fluid w-100" 
-                                    style={{ objectFit: 'cover', maxHeight: "220px" }}  src={ultraleichtImg} alt='Ultraleicht' />
+                                    style={{ objectFit: 'cover', height: "220px" }}  src={ultraleichtImg} alt='Ultraleicht' />
                 </div>
                 <p className="card-text mx-4 mt-2">
                 Leicht, effizient und kostengünstig – ideal für Einsteiger in die Fliegerei.
@@ -61,7 +61,7 @@ function Flugausbildung() {
             <div className="card-body d-flex flex-column">
                 <div>
                   <img className="img-fluid w-100" 
-                                    style={{ objectFit: 'cover', maxHeight: "220px" }}  src={segelflugImg} alt='Segeleflug' />
+                                    style={{ objectFit: 'cover', height: "220px" }}  src={segelflugImg} alt='Segeleflug' />
                 </div>
                 <p className="card-text mx-4 mt-2">
                 Erlebe die pure Freiheit des Fliegens – lautlos und naturverbunden durch die Thermik getragen.
