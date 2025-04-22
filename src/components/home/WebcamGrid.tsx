@@ -3,11 +3,13 @@ import { ROUTES } from '../../routes';
 // Funktion, die den Basis-URL für Webcams festlegt
 const getWebcamPath = () => {
   // Wenn es sich um die Entwicklungsumgebung handelt
-  if (window.location.hostname === "localhost" || window.location.hostname === "dev.fsv-gunzenhausen.de") {
+  if (window.location.hostname === "localhost" || window.location.hostname === "www.dev.fsv-gunzenhausen.de") {
     return "https://www.fsv-gunzenhausen.de/webcam"; // Verwende die feste Domain im Dev
   }
-  // Im Produktionsmodus (z.B. auf fsv-gunzenhausen.de)
-  return "../webcam"; // Relativer Pfad für die Produktion
+  else{
+      // Im Produktionsmodus (z.B. auf fsv-gunzenhausen.de)
+      return "../website/webcam"; // Relativer Pfad für die Produktion
+  }
 };
 
 function WebcamGrid() {

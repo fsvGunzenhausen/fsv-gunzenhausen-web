@@ -7,8 +7,11 @@ const getWebcamPath = () => {
   if (window.location.hostname === "localhost" || window.location.hostname === "www.dev.fsv-gunzenhausen.de") {
     return "https://www.fsv-gunzenhausen.de/webcam"; // Verwende die feste Domain im Dev
   }
-  // Im Produktionsmodus (z.B. auf fsv-gunzenhausen.de)
-  return "../webcam"; // Relativer Pfad für die Produktion
+  else{
+      // Im Produktionsmodus (z.B. auf fsv-gunzenhausen.de)
+      return "../website/webcam"; // Relativer Pfad für die Produktion
+  }
+
 };
 export enum WebcamDirection {
     SUED = "Süd",
