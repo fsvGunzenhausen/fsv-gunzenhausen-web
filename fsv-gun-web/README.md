@@ -1,3 +1,32 @@
+# FSV Gunzenhausen Website
+
+This is the website of FSV Gunzenhausen.
+
+ This project is using
+  - react + typescript + vite and native bootstrap.
+
+# Install packages
+  - npm ci
+
+# Execute locally
+  - npm run dev
+
+  # Execute dist for testing
+  - npm run build
+  - serve -s dist
+  - will run usually on port 3000
+
+# Create new component
+   - create component tsx in components
+   - add routing to routes.ts
+   - add route setup routes.config.tsx
+   - add page configuration in routes.config.tsx. Here you bind your route to your component and provide subheader.
+   - add assets to corresponding component folder
+   - create Images.index.ts for more complex use (arrays of images)
+
+# Lint
+  Use Linter with care. Legacy static html pages needs that Chronikdaten.tsx is not allowed to lint in a strict way (\n needed). Otherwise formatting gets dirty. If u wish to introduce pretty linter (recommended - do it!) then consider refatoring description in Chronikdaten.tsx.
+
 # React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.

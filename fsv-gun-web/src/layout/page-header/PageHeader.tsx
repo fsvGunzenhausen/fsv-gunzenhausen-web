@@ -7,7 +7,7 @@ import { useState } from 'react';
 function Header() {
   const location = useLocation();
   const [navbarOpen, setNavbarOpen] = useState(false);
-
+  const [openDropdown, setOpenDropdown] = useState<string | null>(null);
   const toggleNavbar = () => {
     setNavbarOpen(prev => !prev);
   };
@@ -41,6 +41,8 @@ function Header() {
                 dropdownId={item.dropdownId}
                 routes={item.routes}
                 currentPath={location.pathname}
+                openDropdown={openDropdown}
+                setOpenDropdown={setOpenDropdown}
               />
             ))}
           </ul>

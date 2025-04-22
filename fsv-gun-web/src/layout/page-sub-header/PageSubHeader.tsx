@@ -9,7 +9,7 @@ function SubHeader() {
   // Get the title and content for the current route or fallback to the default
   // Find the route content for the current path
   const route = ROUTE_CONFIG.find((route) => route.path === location.pathname)?.routeContent || {
-    title: 'Default Title',
+    title: 'Seite nicht gefunden',
     subHeader: undefined,
     component: <></>, // Default empty component
   };
