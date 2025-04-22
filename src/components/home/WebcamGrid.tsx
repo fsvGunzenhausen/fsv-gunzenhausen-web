@@ -8,7 +8,7 @@ const getWebcamPath = () => {
   }
   else{
       // Im Produktionsmodus (z.B. auf fsv-gunzenhausen.de)
-      return "../website/webcam"; // Relativer Pfad für die Produktion
+      return "./webcam"; // Relativer Pfad für die Produktion
   }
 };
 
