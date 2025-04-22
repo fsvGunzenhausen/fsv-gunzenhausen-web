@@ -24,15 +24,13 @@ jobs:
       - name: Build the app
         run: npm run build
 
-      - name: Deploy to FTP using lftp
-        env:
-          FTP_HOST: ${{ secrets.FTP_HOST }}
-          FTP_USERNAME: ${{ secrets.FTP_USERNAME }}
-          FTP_PASSWORD: ${{ secrets.FTP_PASSWORD }}
-        run: |
-          apt-get update && apt-get install -y lftp  # Install lftp
-          lftp -f "
-          open -u ${FTP_USERNAME},${FTP_PASSWORD} ftps://${FTP_HOST}
-          mirror -R ./dist /dev/
-          bye
-          "
+      - name: Deploy to FTP
+        uses: SamKirkland/FTP-Deploy-Action@4.3.0
+        with:
+          server: ${{ secrets.FTP_HOST }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          local-dir: dist/
+          server-dir: /dev/
+          protocol: ftps  # Use FTPS for secure connection
+
