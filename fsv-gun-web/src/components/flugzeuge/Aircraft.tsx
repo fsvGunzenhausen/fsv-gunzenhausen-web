@@ -1,3 +1,4 @@
+import PageNotFound from "../../layout/page-not-found/PageNotFound";
 import AircraftTemplate from "./AircraftTemplate";
 import { AircraftType } from "./AircraftType";
 import  aircraftData  from "./Flugzeugdaten"; // Import the aircraft data
@@ -22,7 +23,7 @@ function Aircraft({ aircraftType }: AircraftRegTemplateProps) {
       />
     );
   } else {
-    return <div>Flugzeug nicht gefunden.</div>;
+    return <PageNotFound />; // Return a 404 page if the aircraft is not found
   }
 }
 

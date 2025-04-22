@@ -1,5 +1,6 @@
 export const ROUTES = {
     HOME: '/',
+    NOTFOUND: '*',
     INFORMATIONEN: '/informationen',
     FLUGAUSBILDUNG: '/flugausbildung',
     MOTORFLUG: '/flugausbildung/motorflug',

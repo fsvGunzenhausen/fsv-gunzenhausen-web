@@ -334,3 +334,19 @@ img.zoom {
 .check-icon {
   color: #007bff;  /* Setzt die Farbe des Häkchens auf Blau */
 }
+
+.navgrid-image {
+  max-height: 100px; /* Hauptnavigation Icons behalten Größe */
+  object-fit: contain; /* Verhindert Verzerrung der Icons */
+}
+
+.social-icon {
+  max-height: 50px; /* Kleinere Social Media Icons */
+  border-radius: 50%; /* Runde Ecken für die Social Media Icons */
+  object-fit: contain; /* Verhindert Verzerrung */
+}
+
+.social-icon:hover {
+  opacity: 0.8; /* Hover-Effekt für die Social Media Icons */
+}
+

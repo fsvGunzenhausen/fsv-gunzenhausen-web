@@ -15,6 +15,10 @@ import Flugzeuge from './components/flugzeuge/Flugzeuge';
 
 import Aircraft from './components/flugzeuge/Aircraft';
 import {AircraftType} from './components/flugzeuge/AircraftType'; // Import the AircraftType component
+import RundfluegeSubHeader from './components/rundfluege/RundfluegeSubHeader';
+import ChronikSubHeader from './components/chronik/ChronikSubHeader';
+import Home from './components/home/Home';
+import Webcam, { WebcamDirection } from './components/webcam/Webcam';
 
 // Define types for the route content
 type RouteContent = {
@@ -32,7 +36,15 @@ export const ROUTE_CONFIG: Array<{path:string; routeContent: RouteContent}> =
     routeContent: {   
       title: 'Flugsportvereinigung "Gelbe Bürg" e.V.',
       subHeader: undefined,
-      component: undefined
+      component: <Home />
+    },
+  },
+  {
+    path: ROUTES.HOME,
+    routeContent: {   
+      title: 'Flugsportvereinigung "Gelbe Bürg" e.V.',
+      subHeader: undefined,
+      component: <Home />
     },
   },
     {
@@ -88,12 +100,7 @@ export const ROUTE_CONFIG: Array<{path:string; routeContent: RouteContent}> =
       routeContent: {   
         title: 'Rundflüge',
         subHeader: (
-          <>
-            <h4 className="text-black-50">
-              Gerne fliegen unsere erfahrenen Piloten zu Zielen in der näheren
-              oder weiteren Umgebung.
-            </h4>
-          </>
+              <RundfluegeSubHeader />
         ),
         component: <Rundfluege />
       },
@@ -103,7 +110,7 @@ export const ROUTE_CONFIG: Array<{path:string; routeContent: RouteContent}> =
       routeContent: {   
         title: 'Webcam Ost',
         subHeader: undefined,
-        component: undefined
+        component: <Webcam direction={WebcamDirection.OST} />
       },
     },
     {
@@ -111,7 +118,7 @@ export const ROUTE_CONFIG: Array<{path:string; routeContent: RouteContent}> =
       routeContent: {   
         title: 'Webcam Süd',
         subHeader: undefined,
-        component: undefined
+        component: <Webcam direction={WebcamDirection.SUED} />
       },
     },
     {
@@ -143,9 +150,7 @@ export const ROUTE_CONFIG: Array<{path:string; routeContent: RouteContent}> =
       routeContent: {   
         title: 'Chronik',
         subHeader: (
-          <>
-          <h4 className="text-black-50">1951-2015 - 64 Jahre Flugsportvereinigung "Gelbe Bürg"</h4>
-          </>
+              <ChronikSubHeader />
         ),
         component: <Chronik />
       },
@@ -166,7 +171,6 @@ export const ROUTE_CONFIG: Array<{path:string; routeContent: RouteContent}> =
         component: <Kontakt />
       },
     },
-    
   // Aircraft-specific routes
   {
     path: ROUTES.CESSNA,

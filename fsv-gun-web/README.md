@@ -1,6 +1,9 @@
 # FSV Gunzenhausen Website
 
-This is the Website of FSV Gunzenhausen.
+This is the website of FSV Gunzenhausen.
+
+ This project is using
+  - react + typescript + vite and native bootstrap.
 
 # Install packages
   - npm ci
@@ -16,6 +19,7 @@ This is the Website of FSV Gunzenhausen.
 # Create new component
    - create component tsx in components
    - add routing to routes.ts
+   - add route setup routes.config.tsx
    - add page configuration in routes.config.tsx. Here you bind your route to your component and provide subheader.
    - add assets to corresponding component folder
    - create Images.index.ts for more complex use (arrays of images)
