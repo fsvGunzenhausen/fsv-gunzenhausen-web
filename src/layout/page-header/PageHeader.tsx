@@ -19,7 +19,7 @@ function Header() {
   };
 
   return (
-    <nav className="navbar navbar-expand-md navbar-dark bg-dark">
+    <nav className="navbar navbar-expand-md navbar-dark bg-dark" key={location.pathname}>
       <div className="container">
         <Link className="navbar-brand" to="/">
           <img src={logo} alt="FSV Gunzenhausen Logo" />
