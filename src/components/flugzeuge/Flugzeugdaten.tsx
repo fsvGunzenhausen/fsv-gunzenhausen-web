@@ -7,7 +7,7 @@ import { AircraftType } from "./AircraftType";
 const aircraftData = [
     {
       type: AircraftType.CESSNA,
-      model: "Cessna 172",
+      model: "Cessna 172 P",
       registration: "D-EEWG",
       images: (flugzeugeImages.deewg as { full: string; preview: string }[]).map(img => img.full),
       descriptionItems: [

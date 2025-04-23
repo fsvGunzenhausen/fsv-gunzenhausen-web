@@ -11,7 +11,12 @@ function Header() {
   const toggleNavbar = () => {
     setNavbarOpen(prev => !prev);
   };
+  
+  const handleNavItemClick = () => {
+      setNavbarOpen(false);
+      setOpenDropdown(null);
 
+  };
 
   return (
     <nav className="navbar navbar-expand-md navbar-dark bg-dark">
@@ -31,8 +36,7 @@ function Header() {
           <span className="navbar-toggler-icon" />
         </button>
         <div
-          className="collapse navbar-collapse"       
-          id="navbarCollapse1">
+          className={`collapse navbar-collapse ${navbarOpen ? 'show' : ''}`} id="navbarCollapse1">
           <ul className="navbar-nav ms-auto">
             {NAV_ITEMS.map(item => (
               <NavDropdown
@@ -43,6 +47,7 @@ function Header() {
                 currentPath={location.pathname}
                 openDropdown={openDropdown}
                 setOpenDropdown={setOpenDropdown}
+                onItemClick={handleNavItemClick} // Pass the click handler to NavDropdown
               />
             ))}
           </ul>

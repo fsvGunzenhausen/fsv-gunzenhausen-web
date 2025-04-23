@@ -15,7 +15,10 @@ function Flugzeugekarten() {
                     </div>
                   </a>
                   <div className="card-body">
-                    <a href={aircraft.link}>
+                  <a href={aircraft.link} 
+                                    style={{ textDecoration: "none" }}
+                                    onMouseEnter={(e) => (e.currentTarget.style.textDecoration = "underline")}
+                                    onMouseLeave={(e) => (e.currentTarget.style.textDecoration = "none")}>
                       <h3 className="mb-0 text-dark">{aircraft.title}</h3>
                       <div className="mb-1 text-muted">{aircraft.code}</div>
                     </a>

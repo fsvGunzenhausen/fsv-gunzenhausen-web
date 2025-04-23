@@ -13,9 +13,10 @@ type NavDropdownProps = {
   currentPath: string;
   openDropdown: string | null;
   setOpenDropdown: (id: string | null) => void;
+  onItemClick?: () => void;
 };
 
-function NavDropdown({ label, dropdownId, routes, currentPath, openDropdown, setOpenDropdown }: NavDropdownProps) {
+function NavDropdown({ label, dropdownId, routes, currentPath, openDropdown, setOpenDropdown, onItemClick }: NavDropdownProps) {
   const isOpen = openDropdown === dropdownId;
   const isAnyActive = routes.some(route => route.path === currentPath);
   const [isHovering, setIsHovering] = useState(false);  // Separate hover state
@@ -27,6 +28,7 @@ function NavDropdown({ label, dropdownId, routes, currentPath, openDropdown, set
     setOpenDropdown(isOpen ? null : dropdownId);
 
   };
+
   
   return (
     <li
@@ -62,6 +64,9 @@ function NavDropdown({ label, dropdownId, routes, currentPath, openDropdown, set
             key={route.path}
             to={route.path}
             className={`dropdown-item ${route.path === currentPath ? 'active' : ''}`}
+            onClick={() => {
+              if (onItemClick) onItemClick();
+            }}
           >
             {route.label}
           </Link>

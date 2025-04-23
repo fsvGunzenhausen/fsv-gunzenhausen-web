@@ -5,7 +5,7 @@ import { ROUTES } from "../../routes";
 // Define aircraft data for easy mapping, with grouping based on type
 const aircraftData = [
   {
-    model: "Cessna 172",
+    model: "Cessna 172 P",
     registration: "D-EEWG",
     image: (flugzeugeImages.deewg as { full: string; preview: string }[])[0]?.preview,
     link: ROUTES.CESSNA,

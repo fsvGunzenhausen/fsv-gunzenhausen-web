@@ -1,4 +1,5 @@
 import images from './Images.index';
+import { ROUTES } from "../../routes";
 
 export interface AircraftData {
   title: string;
@@ -20,7 +21,7 @@ export interface RoutingCardData {
   image: string;
   description: string[];
   details: string[];
- detailsUL?: string[];
+  detailsUL?: string[];
 }
 
   
@@ -49,7 +50,7 @@ export const aircraftList: AircraftData[] = [
   {
     title: "Dynamic WT-9",
     image: images.dynamic.preview,
-    link: "flugzeuge_degun.html",
+    link: ROUTES.DYNAMIC,
     code: "D-MFVG",
     passengers: "Ein Passagier",
     typeOfAircraft: "Ultralichtflugzeug",
@@ -58,7 +59,7 @@ export const aircraftList: AircraftData[] = [
   {
     title: "Pioneer 200",
     image: images.pioneer.preview,
-    link: "flugzeuge_degun.html",
+    link: ROUTES.PIONEER,
     code: "D-MFGB",
     passengers: "Ein Passagier",
     typeOfAircraft: "Ultralichtflugzeug",
@@ -67,7 +68,7 @@ export const aircraftList: AircraftData[] = [
   {
     title: "Robin DR-400",
     image: images.robin.preview,
-    link: "flugzeuge_degun.html",
+    link: ROUTES.ROBIN,
     code: "D-EGUN",
     passengers: "Bis zu drei Passagiere",
     typeOfAircraft: "Motorflugzeug der Echo-Klasse",
@@ -76,7 +77,7 @@ export const aircraftList: AircraftData[] = [
   {
     title: "Cessna 172",
     image: images.cessna.preview,
-    link: "flugzeuge_deewg.html",
+    link: ROUTES.CESSNA,
     code: "D-EEWG",
     passengers: "Bis zu drei Passagiere",
     typeOfAircraft: "Motorflugzeug der Echo-Klasse",

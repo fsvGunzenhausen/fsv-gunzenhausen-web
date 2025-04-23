@@ -20,7 +20,6 @@ function Segelflug() {
           <h2 className="text-left text-black-50 mb-4">Segelflug SPL</h2>
           <p className="lead mt-2">
           Erlebe Technik, Dynamik und Ästhetik im Einklang mit der Natur. Ganz ohne Motor, nur mit Sonne und Wind, gleitest du von Aufwind zu Aufwind – lautlos, effizient und faszinierend.
-
 Starte jetzt deine Segelflugausbildung und werde Teil einer Gemeinschaft, die das Fliegen in seiner reinsten Form lebt.
           </p>
           <div className="container mt-4 mb-0 p-0">
@@ -158,7 +157,7 @@ Starte jetzt deine Segelflugausbildung und werde Teil einer Gemeinschaft, die da
                                 style={{ objectFit: 'cover', maxHeight: "250px" }}  src={ausbildung} alt='ausbildung' />
                               </div>
                           <p className="lead mx-3 mt-2">
-                            Die Ausbildung zum Luftsportgeräteführer umfasst einen praktischen und einen theoretischen Teil.
+                            Die Ausbildung zum Segelflugpiloten umfasst einen praktischen und einen theoretischen Teil.
                           </p>
                           <h5 className='mx-3 mb-2'>Praxis</h5>
                           <p className="mx-3 mb-2">Die praktische Ausbildung umfasst unter anderem folgende Mindestanforderungen:</p>

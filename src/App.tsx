@@ -7,11 +7,13 @@ import PageHeader from './layout/page-header/PageHeader';
 import SubHeader from './layout/page-sub-header/PageSubHeader';
 import PageFooter from './layout/page-footer/PageFooter';
 import PageNotFound from './layout/page-not-found/PageNotFound';
+import ScrollToTop from './shared/scrollToTop/ScrollToTop';
 
 function App() {
 
   return (
     <BrowserRouter>
+         <ScrollToTop/> 
       <div className="d-flex flex-column min-vh-100">
         <PageHeader />
         <SubHeader />
