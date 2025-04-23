@@ -15,7 +15,7 @@ function SubHeader() {
   };
 
   return (
-    <div className="jumbotron">
+    <div className="jumbotron responsive-block">
       <div className="container">
         <h1 className='text-black-50'>{route.title}</h1>
         {/* Render subHeader if it exists */}
