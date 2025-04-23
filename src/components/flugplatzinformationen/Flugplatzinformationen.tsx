@@ -13,7 +13,7 @@ function Flugplatzinformationen() {
               <div className="table-responsive w-100" style={{ overflowX: 'hidden' }}>
                 <table className="table table-bordered align-middle">
                 <colgroup>
-                <col style={{ minWidth: '27%'}} />
+                <col style={{ minWidth: '45px'}} />
                 </colgroup>
                   <tbody>
                     {flugplatzdaten.map(([labelDe, labelEn, content], index) => (

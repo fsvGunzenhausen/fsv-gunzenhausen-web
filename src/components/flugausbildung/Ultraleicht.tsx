@@ -153,21 +153,81 @@ function Ultraleicht() {
                           <h5 className='mx-3 mb-2'>Praxis</h5>
                           <p className="mx-3 mb-2">Die praktische Ausbildung umfasst unter anderem folgende Mindestanforderungen:</p>
                           <ul className="mb-4 fw-light list-unstyled mx-4">
-                            <li className="mb-2"><BoldBlueCheckmark /> Mindestens 30 Flugstunden</li> 
-                            <li className="mb-2"><BoldBlueCheckmark /> Davon mindestens 5 Flugstunden Alleinflug</li>   
-                            <li className="mb-2"><BoldBlueCheckmark /> Starts- und Landungen auf verschiedenen Flugplätzen</li>
-                            <li className="mb-2"><BoldBlueCheckmark /> Mindestens zwei Überlandflüge mit Fluglehrer</li>
-                            <li className="mb-2"><BoldBlueCheckmark /> Mindestens drei Solo-Überlandflüge über jeweils 50 km</li>
+                          <li className="mb-2">
+                              <div className="d-flex">
+                                <div className="me-2 mt-1"><BoldBlueCheckmark /></div>
+                                <div>Mindestens 30 Flugstunden</div>
+                              </div>
+                            </li>
+                            <li className="mb-2">
+                              <div className="d-flex">
+                                <div className="me-2 mt-1"><BoldBlueCheckmark /></div>
+                                <div>Davon mindestens 5 Flugstunden Alleinflug</div>
+                              </div>
+                            </li>
+                            <li className="mb-2">
+                              <div className="d-flex">
+                                <div className="me-2 mt-1"><BoldBlueCheckmark /></div>
+                                <div>Starts- und Landungen auf verschiedenen Flugplätze</div>
+                              </div>
+                            </li>
+                            <li className="mb-2">
+                              <div className="d-flex">
+                                <div className="me-2 mt-1"><BoldBlueCheckmark /></div>
+                                <div>Mindestens zwei Überlandflüge mit Fluglehrer</div>
+                              </div>
+                            </li>
+                            <li className="mb-2">
+                              <div className="d-flex">
+                                <div className="me-2 mt-1"><BoldBlueCheckmark /></div>
+                                <div>Mindestens drei Solo-Überlandflüge über jeweils 50 km</div>
+                              </div>
+                            </li>
                           </ul>
                           <h5 className='mx-3 mb-2'>Theorie</h5>
                           <ul className="mb-4 fw-light list-unstyled mx-4">
-                            <li className="mb-2"><BoldBlueCheckmark /> Allgemeine Luftfahrzeugkunde</li> 
-                            <li className="mb-2"><BoldBlueCheckmark /> Luftrecht und Flugfunk</li>   
-                            <li className="mb-2"><BoldBlueCheckmark /> Menschliches Leistungsvermögen</li>
-                            <li className="mb-2"><BoldBlueCheckmark /> Meteorologie</li>
-                            <li className="mb-2"><BoldBlueCheckmark /> Navigation</li>
-                            <li className="mb-2"><BoldBlueCheckmark /> Pyrotechnische Einweisung</li>
-                            <li className="mb-2"><BoldBlueCheckmark /> Verhalten in besonderen Fällen</li>  
+                          <li className="mb-2">
+                              <div className="d-flex">
+                                <div className="me-2 mt-1"><BoldBlueCheckmark /></div>
+                                <div>Allgemeine Luftfahrzeugkunde</div>
+                              </div>
+                            </li>
+                            <li className="mb-2">
+                              <div className="d-flex">
+                                <div className="me-2 mt-1"><BoldBlueCheckmark /></div>
+                                <div>Luftrecht und Flugfunk</div>
+                              </div>
+                            </li>
+                            <li className="mb-2">
+                              <div className="d-flex">
+                                <div className="me-2 mt-1"><BoldBlueCheckmark /></div>
+                                <div>Menschliches Leistungsvermögen</div>
+                              </div>
+                            </li>
+                            <li className="mb-2">
+                              <div className="d-flex">
+                                <div className="me-2 mt-1"><BoldBlueCheckmark /></div>
+                                <div>Meteorologie</div>
+                              </div>
+                            </li>
+                            <li className="mb-2">
+                              <div className="d-flex">
+                                <div className="me-2 mt-1"><BoldBlueCheckmark /></div>
+                                <div>Navigation</div>
+                              </div>
+                            </li>
+                            <li className="mb-2">
+                              <div className="d-flex">
+                                <div className="me-2 mt-1"><BoldBlueCheckmark /></div>
+                                <div>Verhalten in besonderen Fällen</div>
+                              </div>
+                            </li>
+                            <li className="mb-2">
+                              <div className="d-flex">
+                                <div className="me-2 mt-1"><BoldBlueCheckmark /></div>
+                                <div>Pyrotechnische Einweisung</div>
+                              </div>
+                            </li>
                           </ul> 
                       </div>
                   </div>

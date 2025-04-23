@@ -172,15 +172,60 @@ function Motorflug() {
                           </ul>
                           <h5 className='mx-3 mb-2'>Theorie</h5>
                           <ul className="mb-4 fw-light list-unstyled mx-4">
-                            <li className="mb-2"><BoldBlueCheckmark /> Grundlagen des Fliegens</li> 
-                            <li className="mb-2"><BoldBlueCheckmark /> Allgemeine Luftfahrzeugkunde (Technik)</li> 
-                            <li className="mb-2"><BoldBlueCheckmark /> Luftrecht</li>   
-                            <li className="mb-2"><BoldBlueCheckmark /> Kommunikation (Flugfunk)</li>
-                            <li className="mb-2"><BoldBlueCheckmark /> Menschliches Leistungsvermögen</li>
-                            <li className="mb-2"><BoldBlueCheckmark /> Meteorologie</li>
-                            <li className="mb-2"><BoldBlueCheckmark /> Allgemeine Navigation</li>
-                            <li className="mb-2"><BoldBlueCheckmark /> Flugleistung und Flugplanung</li>
-                            <li className="mb-2"><BoldBlueCheckmark /> Allgemeine Betriebsverfahren</li>  
+                          <li className="mb-2">
+                              <div className="d-flex">
+                                <div className="me-2 mt-1"><BoldBlueCheckmark /></div>
+                                <div>Grundlagen des Fliegens</div>
+                              </div>
+                            </li>
+                            <li className="mb-2">
+                              <div className="d-flex">
+                                <div className="me-2 mt-1"><BoldBlueCheckmark /></div>
+                                <div>Allgemeine Luftfahrzeugkunde (Technik)</div>
+                              </div>
+                            </li>
+                            <li className="mb-2">
+                              <div className="d-flex">
+                                <div className="me-2 mt-1"><BoldBlueCheckmark /></div>
+                                <div>Luftrecht</div>
+                              </div>
+                            </li>
+                            <li className="mb-2">
+                              <div className="d-flex">
+                                <div className="me-2 mt-1"><BoldBlueCheckmark /></div>
+                                <div>Kommunikation (Flugfunk)</div>
+                              </div>
+                            </li>
+                            <li className="mb-2">
+                              <div className="d-flex">
+                                <div className="me-2 mt-1"><BoldBlueCheckmark /></div>
+                                <div>Menschliches Leistungsvermögen</div>
+                              </div>
+                            </li>
+                            <li className="mb-2">
+                              <div className="d-flex">
+                                <div className="me-2 mt-1"><BoldBlueCheckmark /></div>
+                                <div>Meteorologie</div>
+                              </div>
+                            </li>
+                            <li className="mb-2">
+                              <div className="d-flex">
+                                <div className="me-2 mt-1"><BoldBlueCheckmark /></div>
+                                <div>Allgemeine Navigation</div>
+                              </div>
+                            </li>
+                            <li className="mb-2">
+                              <div className="d-flex">
+                                <div className="me-2 mt-1"><BoldBlueCheckmark /></div>
+                                <div>Flugleistung und Flugplanung</div>
+                              </div>
+                            </li>
+                            <li className="mb-2">
+                              <div className="d-flex">
+                                <div className="me-2 mt-1"><BoldBlueCheckmark /></div>
+                                <div>Allgemeine Betriebsverfahren</div>
+                              </div>
+                            </li>
                           </ul> 
                           <h5 className='mx-3 mb-2'>Sprechfunkzeugnis / Sprachprüfung</h5>
                           <ul className="mb-4 fw-light list-unstyled mx-4">

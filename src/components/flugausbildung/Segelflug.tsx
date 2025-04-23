@@ -162,25 +162,95 @@ Starte jetzt deine Segelflugausbildung und werde Teil einer Gemeinschaft, die da
                           <h5 className='mx-3 mb-2'>Praxis</h5>
                           <p className="mx-3 mb-2">Die praktische Ausbildung umfasst unter anderem folgende Mindestanforderungen:</p>
                           <ul className="mb-4 fw-light list-unstyled mx-4">
-                            <li className="mb-2"><BoldBlueCheckmark /> Mindestens 15 Flugstunden</li> 
-                            <li className="mb-2"><BoldBlueCheckmark /> Davon mindestens 10 Flugstunden mit Fluglehrer</li>   
-                            <li className="mb-2"><BoldBlueCheckmark /> Davon zwei Stunden Alleinflugzeit unter Aufsicht</li>
-                            <li className="mb-2"><BoldBlueCheckmark /> Mindestens 45 Starts und Landungen</li>
-                            <li className="mb-2"><BoldBlueCheckmark /> Mindestens ein Alleinflug über eine Strecke von 50 km</li>
-                            <li className="mb-2"><BoldBlueCheckmark /> oder ein Alleinflug von 100 km unter Aufsicht eines Fluglehrers</li>
+                          <li className="mb-2">
+                              <div className="d-flex">
+                                <div className="me-2 mt-1"><BoldBlueCheckmark /></div>
+                                <div>Mindestens 15 Flugstunden</div>
+                              </div>
+                            </li>
+                            <li className="mb-2">
+                              <div className="d-flex">
+                                <div className="me-2 mt-1"><BoldBlueCheckmark /></div>
+                                <div>Davon mindestens 10 Flugstunden mit Fluglehrer</div>
+                              </div>
+                            </li>
+                            <li className="mb-2">
+                              <div className="d-flex">
+                                <div className="me-2 mt-1"><BoldBlueCheckmark /></div>
+                                <div>Davon zwei Stunden Alleinflugzeit unter Aufsicht</div>
+                              </div>
+                            </li>
+                            <li className="mb-2">
+                              <div className="d-flex">
+                                <div className="me-2 mt-1"><BoldBlueCheckmark /></div>
+                                <div>Mindestens 45 Starts und Landungen</div>
+                              </div>
+                            </li>
+                            <li className="mb-2">
+                              <div className="d-flex">
+                                <div className="me-2 mt-1"><BoldBlueCheckmark /></div>
+                                <div>Mindestens ein Alleinflug über eine Strecke von 50 km <br /> oder ein Alleinflug von 100 km unter Aufsicht eines Fluglehrers</div>
+                              </div>
+                            </li>
                           </ul>
                           <h5 className='mx-3 mb-2'>Theorie</h5>
                           <ul className="mb-4 fw-light list-unstyled mx-4">
-                            <li className="mb-2"><BoldBlueCheckmark /> Grundlagen des Fliegens</li> 
-                            <li className="mb-2"><BoldBlueCheckmark /> Allgemeine Luftfahrzeugkunde (Technik)</li> 
-                            <li className="mb-2"><BoldBlueCheckmark /> Luftrecht</li>   
-                            <li className="mb-2"><BoldBlueCheckmark /> Kommunikation (Flugfunk)</li>
-                            <li className="mb-2"><BoldBlueCheckmark /> Menschliches Leistungsvermögen</li>
-                            <li className="mb-2"><BoldBlueCheckmark /> Meteorologie</li>
-                            <li className="mb-2"><BoldBlueCheckmark /> Allgemeine Navigation</li>
-                            <li className="mb-2"><BoldBlueCheckmark /> Flugleistung und Flugplanung</li>
-                            <li className="mb-2"><BoldBlueCheckmark /> Allgemeine Betriebsverfahren</li>  
+                          <li className="mb-2">
+                              <div className="d-flex">
+                                <div className="me-2 mt-1"><BoldBlueCheckmark /></div>
+                                <div>Grundlagen des Fliegens</div>
+                              </div>
+                            </li>
+                            <li className="mb-2">
+                              <div className="d-flex">
+                                <div className="me-2 mt-1"><BoldBlueCheckmark /></div>
+                                <div>Allgemeine Luftfahrzeugkunde (Technik)</div>
+                              </div>
+                            </li>
+                            <li className="mb-2">
+                              <div className="d-flex">
+                                <div className="me-2 mt-1"><BoldBlueCheckmark /></div>
+                                <div>Luftrecht</div>
+                              </div>
+                            </li>
+                            <li className="mb-2">
+                              <div className="d-flex">
+                                <div className="me-2 mt-1"><BoldBlueCheckmark /></div>
+                                <div>Kommunikation (Flugfunk)</div>
+                              </div>
+                            </li>
+                            <li className="mb-2">
+                              <div className="d-flex">
+                                <div className="me-2 mt-1"><BoldBlueCheckmark /></div>
+                                <div>Menschliches Leistungsvermögen</div>
+                              </div>
+                            </li>
+                            <li className="mb-2">
+                              <div className="d-flex">
+                                <div className="me-2 mt-1"><BoldBlueCheckmark /></div>
+                                <div>Meteorologie</div>
+                              </div>
+                            </li>
+                            <li className="mb-2">
+                              <div className="d-flex">
+                                <div className="me-2 mt-1"><BoldBlueCheckmark /></div>
+                                <div>Allgemeine Navigation</div>
+                              </div>
+                            </li>
+                            <li className="mb-2">
+                              <div className="d-flex">
+                                <div className="me-2 mt-1"><BoldBlueCheckmark /></div>
+                                <div>Flugleistung und Flugplanung</div>
+                              </div>
+                            </li>
+                            <li className="mb-2">
+                              <div className="d-flex">
+                                <div className="me-2 mt-1"><BoldBlueCheckmark /></div>
+                                <div>Allgemeine Betriebsverfahren</div>
+                              </div>
+                            </li>
                           </ul> 
+
                           <h5 className='mx-3 mb-2'>Sprechfunkzeugnis / Sprachprüfung</h5>
                           <ul className="mb-4 fw-light list-unstyled mx-4">
                             <li className="mb-2">
