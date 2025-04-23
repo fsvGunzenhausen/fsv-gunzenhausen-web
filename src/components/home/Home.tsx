@@ -1,6 +1,7 @@
 
 import Carousel from "./Carousel";
 import Navigation from './Navigation';
+import News from "./News";
 import WebcamGrid from "./WebcamGrid";
 
 
@@ -12,6 +13,8 @@ function Home() {
           <Carousel />
           {/* Navigation Grid */}
           <Navigation />
+          {/* News */}
+          <News/>
           {/* Webcam Grid */}
           <WebcamGrid />
         </>

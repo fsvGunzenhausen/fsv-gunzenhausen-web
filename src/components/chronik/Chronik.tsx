@@ -53,8 +53,8 @@ function Chronik() {
           ))}
         </ul>
       </div>
-      <p className="small fw-light">Dank sagt die FSV an dieser Stelle all ihren Förderern, insbesondere der Stadt Gunzenhausen, die den Belangen des Flugsports immer aufgeschlossen gegen&uuml;berstand.</p>      
-      <p className="small fw-light text-center">Text und Bilder 1951-2001: Hans-Peter Lautner, November 2001<br/>Text und Bilder 2002-2015: FSV-Gunzenhausen</p>      
+      <p className="small fw-light">Dank sagt die FSV an dieser Stelle all ihren Förderern, insbesondere der Stadt Gunzenhausen, die den Belangen des Flugsports immer aufgeschlossen gegenüberstand.</p>      
+      <p className="small fw-light text-center">Text und Bilder 1951-2001: Hans-Peter Lautner, November 2001<br/>Text und Bilder 2002-2025: FSV-Gunzenhausen</p>      
     
       {selectedImage && (
   <>
