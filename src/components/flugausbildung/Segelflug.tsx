@@ -19,7 +19,7 @@ function Segelflug() {
           text={textIntro} />
           <h2 className="text-left text-black-50 mb-4">Segelflug SPL</h2>
           <p className="lead mt-2">
-          Erlebe Technik, Dynamik und Ästhetik im Einklang mit der Natur. Ganz ohne Motor, nur mit Sonne und Wind, gleitest du von Aufwind zu Aufwind – lautlos, effizient und faszinierend.
+          Erlebe Technik, Dynamik und Ästhetik im Einklang mit der Natur. Ganz ohne Motor, nur mit Sonne und Wind, gleitest Du von Aufwind zu Aufwind – lautlos, effizient und faszinierend.
 Starte jetzt deine Segelflugausbildung und werde Teil einer Gemeinschaft, die das Fliegen in seiner reinsten Form lebt.
           </p>
           <div className="container mt-4 mb-0 p-0">
@@ -237,10 +237,7 @@ Starte jetzt deine Segelflugausbildung und werde Teil einer Gemeinschaft, die da
                                   </div>
                                 </li>               
                               </ul>
-                              <p className="mx-3 mb-4">Mit diesen fortschrittlichen Flugzeugen erheben wir uns mühelos
-                                                      in luftige Höhen und können schnell weite Strecken überbrücken
-                                                      – Geschwindigkeiten von 200 km/h und mehr sind problemlos
-                                                      möglich.</p>
+                              <p className="mx-3 mb-4">Nach einer entsprechenden Umschulung kannst Du auch unsere Utraleichtflugzeuge fliegen.</p>
                               <p className="mx-3 mb-4">👉 Die komplette Flotte findest Du <a href={ROUTES.FLUGZEUGE}>hier</a>.</p>
                             </div>
                 </div>
