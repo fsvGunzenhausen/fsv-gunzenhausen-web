@@ -7,7 +7,7 @@ function News() {
         <>
             <div className="container text-center">
                         {/* Divider */}
-                    <h3 className="text-black-50">Aktuell News</h3>
+                    <h3 className="text-black-50">Aktuelle News</h3>
                     <ul className="list-group list-group-flush">
                         <li className="list-group-item">
                         <div className="card-body p-3">
