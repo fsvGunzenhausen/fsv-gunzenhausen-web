@@ -6,7 +6,7 @@ export const NAV_ITEMS = [
       dropdownId: 'flugplatz',
       routes: [
         { path: ROUTES.INFORMATIONEN, label: 'Informationen' },
-          {path: ROUTES.PILOTEN, label: 'Piloteninfos'},
+          {path: ROUTES.PILOTENINFO, label: 'Piloteninformation'},
         { path: ROUTES.WEBCAM_OST, label: 'Webcam Ost' },
         { path: ROUTES.WEBCAM_SUED, label: 'Webcam Süd' },
       ],
