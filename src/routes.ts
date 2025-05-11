@@ -1,7 +1,7 @@
 export const ROUTES = {
     HOME: '/',
     NOTFOUND: '*',
-    PILOTENINFO: '*',
+    LANDEGEBUEHREN: '/landeguehren',
     INFORMATIONEN: '/informationen',
     FLUGAUSBILDUNG: '/flugausbildung',
     MOTORFLUG: '/flugausbildung/motorflug',

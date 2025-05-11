@@ -19,6 +19,7 @@ import RundfluegeSubHeader from './components/rundfluege/RundfluegeSubHeader';
 import ChronikSubHeader from './components/chronik/ChronikSubHeader';
 import Home from './components/home/Home';
 import Webcam, { WebcamDirection } from './components/webcam/Webcam';
+import Landegebuehren from './components/landegebuehren/Landegebuehren';
 
 // Define types for the route content
 type RouteContent = {
@@ -53,6 +54,14 @@ export const ROUTE_CONFIG: Array<{path:string; routeContent: RouteContent}> =
         title: 'Flugplatzinformationen',
         subHeader: undefined,
         component: <Flugplatzinformationen />
+      },
+    },
+    {
+      path: ROUTES.LANDEGEBUEHREN,
+      routeContent: {   
+        title: 'Landegebühren',
+        subHeader: undefined,
+        component: <Landegebuehren />
       },
     },
     {
