@@ -144,13 +144,18 @@ function Landegebuehren() {
               <div className="mt-4 text-center">
                 <h3 className="fw-bold">
                   <span className="text-primary">Gebühr: </span>
-                  {fee !== undefined ? `${fee} €` : 'Nicht verfügbar'}
+                  {fee !== undefined ? (fee === 0 ? 'frei' : `${fee} €`) : 'Nicht verfügbar'}
                 </h3>
               </div>
             </div>
           </div>
         </div>
       </div>
+      <div className="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+                    <h3 className="text-black-50">Starts und Landungen außerhalb von Wochenenden</h3>
+                    <p className='fw-light'>  Zusätzlich zu den oben genannten Gebühren wird für Landungen außerhalb der Wochenenden eine Gebühr von 6,00 € erhoben, sollte die Flugleitung hierfür extra besetzt werden.</p>
+
+        </div>
     </div>
   );
 }
