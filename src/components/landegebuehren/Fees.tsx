@@ -83,6 +83,7 @@ export const soundOptions = ['mit erhöhtem Schallschutz', 'ohne erhöhtem Schal
 
 export const aircraftTypes: AircraftType[] = [
   'UL-Flugzeuge',
+  'Motorsegler (alle Gewichtsklassen)',
   'Motorflugzeuge',
   'Abweichend LFZ gemäß §25 LuftVG',
   'Segelflugzeuge',
