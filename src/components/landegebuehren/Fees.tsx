@@ -9,7 +9,7 @@ export type AircraftType =
   | 'Segelflugzeuge'
   | 'Segelflugzeuge mit Motor (nicht Selbststarter)';
 
-export type SchulflugSubType = 'Motorsegler' | 'UL' | 'Flugzeuge';
+export type SchulflugSubType = 'Motorsegler' | 'UL' | 'Motorflugzeug';
 export type FlightSubType = 'Normal' | 'Schulflug';
 export type SchulflugWeight = AircraftWeight;
 
@@ -59,7 +59,7 @@ export const fees: Record<FlightSubType, FeeMatrix> = {
       Schulflüge: {
         Motorsegler: 3,
         UL: 3,
-        Flugzeuge: {
+        Motorflugzeug: {
           'bis 1000kg': 3,
           'über 1000kg - 1600kg': 4,
           'bis 2000kg': 6,
@@ -69,7 +69,7 @@ export const fees: Record<FlightSubType, FeeMatrix> = {
     'ohne erhöhtem Schallschutz': {
       Schulflüge: {
         Motorsegler: 4,
-        Flugzeuge: {
+        Motorflugzeug: {
           'bis 1000kg': 4,
           'über 1000kg - 1600kg': 6,
           'bis 2000kg': 8,
@@ -91,5 +91,5 @@ export const aircraftTypes: AircraftType[] = [
 ];
 
 export const weights: AircraftWeight[] = ['bis 1000kg', 'über 1000kg - 1600kg', 'bis 2000kg'];
-export const schulflugSubTypes: SchulflugSubType[] = ['Motorsegler', 'UL', 'Flugzeuge'];
+export const schulflugSubTypes: SchulflugSubType[] = ['Motorsegler', 'UL', 'Motorflugzeug'];
 export const flightTypes: FlightSubType[] = ['Normal', 'Schulflug'];

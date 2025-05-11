@@ -8,17 +8,14 @@ function Flugplatzinformationen() {
     <div className="container pb-4">
       <div className="row justify-content-center">
         <div className="col-lg-14 ">
-          <div className="card shadow rounded-4">
+          <div className="card shadow rounded-4 p-3 p-md-4">
             <div className="card-body">
               <div className="table-responsive w-100" style={{ overflowX: 'hidden' }}>
                 <table className="table table-bordered align-middle">
-                <colgroup>
-                <col style={{ minWidth: '45px'}} />
-                </colgroup>
                   <tbody>
                     {flugplatzdaten.map(([labelDe, labelEn, content], index) => (
                       <tr key={index}>
-                        <th scope="row" className="align-top">
+                        <th scope="row" className="align-top" style={{ minWidth: '40%' }}>
                           <div className="mb-1">{labelDe}</div>
                           <div className="fw-normal text-muted">{labelEn}</div>
                         </th>

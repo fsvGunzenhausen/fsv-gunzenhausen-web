@@ -82,8 +82,8 @@ function Landegebuehren() {
                 </div>
               )}
 
-                            {/* Schulflug SubType Selector */}
-                            {flightType === 'Schulflug' && (
+                {/* Schulflug SubType Selector */}
+                {flightType === 'Schulflug' && (
                 <div className="mb-3">
                   <label htmlFor="subType" className="form-label fw-bold">Flugzeugtyp</label>
                   <select
@@ -102,6 +102,7 @@ function Landegebuehren() {
               )}
 
               {/* Sound Protection Selector */}
+                              {(type !== 'Segelflugzeuge' && type!== 'Segelflugzeuge mit Motor (nicht Selbststarter)') && (
               <div className="mb-3">
                 <label htmlFor="sound" className="form-label fw-bold">Schallschutz</label>
                 <select
@@ -116,13 +117,13 @@ function Landegebuehren() {
                     </option>
                   ))}
                 </select>
-              </div>
+              </div>)}
 
 
 
               {/* Weight Selector */}
               {(flightType === 'Normal' && type === 'Motorflugzeuge') ||
-              (flightType === 'Schulflug' && subType === 'Flugzeuge') ? (
+              (flightType === 'Schulflug' && subType === 'Motorflugzeug') ? (
                 <div className="mb-3">
                   <label htmlFor="weight" className="form-label fw-bold">Gewicht</label>
                   <select

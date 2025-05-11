@@ -30,7 +30,7 @@ function Chronikkarte(  { year, title, description, images, expanded, setExpande
     };
 
     return (
-      <div className="card border-0">
+      <div className="card border-0 p-3 p-md-4">
         <div className="card-body p-0">
           <h5 className="card-subtitle text-secondary mb-1">{era.year}</h5>
           <h2 className="card-title mb-3 text-secondary">{era.title}</h2>
