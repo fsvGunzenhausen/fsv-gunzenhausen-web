@@ -40,18 +40,10 @@ export const ROUTE_CONFIG: Array<{path:string; routeContent: RouteContent}> =
       component: <Home />
     },
   },
-  {
-    path: ROUTES.HOME,
-    routeContent: {   
-      title: 'Flugsportvereinigung "Gelbe Bürg" e.V.',
-      subHeader: undefined,
-      component: <Home />
-    },
-  },
     {
       path: ROUTES.INFORMATIONEN,
       routeContent: {   
-        title: 'Flugplatzinformationen',
+        title: 'Flugplatz\u00ADinformationen',
         subHeader: undefined,
         component: <Flugplatzinformationen />
       },

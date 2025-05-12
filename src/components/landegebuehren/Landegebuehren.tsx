@@ -40,7 +40,7 @@ function Landegebuehren() {
   return (
     <div className="container pb-4">
      <p className="lead mb-5">
-        Für Flugzeuge, selbsstartende Motorsegler und Ultraleichtflugzeuge gelten die Gebühren gemäß der Gebührenordnung für den Sonderlandeplatz "Gunzenhausen-Reutberg", Flugsportvereinigung "Gelbe Bürg" Gunzenhausen und bemessen sich (Preise incl. 19% MwSt.) nach dem in der in der Zulassungsurkunde des Luftfahrzeugs eingetragenen Höchstgewicht:
+        Für Flugzeuge, selbsstartende Motorsegler und Ultraleichtflugzeuge gelten die Gebühren gemäß der Gebührenordnung für den Sonderlandeplatz "Gunzenhausen-Reutberg", Flugsportvereinigung "Gelbe Bürg" Gunzenhausen und bemessen sich (Preise incl. 19% MwSt.) nach dem in der Zulassungsurkunde des Luftfahrzeugs eingetragenen Höchstgewicht:
       </p>
       <div className="row justify-content-center">
         <div className="col-lg-14">
