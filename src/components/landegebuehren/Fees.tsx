@@ -1,5 +1,5 @@
 export type AircraftWeight = 'bis 1000kg' | 'über 1000kg - 1600kg' | 'bis 2000kg';
-export type SoundProtection = 'mit erhöhtem Schallschutz' | 'ohne erhöhtem Schallschutz';
+export type SoundProtection = 'mit erhöhtem Schallschutz' | 'ohne erhöhten Schallschutz';
 
 export type AircraftType =
   | 'UL-Flugzeuge'
@@ -42,7 +42,7 @@ export const fees: Record<FlightSubType, FeeMatrix> = {
       'Segelflugzeuge': 0,
       'Segelflugzeuge mit Motor (nicht Selbststarter)': 0,
     },
-    'ohne erhöhtem Schallschutz': {
+    'ohne erhöhten Schallschutz': {
       'Motorsegler (alle Gewichtsklassen)': 7,
       'Motorflugzeuge': {
         'bis 1000kg': 7,
@@ -66,7 +66,7 @@ export const fees: Record<FlightSubType, FeeMatrix> = {
         },
       },
     },
-    'ohne erhöhtem Schallschutz': {
+    'ohne erhöhten Schallschutz': {
       Schulflüge: {
         Motorsegler: 4,
         Motorflugzeug: {
@@ -79,7 +79,7 @@ export const fees: Record<FlightSubType, FeeMatrix> = {
   },
 };
 
-export const soundOptions = ['mit erhöhtem Schallschutz', 'ohne erhöhtem Schallschutz'];
+export const soundOptions = ['mit erhöhtem Schallschutz', 'ohne erhöhten Schallschutz'];
 
 export const aircraftTypes: AircraftType[] = [
   'UL-Flugzeuge',
