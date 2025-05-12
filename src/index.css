@@ -355,3 +355,9 @@ img.zoom {
   opacity: 0.8; /* Hover-Effekt für die Social Media Icons */
 }
 
+@media (max-width: 768px) {
+table th {
+width: 40% !important;
+}
+}
+
