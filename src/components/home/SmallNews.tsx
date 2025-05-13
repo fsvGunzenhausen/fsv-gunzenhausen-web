@@ -19,7 +19,7 @@ function SmallNews() {
                 className={`carousel-item ${index === 0 ? 'active' : ''} bg-white`}
               >
                 <div className="d-flex justify-content-center px-4">
-                  <div className="card shadow-sm border rounded-3" style={{ padding: "0.5em", maxWidth: "95%", height: "250px" }}>
+                  <div className="card shadow-sm border rounded-3" style={{ padding: "0.5em", maxWidth: "95%", height: "300px" }}>
                     <div className="card-body p-3 text-start">
                       <h5 className="card-title mb-1 text-primary">{news.title}</h5>
                       <small className="text-muted d-block mb-2">{news.date}</small>
@@ -52,7 +52,7 @@ function SmallNews() {
                 <div className="card-body p-3 text-start">
                   <h5 className="card-title mb-1 text-primary">{news.title}</h5>
                   <small className="text-muted d-block mb-2">{news.date}</small>
-                  <div className="card-text fw-light">
+                  <div className="card-text pb-1 fw-light">
                     {news.description}
                   </div>
                 </div>
