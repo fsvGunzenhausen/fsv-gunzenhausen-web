@@ -75,7 +75,7 @@ const flugplatzdaten = [
     ['Kraftstoff', 'Fuel',
       <>
         AvGas 100LL<br />
-        AvGas UL91
+              UL91
       </>
     ],
     ['Bemerkungen', 'Remarks',
