@@ -20,6 +20,7 @@ import ChronikSubHeader from './components/chronik/ChronikSubHeader';
 import Home from './components/home/Home';
 import Webcam, { WebcamDirection } from './components/webcam/Webcam';
 import Landegebuehren from './components/landegebuehren/Landegebuehren';
+import News from './components/news/News';
 
 // Define types for the route content
 type RouteContent = {
@@ -157,6 +158,14 @@ export const ROUTE_CONFIG: Array<{path:string; routeContent: RouteContent}> =
       },
     },
     {
+      path: ROUTES.NEWS,
+      routeContent: {   
+        title: 'Aktuelles',
+        subHeader:undefined,
+        component: <News />
+      },
+    },
+    {
       path: ROUTES.DATENSCHUTZ,
       routeContent: {   
         title: 'Datenschutz',
@@ -172,7 +181,6 @@ export const ROUTE_CONFIG: Array<{path:string; routeContent: RouteContent}> =
         component: <Kontakt />
       },
     },
-  // Aircraft-specific routes
   {
     path: ROUTES.CESSNA,
     routeContent: {
@@ -242,5 +250,5 @@ export const ROUTE_CONFIG: Array<{path:string; routeContent: RouteContent}> =
         </>,
       component: <Aircraft aircraftType={AircraftType.ASW20} />
     }
-  },
+  }
 ];

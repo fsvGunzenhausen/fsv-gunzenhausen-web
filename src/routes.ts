@@ -24,5 +24,6 @@ export const ROUTES = {
     DATENSCHUTZ: '/datenschutz',
     WEBCAM_OST: '/webcam-ost',
     WEBCAM_SUED: '/webcam-sued',
+    NEWS: '/news',
   };
   

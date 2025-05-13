@@ -19,8 +19,9 @@ export const NAV_ITEMS = [
         { path: ROUTES.RUNDFLUEGE, label: 'Rundflüge' },
         { path: ROUTES.FLUGZEUGE, label: 'Flugzeuge' },
         { path: ROUTES.FOTOS, label: 'Fotos' },
-        { path: ROUTES.KONTAKT, label: 'Kontakt' },
+        { path: ROUTES.NEWS, label: 'Aktuelles' },
         { path: ROUTES.CHRONIK, label: 'Chronik' },
+        { path: ROUTES.KONTAKT, label: 'Kontakt' },
       ],
     },
   ];
