@@ -1,5 +1,5 @@
 
-import Carousel from "./Carousel";
+
 import Navigation from './Navigation';
 import SmallNews from "./SmallNews";
 import WebcamGrid from "./WebcamGrid";
@@ -9,8 +9,6 @@ function Home() {
 
     return (
         <>
-          {/* Carousel */}
-          <Carousel />
           {/* Navigation Grid */}
           <Navigation />
                   {/* Divider */}

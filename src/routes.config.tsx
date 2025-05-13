@@ -21,10 +21,11 @@ import Home from './components/home/Home';
 import Webcam, { WebcamDirection } from './components/webcam/Webcam';
 import Landegebuehren from './components/landegebuehren/Landegebuehren';
 import News from './components/news/News';
+import Carousel from './components/home/Carousel';
 
 // Define types for the route content
 type RouteContent = {
-    title: string;
+    title?: string;
     subHeader?: React.ReactNode;  // Ensure the content is of type React.ReactNode (allows JSX)
     component?: React.ReactNode; // Component to render for this route
   };
@@ -36,8 +37,10 @@ export const ROUTE_CONFIG: Array<{path:string; routeContent: RouteContent}> =
   {
     path: ROUTES.HOME,
     routeContent: {   
-      title: 'Flugsportvereinigung "Gelbe Bürg" e.V.',
-      subHeader: undefined,
+      title: undefined, 
+             subHeader: (
+              <Carousel />
+        ),
       component: <Home />
     },
   },
