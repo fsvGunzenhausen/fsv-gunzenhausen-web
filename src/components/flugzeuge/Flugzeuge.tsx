@@ -1,4 +1,4 @@
-import flugzeugeImages from "./Images.index"; 
+import flugzeugeImages from "./Images.index";
 import { ROUTES } from "../../routes";
 
 
@@ -67,39 +67,41 @@ function Flugzeuge() {
               .filter((aircraft) => aircraft.category === category)
               .map((aircraft, index) => (
                 <div
-                  className={`col-sm-12 col-md-6 ${
-                    category === "Segelflugzeuge" ? "col-lg-4" : "col-lg-6"
-                  } d-flex align-items-stretch`}
+                  className={`col-sm-12 col-md-6 ${category === "Segelflugzeuge" ? "col-lg-4" : "col-lg-6"
+                    } d-flex align-items-stretch`}
                   key={index}
                 >
-                    <div className="card d-block mb-4 shadow p-0">
-                      <div className="view overlay">
-                        <img
-                          className="card-img-top"
-                          src={aircraft.image}
-                          alt={aircraft.model}
-                        />
-                      </div>
-                      <div className="card-body">
-                            <a href={aircraft.link} 
-                                    style={{ textDecoration: "none" }}
-                                    onMouseEnter={(e) => (e.currentTarget.style.textDecoration = "underline")}
-                                    onMouseLeave={(e) => (e.currentTarget.style.textDecoration = "none")}>
-                            <h3
-                              className="mb-0 text-dark"
-                            >{aircraft.model}</h3>
-                            <div
-                              className="mb-1 text-muted"
-                            >{aircraft.registration}</div>
-                            </a>
-                      </div>
+                  <a href={aircraft.link}
+                    style={{ textDecoration: "none" }}
+                    onMouseEnter={(e) => (e.currentTarget.style.textDecoration = "underline")}
+                    onMouseLeave={(e) => (e.currentTarget.style.textDecoration = "none")}></a>
+                  <div className="card d-block mb-4 shadow p-0">
+                    <div className="view overlay">
+                      <img
+                        className="card-img-top"
+                        src={aircraft.image}
+                        alt={aircraft.model}
+                      />
                     </div>
+                    <div className="card-body">
+
+                      <h3
+                        className="mb-0 text-dark"
+                      >{aircraft.model}</h3>
+                      <div
+                        className="mb-1 text-muted"
+                      >{aircraft.registration}</div>
+
+                    </div>
+                  </div>
+                </a>
                 </div>
               ))}
-          </div>
         </div>
-      ))}
-    </div>
+        </div>
+  ))
+}
+    </div >
   );
 }
 
