@@ -74,7 +74,7 @@ function Flugzeuge() {
                   <a href={aircraft.link}
                     style={{ textDecoration: "none" }}
                     onMouseEnter={(e) => (e.currentTarget.style.textDecoration = "underline")}
-                    onMouseLeave={(e) => (e.currentTarget.style.textDecoration = "none")}></a>
+                    onMouseLeave={(e) => (e.currentTarget.style.textDecoration = "none")}>
                   <div className="card d-block mb-4 shadow p-0">
                     <div className="view overlay">
                       <img
@@ -84,14 +84,12 @@ function Flugzeuge() {
                       />
                     </div>
                     <div className="card-body">
-
                       <h3
                         className="mb-0 text-dark"
                       >{aircraft.model}</h3>
                       <div
                         className="mb-1 text-muted"
                       >{aircraft.registration}</div>
-
                     </div>
                   </div>
                 </a>
