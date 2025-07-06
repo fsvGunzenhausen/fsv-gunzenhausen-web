@@ -44,7 +44,7 @@ function Landegebuehren() {
       </p>
       <div className="row justify-content-center">
         <div className="col-lg-14">
-          <div className="card shadow rounded-4" style={{ maxWidth: '600px' }}>
+          <div className="card shadow rounded-4" style={{ maxWidth: 100% }}>
             <div className="card-body">
               {/* Flight Type Selector */}
               <div className="mb-3">
