@@ -16,11 +16,9 @@
     },
     {
       title: "Erster Alleinflug Emilio!",
-      date: 15.06.2025",
-      description: 'Unser Mitgleid Emilio hat heute seinen ersten Alleinflug im Segelflug mit unserer ASK21 [ASK21](https://dev.fsv-gunzenhausen.de/flugzeuge/ask21). Wir wünschen ihm viel Erfolg bei der weiteren Ausbildung und viele schöne Flüge!',
+      date: "15.06.2025",
+      description: 'Unser Mitgleid Emilio hat heute seinen ersten Alleinflug im Segelflug mit unserer ASK21. Wir wünschen ihm viel Erfolg bei der weiteren Ausbildung und viele schöne Flüge!',
       images: []
-
-
     }
   ];
 
