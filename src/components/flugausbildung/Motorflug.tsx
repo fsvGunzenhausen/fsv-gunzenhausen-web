@@ -38,7 +38,7 @@ function Motorflug() {
                                 <li className="mb-2">
                                   <div className="d-flex">
                                     <div className="me-2 mt-1"><BoldBlueCheckmark /></div>
-                                    <div>Mindestalter: 16 Jahre für den Ausbildungsbeginn, Lizenz ab 17 Jahren</div>
+                                    <div>Mindestalter: 16 Jahre für den Ausbildungsbeginn</div>
                                   </div>
                                 </li>
                                 <li className="mb-2">
@@ -93,12 +93,12 @@ function Motorflug() {
                     <div className="card-header">
                       <h4 className="card-title my-0 font-weight-normal py-0.5">🎯 Vorteile bei uns im Verein</h4>
                     </div>
-                    <div className="card-body mt-0">
+                    <div className="card-body mt-0 pb-4">
                         <div>
                           <img className="img-fluid w-100 " 
-                                style={{ objectFit: 'cover', maxHeight: "279px" }}  src={robin} alt='Vorteile' />
+                                style={{ objectFit: 'cover', maxHeight: "250px" }}  src={robin} alt='Vorteile' />
                         </div>
-                      <ul className="mb-4 fw-light list-unstyled mx-4 mt-2">
+                      <ul className="fw-light list-unstyled mx-4 mt-2" style={{ marginBottom: "1.75rem" }}>
                         <li className="mb-2">
                           <div className="d-flex">
                             <div className="me-2 mt-1"><BoldBlueCheckmark /></div>
@@ -254,7 +254,7 @@ function Motorflug() {
                             <div className="card-body">
                                 <div>
                                   <img className="img-fluid w-100 " 
-                                        style={{ objectFit: 'cover', maxHeight: "200px" }}  src={cessna} alt='Flugzeugpark' />
+                                        style={{ objectFit: 'cover', maxHeight: "250px" }}  src={cessna} alt='Flugzeugpark' />
                                 </div>
                                 <p className="lead mx-3 mt-2">
                                 Hier im mittelfränkischen Gunzenhausen schulen wir auf der bewährten und in aller Welt bekannten Cessna 172.

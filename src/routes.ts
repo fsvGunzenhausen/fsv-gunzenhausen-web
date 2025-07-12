@@ -25,5 +25,6 @@ export const ROUTES = {
     WEBCAM_OST: '/webcam-ost',
     WEBCAM_SUED: '/webcam-sued',
     NEWS: '/news',
+    NEWS_DETAIL: (id: string) => `/news#${id}`,
   };
   

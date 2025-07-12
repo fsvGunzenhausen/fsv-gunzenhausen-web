@@ -3,6 +3,8 @@ import { useState } from "react";
 import imageStore from './Images.index';
 import Newskarte from "./Newskarte";
 import newsDaten from "./Newsdaten";
+import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
 
 function convertImageStoreToArray(imageStore: { [key: string]: { full: any, preview: any } }) {
   return Object.values(imageStore);
@@ -10,7 +12,7 @@ function convertImageStoreToArray(imageStore: { [key: string]: { full: any, prev
 
 
 function News() {
-
+  const location = useLocation();
   const imageStoreArray = convertImageStoreToArray(imageStore);
   // State to manage the expanded card
   const [expanded, setExpanded] = useState<string | null>(null);
@@ -30,27 +32,36 @@ function News() {
     setSelectedImage(imageStoreArray[newIndex].full);
   };
 
+    // Scroll and expand based on hash
+  useEffect(() => {
+    if (location.hash) {
+      const id = location.hash.replace('#', '');
+      const element = document.getElementById(id);
+
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        setExpanded(id); // Automatically expand the clicked news
+      }
+    }
+  }, [location]);
+
   return (
     <div className="container pb-5 pt-0">
       <div className="timeline-container">
         <ul className="timeline">
-          {newsDaten.map((era, index) => (
-            <li key={index} className="timeline-item">
-              <div className="timeline-body">
-                <div className="timeline-content">
+            {newsDaten.map((era) => (
+                    <section id={era.id} style={{ marginBottom: '1.5rem' }}>
                       <Newskarte
                         date={era.date}
-                        title={era.title} 
+                        title={era.title}
                         description={era.description}
                         images={era.images}
                         expanded={expanded}
                         setExpanded={setExpanded}
                         openModal={openModal}
                       />
-                </div>
-              </div>
-            </li>
-          ))}
+                    </section>
+            ))}
         </ul>
       </div>
  

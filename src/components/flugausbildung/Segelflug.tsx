@@ -79,7 +79,7 @@ Starte jetzt deine Segelflugausbildung und werde Teil einer Gemeinschaft, die da
                                   </div>
                                 </li>
                               </ul>
-                              <p className="fw-light mx-3 mb-4">Segelfliegen ist auch ein Team-Sport. Mehrere Helfer sind
+                              <p className="fw-light mx-3"  style={{ marginBottom: "3.1rem" }}>Segelfliegen ist auch ein Team-Sport. Mehrere Helfer sind
                                                   notwendig, um ein Segelflugzeug in die Luft zu befördern. Es ist wichtig, dass sich jedes Teammitglied auf
                                                   die anderen verlassen kann. Daher werden von Beginn der
                                                   Ausbildung an Verantwortungsbewusstsein, Teamgeist und das

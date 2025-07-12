@@ -2,11 +2,15 @@ import smallNewsDaten from "./Smallnewsdaten";
 import { Link } from 'react-router-dom'; // Import Link from react-router-dom
 import { ROUTES } from '../../routes';
 
+
 function SmallNews() {
   return (
     <>
       <div className="container text-center">
-           <Link to={ROUTES.NEWS} style={{ textDecoration: 'underline' }}>
+        
+           <Link to={ROUTES.NEWS} style={{ textDecoration: 'none' }} 
+           onMouseEnter={(e) => (e.currentTarget.style.textDecoration = 'underline')}
+           onMouseLeave={(e) => (e.currentTarget.style.textDecoration = 'none')}>
           <h3 className="text-black-50 pb-2">Aktuelles</h3>
         </Link>
 
@@ -21,7 +25,13 @@ function SmallNews() {
                 <div className="d-flex justify-content-center px-4">
                   <div className="card shadow-sm border rounded-3" style={{ padding: "0.5em", maxWidth: "95%", height: "300px" }}>
                     <div className="card-body p-3 text-start">
-                      <h5 className="card-title mb-1 text-primary">{news.title}</h5>
+                      <h5 className="card-title mb-1 text-primary">
+                        <Link to={ROUTES.NEWS_DETAIL(news.id)}
+                          style={{ textDecoration: 'none' }}
+                          onMouseEnter={(e) => (e.currentTarget.style.textDecoration = 'underline')}
+                          onMouseLeave={(e) => (e.currentTarget.style.textDecoration = 'none')}
+                        >{news.title}</Link>
+                        </h5>
                       <small className="text-muted d-block mb-2">{news.date}</small>
                       <div className="card-text fw-light">
                         {news.description}
@@ -50,7 +60,11 @@ function SmallNews() {
             <li key={index} className="mb-3">
               <div className="card shadow-sm border rounded-3" style={{ padding: "0.5em" }}>
                 <div className="card-body p-3 text-start">
-                  <h5 className="card-title mb-1 text-primary">{news.title}</h5>
+                  <h5 className="card-title mb-1 text-primary">
+                        <Link to={ROUTES.NEWS_DETAIL(news.id)}  style={{ textDecoration: 'none' }}
+                          onMouseEnter={(e) => (e.currentTarget.style.textDecoration = 'underline')}
+                          onMouseLeave={(e) => (e.currentTarget.style.textDecoration = 'none')}>{news.title}</Link>
+                  </h5>
                   <small className="text-muted d-block mb-2">{news.date}</small>
                   <div className="card-text pb-1 fw-light">
                     {news.description}

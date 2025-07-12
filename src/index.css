@@ -282,6 +282,14 @@ img.zoom {
   max-width: 95%;
 }
 
+.custom-timeline-content {
+
+  padding: 20px;
+  border-radius: 8px;
+  transition: transform 0.3s ease-in-out;
+}
+
+
 .timeline-content:hover {
   transform: scale(1.05); /* Slight zoom effect on hover */
 }
@@ -291,12 +299,26 @@ img.zoom {
   font-size: 1.1rem;
 }
 
+.custom-timeline-content h5 {
+  color: #6c757d; /* Subtitle color */
+  font-size: 1.1rem;
+}
+
 .timeline-content h2 {
+  color: #007bff; /* Title color */
+  font-size: 1.5rem;
+}
+.custom-timeline-content h2 {
   color: #007bff; /* Title color */
   font-size: 1.5rem;
 }
 
 .timeline-content p {
+  font-size: 1rem;
+  color: #495057;
+}
+
+.custom-timeline-content p {
   font-size: 1rem;
   color: #495057;
 }

@@ -77,7 +77,7 @@ function Ultraleicht() {
                                   </div>
                                 </li>
                               </ul>
-                              <p className="fw-light mx-3 mb-4">Günstige Flugpreise sind in Vereinen nur möglich, wenn alle
+                              <p className="fw-light mx-3"  style={{ marginBottom: "2.5rem" }}>Günstige Flugpreise sind in Vereinen nur möglich, wenn alle
                                                         Mitglieder auch ihre sonstigen (Berufs)Qualitäten zum Gelingen
                                                         des Ganzen beisteuern. </p>
                         </div>
