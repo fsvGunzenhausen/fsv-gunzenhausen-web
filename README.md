@@ -1,6 +1,6 @@
 # FSV Gunzenhausen Website
 
-This is the website of FSV Gunzenhausen.
+This is the website of FSV Gunzenhausen from 2025-07-12
 
  This project is using
   - react + typescript + vite and native bootstrap.
