@@ -7,7 +7,7 @@
       // id is used to identify the news item in the URL    
       title: "Erster Alleinflug Emilio!",
       date: "15.06.2025",
-      description: 'Unser Mitgleid Emilio hat heute seinen ersten Alleinflug im Segelflug mit unserer ASK21 absolviert. Wir wünschen ihm viel Erfolg bei der weiteren Ausbildung und viele schöne Flüge!',
+      description: 'Unser Mitglied Emilio hat heute seinen ersten Alleinflug im Segelflug mit unserer ASK21 absolviert. Wir wünschen ihm viel Erfolg bei der weiteren Ausbildung und viele schöne Flüge!',
         images: [
           'pic002'
         ]
