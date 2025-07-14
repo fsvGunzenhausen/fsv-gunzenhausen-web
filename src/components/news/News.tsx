@@ -50,7 +50,7 @@ function News() {
       <div className="timeline-container">
         <ul className="timeline">
             {newsDaten.map((era) => (
-                    <section id={era.id} style={{ marginBottom: '1.5rem' }}>
+                    <section id={era.id} key={era.id} style={{ marginBottom: '1.5rem' }}>
                       <Newskarte
                         date={era.date}
                         title={era.title}
