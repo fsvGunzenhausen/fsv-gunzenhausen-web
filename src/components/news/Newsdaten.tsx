@@ -23,7 +23,9 @@
       title: "Flotte vergrößert!",
       date: "21.01.2025",
       description: 'Unsere Flotte ist seit dem 21.01.2025 gewachsen! Wir haben nun als Vereinsflugzeug für alle Mitglieder eine Aerospool Dynamic WT9 600 mit dem Kennzeichen D-MFVG zur Verfügung.',
-      images: []
+      images: [
+          'pic001'
+      ]
     },
 
   ];

@@ -53,7 +53,7 @@ export const aircraftList: AircraftData[] = [
     link: ROUTES.DYNAMIC,
     code: "D-MFVG",
     passengers: "Ein Passagier",
-    typeOfAircraft: "Ultralichtflugzeug",
+    typeOfAircraft: "Ultraleichtflugzeug",
     price: "200 €",
   },
   {
@@ -62,7 +62,7 @@ export const aircraftList: AircraftData[] = [
     link: ROUTES.PIONEER,
     code: "D-MFGB",
     passengers: "Ein Passagier",
-    typeOfAircraft: "Ultralichtflugzeug",
+    typeOfAircraft: "Ultraleichtflugzeug",
     price: "200 €",
   },
   {
