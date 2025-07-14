@@ -56,12 +56,13 @@
 
 .close-button {
   position: absolute;
-  top: 8px;
-  right: 12px;
+  top: 0;
+  right: 6px;
   font-size: 32px;
   background: transparent;
   border: none;
   color: white;
   cursor: pointer;
   z-index: 2;
+  padding-top: 0;
 }
