@@ -115,7 +115,7 @@ export const routingCards: RoutingCardData[] = [
     ],
     details: [
       "Motorflugzeug (max. 3 Passagiere)", 
-      "Dauer ca. 1:20h € 700,-",
+      "Dauer ca. 2:30h € 700,-",
     ],
     detailsUL: ["UL (ein Passagier)  € 500,-",       "Terminfindung ist stark wetterabhängig!",],
   },
