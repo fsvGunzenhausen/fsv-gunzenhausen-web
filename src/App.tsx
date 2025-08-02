@@ -1,6 +1,7 @@
 
 import './App.css'
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { useEffect, useState } from 'react';
 import { ROUTES } from './routes';
 import { ROUTE_CONFIG } from './routes.config';
 import PageHeader from './layout/page-header/PageHeader';
@@ -11,12 +12,23 @@ import RundflugtagModal from './components/rundflugtag/Rundflugtag';
 import ScrollToTop from './shared/scrollToTop/ScrollToTop';
 
 function App() {
+    const [showModal, setShowModal] = useState(false);
+
+    useEffect(() => {
+      const today = new Date();
+      const cutoffDate = new Date('2025-08-03');
+
+      // Show modal only if today is before August 3, 2025
+      if (today < cutoffDate) {
+        setShowModal(true);
+      }
+    }, []);
 
   return (
     <BrowserRouter>
          <ScrollToTop/> 
       <div className="d-flex flex-column min-vh-100">
-        <RundflugtagModal />
+        {showModal && <RundflugtagModal />}
         <PageHeader />
         <SubHeader />
 
