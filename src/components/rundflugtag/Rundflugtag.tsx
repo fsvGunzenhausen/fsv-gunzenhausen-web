@@ -16,14 +16,12 @@ const RundflugtagModal = () => {
       return;
     }
 
-    // Get current count from sessionStorage
-    const countStr = sessionStorage.getItem('rundflugModalCount');
-    let count = countStr ? parseInt(countStr, 10) : 0;
+    // Check if user has already seen the modal
+    const alreadySeen = localStorage.getItem('rundflugModalSeen');
 
-    if (count < 5) {
+    if (!alreadySeen) {
       setIsOpen(true);
-      count += 1;
-      sessionStorage.setItem('rundflugModalCount', count.toString());
+      localStorage.setItem('rundflugModalSeen', 'true'); // Set flag to prevent future popups
     } else {
       setIsOpen(false);
     }
