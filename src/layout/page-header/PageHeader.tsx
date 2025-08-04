@@ -1,7 +1,7 @@
 import { Link, useLocation } from 'react-router-dom';
 import { NAV_ITEMS } from '../../navigation.config';
 import NavDropdown from '../../shared/dropdown/NavDropdown';
-import logo from '../../assets/header/fsvlogo180x60.png';
+import logo from '../../assets/header/fsvlogo.png';
 import { useState } from 'react';
 
 function Header() {
@@ -22,7 +22,7 @@ function Header() {
     <nav className="navbar navbar-expand-md navbar-dark bg-dark" key={location.pathname}>
       <div className="container">
         <Link className="navbar-brand" to="/">
-          <img src={logo} alt="FSV Gunzenhausen Logo" />
+          <img src={logo} alt="FSV Gunzenhausen Logo" style={{ width: 'auto', height: '60px'}}/>
         </Link>
         <button
           className="navbar-toggler"

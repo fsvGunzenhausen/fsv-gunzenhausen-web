@@ -2,6 +2,21 @@
   // This file contains the chronik data for the FSV Gunzenhausen website
   
   const newsDaten =  [
+        {
+      id: "20250803",
+      title: "Toller Rundflugtag!",
+      date: "03.08.2025",
+        description: 'Auch wenn es das Wetter stellenweise spannend gemacht hat, war es ein toller Tag! Wir konnten an unserem Rundflugtag alle Flüge wie geplant durchführen und den einen oder anderen Gast begeistern. Vielen Dank an die zahlreichen Besucher und Helfer in allen Bereichen! Egal ob in der Küche, beim Verkauf, bei der Vorbereitung, am und im Flugzeug und und und…. 👍 Wir freuen uns schon auf nächstes Jahr! 😌',
+        images: [
+            'pic003',
+            'pic004',
+            'pic005',
+            'pic006',
+            'pic007',
+            'pic008',
+            'pic009'
+        ]
+    },
     {
         id: "20250615",
         title: "Erster Alleinflug Emilio!",

@@ -1,24 +1,19 @@
   // do not lint this file
-  // This file contains the chronik data for the FSV Gunzenhausen website
+import homeImages from './Images.index';
   
   const smallNewsDaten =  [
-        {
-      id: "20250615",
-      // id is used to identify the news item in the URL    
-      title: "Erster Alleinflug Emilio!",
-      date: "15.06.2025",
-      description: 'Unser Mitglied Emilio hat heute seinen ersten Alleinflug im Segelflug mit unserer ASK21 absolviert. Wir wünschen ihm viel Erfolg bei der weiteren Ausbildung und viele schöne Flüge!',
+       {
+      id: "20250803",
+      title: "Toller Rundflugtag!",
+      date: "03.08.2025",
+      description: 'Auch wenn es das Wetter stellenweise spannend gemacht hat, war es ein toller Tag! Wir konnten an unserem Rundflugtag alle Flüge wie geplant durchführen und den einen oder anderen Gast begeistern. Vielen Dank an die zahlreichen Besucher und Helfer in allen Bereichen! Egal ob in der Küche, beim Verkauf, bei der Vorbereitung, am und im Flugzeug und und und…. 👍 Wir freuen uns schon auf nächstes Jahr! 😌',
         images: [
-          'pic002'
         ]
     },
-     {
-      id: "20250405",
-      title: "Die Flugsaison 2025 beginnt!",
-      date: "05.04.2025",
-      description: 'Endlich ist es soweit – die neue Flugsaison beginnt! Die Flugsportvereinigung Gunzenhausen e.V. startet am Samstag, den 05. April 2025, offiziell in die neue Saison.',
-      images: []
-    },
+    {
+    id: "20250804",
+    video: homeImages.carouselVideo
+    }
   ];
 
   export default smallNewsDaten;
