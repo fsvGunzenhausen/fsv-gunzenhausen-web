@@ -1,4 +1,3 @@
-
 import homeImages from "./Images.index";
 
 function Carousel() {

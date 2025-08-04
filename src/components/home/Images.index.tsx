@@ -5,6 +5,7 @@ import kontaktIcon from '../../assets/components/home/icons/kontakt.png';
 import fotosIcon from '../../assets/components/home/icons/fotos.png';
 import rundfluegeIcon from '../../assets/components/home/icons/rundfluege.png';
 
+import introVideo from '../../assets/components/home/carousel_000.mp4';
 import carousel_001 from '../../assets/components/home/carousel_001.png';
 import carousel_002 from '../../assets/components/home/carousel_002.jpg';
 import carousel_003 from '../../assets/components/home/carousel_003.jpg';
@@ -44,6 +45,7 @@ const homeImages = {
         carousel_010,
         carousel_011
     ],
+    carouselVideo: introVideo,
     socialMediaIcons: {
         facebook: facebookIcon,
         instagram: instagramIcon,
