@@ -4,7 +4,7 @@ import imageStore from './Images.index';
 import { useLocation } from 'react-router-dom';
 
 const RundflugtagModal = () => {
-  const imgSrc = 'plakat'; // Assuming 'plakat' is the key for the image in the store    
+  const imgSrc = 'plakatRundflugtag';  
   const imageFromStore = imageStore[imgSrc as keyof typeof imageStore];
   const location = useLocation();
 
