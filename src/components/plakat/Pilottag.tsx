@@ -18,7 +18,7 @@ const imageFromStore = imageStore[imgSrc as keyof typeof imageStore].full;
     const countStr = localStorage.getItem('plakatModalCount');
     let count = countStr ? parseInt(countStr, 10) : 0;
 
-    if (count < 5) {
+    if (count < 10) {
       setIsOpen(true);
       count += 1;
       localStorage.setItem('plakatModalCount', count.toString());
@@ -82,7 +82,7 @@ const imageFromStore = imageStore[imgSrc as keyof typeof imageStore].full;
 
             <div className="modal-footer justify-content-center">
    <a
-    href="mailto:vorstand@fsv-gunzenhausen.de?subject=Anmeldung%20zum%20Pilot%20für%20ein%20Tag&body=Hallo%20FSV-Team%2C%0A%0Aich%20möchte%20mich%20für%20den%20Pilottag%20anmelden.%0A%0AMit%20freundlichen%20Grüßen"
+    href="mailto:vorstand@fsv-gunzenhausen.de?subject=Anmeldung%20zum%20Pilot%20für%20ein%20Tag&body=Hallo%20FSV-Team%2C%0A%0Aich%20möchte%20mich%20für%20den%20Pilot%20für%20ein%20Tag%20anmelden.%0A%0AMit%20freundlichen%20Grüßen"
     className="btn btn-primary fw-bold"
     style={{ fontSize: '1.1rem' }}
   >

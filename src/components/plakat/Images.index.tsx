@@ -1,5 +1,5 @@
 import plakatRundflugtag from '../../assets/components/rundflugtag/plakat.jpg';
-import plakatPilot from '../../assets/components/pilottag/plakat.png';
+import plakatPilot from '../../assets/components/pilottag/plakat_info.jpg';
 
 const imageStore = {
   // Image store with full and preview images}
