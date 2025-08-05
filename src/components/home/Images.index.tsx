@@ -4,6 +4,8 @@ import flugzeugeIcon from '../../assets/components/home/icons/flugzeuge.png';
 import kontaktIcon from '../../assets/components/home/icons/kontakt.png';
 import fotosIcon from '../../assets/components/home/icons/fotos.png';
 import rundfluegeIcon from '../../assets/components/home/icons/rundfluege.png';
+import landegebuehrenIcon from '../../assets/components/home/icons/landegebuehren.png';
+import informationIcon from '../../assets/components/home/icons/piloteninformation.png';
 
 import introVideo from '../../assets/components/home/carousel_000.mp4';
 import carousel_001 from '../../assets/components/home/carousel_001.png';
@@ -31,6 +33,8 @@ const homeImages = {
         kontakt: kontaktIcon,
         fotos: fotosIcon,
         rundfluege: rundfluegeIcon,
+        landegebuehren: landegebuehrenIcon,
+        information: informationIcon,
       },
     carouselImages:[
         carousel_001,
