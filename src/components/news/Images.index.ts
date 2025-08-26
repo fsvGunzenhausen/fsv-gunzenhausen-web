@@ -27,7 +27,7 @@ import pic013Prev from '../../assets/components/news/03-11_prev.jpg';
 import pic014 from '../../assets/components/news/03-12.jpg';
 import pic014Prev from '../../assets/components/news/03-12_prev.jpg';
 import pic015 from '../../assets/components/news/03-15.jpg';
-import pic016Prev from '../../assets/components/news/03-15.jpg';
+import pic015Prev from '../../assets/components/news/03-15.jpg';
 import pic017 from '../../assets/components/news/03-16.jpg';
 import pic017Prev from '../../assets/components/news/03-16.jpg';
 import pic018 from '../../assets/components/news/03-17.jpg';
@@ -55,7 +55,7 @@ const imageStore = {
   pic012: { full: pic012, preview: pic012Prev },
   pic013: { full: pic013, preview: pic013Prev },
   pic014: { full: pic014, preview: pic014Prev },
-  pic015: { full: pic015, preview: pic016Prev },
+  pic015: { full: pic015, preview: pic015Prev },
   pic016: { full: pic017, preview: pic017Prev },
   pic017: { full: pic018, preview: pic018Prev },
   pic018: { full: pic019, preview: pic019Prev },
