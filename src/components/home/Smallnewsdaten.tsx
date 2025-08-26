@@ -6,7 +6,7 @@
       id: "20250817",
       title: "Fluglager 2025",
       date: "17.08.2025",
-      description: 'Zum Abschluss Mitte August unserer zweiwöchigen Fluglagerzeit erlebten wir unvergessliche Momente: Sunrise-Segelflug, Pilot für einen Tag, ein Ausflug mit UL und Motorflugzeug zu einem nahegelegenen See und viele weitere schöne Flugerlebnisse bei herrlichem Wetter. Ein unvergessliches Fluglager!',
+      description: 'Zum Abschluss Mitte August unserer zweiwöchigen Fluglagerzeit erlebten wir unvergessliche Momente: Sunrise-Segelflug, Pilot für einen Tag, ein Ausflug mit UL und Motorflugzeug zu einem nahegelegenen See und viele weitere schöne Flugerlebnisse.',
         images: [
         ]
     },

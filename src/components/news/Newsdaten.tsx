@@ -23,12 +23,8 @@ Ein herzliches Dankeschön an alle Teilnehmer, Helfer und Fluglehrer, die dieses
             'pic013',
             'pic014',
             'pic015',
-            'pic016',
-            'pic017',
+            'pic016', 
             'pic018',
-            'pic019',
-            'pic020',
-            'pic021'
         ]
     },
             {
