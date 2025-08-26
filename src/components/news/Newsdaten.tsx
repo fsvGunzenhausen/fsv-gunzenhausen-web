@@ -7,7 +7,7 @@
       id: "20250817",
       title: "Fluglager 2025",
         date: "17.08.2025",
-  description:` Die Flugtage waren geprägt von unvergesslichen Erlebnissen und strahlendem Sonnenschein. ✈️☀️
+  description:`Die Flugtage waren geprägt von unvergesslichen Erlebnissen und strahlendem Sonnenschein. ✈️☀️
 
 Besonders beeindruckend waren die Sunrise-Segelflüge, bei denen die ersten Sonnenstrahlen die Landschaft in ein goldenes Licht tauchten.🌅
  
