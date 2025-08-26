@@ -6,7 +6,7 @@
       id: "20250817",
       title: "Fluglager 2025",
       date: "17.08.2025",
-      description: 'Zum Abschluss Mitte August unserer zweiwöchigen Fluglagerzeit erlebten wir unvergessliche Momente: Sunrise-Segelflug, Pilot für einen Tag, ein Ausflug mit UL und Motorflugzeug zu einem nahegelegenen See und viele weitere schöne Flugerlebnisse.',
+      description: 'Die Flugtage waren geprägt von unvergesslichen Erlebnissen und strahlendem Sonnenschein. Highlights waren Sunrise-Segelflug, Pilot für einen Tag und gemeinsamen Ausflüge mit unseren Flugzeugen.',
         images: [
         ]
     },
@@ -14,7 +14,7 @@
         id: "20250810",
         title: "Pilot für einen Tag",
         date: "10.08.2025",
-        description: 'Großes Interesse, viele Teilnehmer und beste Stimmung: Bei Segelflug und Ultraleichtflug hatten alle viel Spaß. Für Verpflegung war ebenfalls gesorgt – einige Gäste zeigten Interesse am Vereinsleben. Ein herzliches Dankeschön an alle Helfer und Teilnehmer!',
+        description: 'Am Sonntag hieß es bei uns: Anschnallen, durchstarten und die Welt von oben erleben! Unsere Teilnehmer durften beim Segel- und Ultraleichtflug unter Anleitung erfahrener Fluglehrer selbst ins Cockpit steigen und für ein Tag Pilot sein.',
         images: [
         ]
       },
