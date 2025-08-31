@@ -21,6 +21,7 @@ import Home from './components/home/Home';
 import Webcam, { WebcamDirection } from './components/webcam/Webcam';
 import Landegebuehren from './components/landegebuehren/Landegebuehren';
 import News from './components/news/News';
+import AZFApp from './components/azf/Azf';
 
 
 // Define types for the route content
@@ -48,6 +49,14 @@ export const ROUTE_CONFIG: Array<{path:string; routeContent: RouteContent}> =
         title: 'Flugplatz\u00ADinformationen',
         subHeader: undefined,
         component: <Flugplatzinformationen />
+      },
+    },
+        {
+      path: ROUTES.INTERNAL_AZF,
+      routeContent: {   
+        title: 'AZF Fragenkatalog Trainer',
+        subHeader: undefined,
+        component: <AZFApp />
       },
     },
     {
