@@ -2,7 +2,7 @@ import { useState } from "react";
 import type { Result } from "./model/Result";
 import QuestionaireUI from "./components/question/Question";
 import type { TestMode } from "./model/TestMode";
-import { APP_TITLE, BUTTONS } from "./constants/Constants";
+import { BUTTONS } from "./constants/Constants";
 
 // Import your image
 import mainImage from "./assets/main.jpg";
