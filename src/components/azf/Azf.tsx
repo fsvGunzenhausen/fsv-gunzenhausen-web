@@ -8,6 +8,7 @@ import { BUTTONS } from "./constants/Constants";
 import mainImage from "./assets/main.jpg";
 import { Statistics } from "./components/statistics/Statistics";
 
+
 export default function AZFApp() {
   const [mode, setMode] = useState<TestMode | null>(null);
   const [results, setResults] = useState<Result[]>(() => {
@@ -22,24 +23,24 @@ export default function AZFApp() {
   };
 
   return (
-    <div className="container">
+    <div className="container quiz-scope">
       <div className="text-center px-2">
         {/* Header */}
         <img
           src={mainImage}
           alt="Quiz Illustration"
           className="img-fluid mb-4"
-          style={{ maxHeight: "400px" }}
+          style={{ maxHeight: "400px"}}
         />
 
         {/* Content */}
         {!mode ? (
           <>
-            <div className="d-grid gap-3 mb-4">
-              <button className="btn btn-primary" onClick={() => setMode("Practice")}>
+            <div className="d-grid gap-3 mb-4 max-w-[700px]">
+              <button className="btn btn-primary  quiz-btn" onClick={() => setMode("Practice")}>
                 {BUTTONS.PRACTICE}
               </button>
-              <button className="btn btn-success" onClick={() => setMode("Exam")}>
+              <button className="btn btn-success  quiz-btn" onClick={() => setMode("Exam")}>
                 {BUTTONS.EXAM}
               </button>
             </div>

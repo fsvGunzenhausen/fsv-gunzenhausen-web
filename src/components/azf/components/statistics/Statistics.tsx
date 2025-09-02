@@ -34,7 +34,7 @@ export function Statistics({ results, onReset }: StatisticsProps) {
     </ul>
 
       {onReset && (
-        <button className="btn btn-danger mt-3" onClick={onReset}>
+        <button className="btn btn-danger  quiz-btn mt-3" onClick={onReset}>
           {MESSAGES.RESET_STATS}
         </button>
       )}
