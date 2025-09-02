@@ -119,10 +119,12 @@ h1 {
   box-shadow: none;
 }
 
-.btn:hover, .btn:focus {
+.btn:not(.quiz-btn):hover,
+.btn:not(.quiz-btn):focus {
   color: #fff;
   background-color: #0069d9;
 }
+
 
 /* Dropdown menu font color*/ 
 .navbar-nav > li > .dropdown-menu a {   color: #555555;  }

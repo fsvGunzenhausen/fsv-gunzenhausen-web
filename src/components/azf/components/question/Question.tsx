@@ -69,9 +69,9 @@ export default function QuestionaireUI({ mode, onFinish, onCancel }: Questionair
   const goToQuestion = (i: number) => setIndex(i);
 
   const getButtonClass = (i: number) => {
-    if (answers[index] == null) return "btn btn-outline-primary m-1";
-    if (i === current.answer) return "btn btn-success m-1";
-    if (i === answers[index] && i !== current.answer) return "btn btn-danger m-1";
+    if (answers[index] == null) return "btn btn-outline-primary m-1 quiz-btn";
+    if (i === current.answer) return "btn btn-success m-1 quiz-btn";
+    if (i === answers[index] && i !== current.answer) return "btn btn-danger m-1 quiz-btn";
     return "btn btn-outline-secondary m-1";
   };
 
@@ -108,7 +108,7 @@ export default function QuestionaireUI({ mode, onFinish, onCancel }: Questionair
             {current.options.map((opt: string, i: number) => (
               <button
                 key={i}
-                className={getButtonClass(i)}
+                className={getButtonClass(i) }
                 onClick={() => selectAnswer(i)}
               >
                 {opt}
@@ -118,15 +118,15 @@ export default function QuestionaireUI({ mode, onFinish, onCancel }: Questionair
 
           <div className="d-flex justify-content-between mt-3">
             <div>
-              <button className="btn btn-secondary me-2" onClick={goPrev} disabled={index === 0}>
+              <button className="btn btn-secondary quiz-btn me-2" onClick={goPrev} disabled={index === 0}>
                 {MESSAGES.PREVIOUS}
               </button>
               {index < pool.length - 1 ? (
-                <button className="btn btn-secondary" onClick={goNext}>
+                <button className="btn btn-secondary quiz-btn" onClick={goNext}>
                   {MESSAGES.NEXT}
                 </button>
               ) : (
-                <button className="btn btn-primary" onClick={finish}>
+                <button className="btn btn-primary  quiz-btn" onClick={finish}>
                   {MESSAGES.FINISH}
                 </button>
               )}
@@ -141,7 +141,7 @@ export default function QuestionaireUI({ mode, onFinish, onCancel }: Questionair
 
       {onCancel && (
         <div className="mt-5 text-end">
-          <button className="btn btn-outline-dark" onClick={onCancel}>
+          <button className="btn btn-outline-dark  quiz-btn" onClick={onCancel}>
             {MESSAGES.CANCEL}
           </button>
         </div>
