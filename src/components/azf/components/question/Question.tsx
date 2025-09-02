@@ -103,7 +103,7 @@ export default function QuestionaireUI({ mode, onFinish, onCancel }: Questionair
 
       <div className="card">
         <div className="card-body">
-          <h5 className="card-title min-w-[80">{current.question}</h5>
+          <h5 className="card-title">{current.question}</h5>
           <div className="d-flex flex-column">
             {current.options.map((opt: string, i: number) => (
               <button
