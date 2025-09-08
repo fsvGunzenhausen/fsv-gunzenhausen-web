@@ -2,6 +2,22 @@
   // This file contains the chronik data for the FSV Gunzenhausen website
   
   const newsDaten =  [
+            {
+          id: "20250906",
+  title: "Erfolgreicher Prüfungsflug –\nGlückwunsch an Uwe!",
+          date: "06.09.2025",
+          description: `Am Samstag hat unser Vereinsmitglied Uwe erfolgreich seinen Prüfungsflug absolviert 
+        und damit die Segelflugpilotenlizenz erworben. 🎉
+
+        Wir gratulieren ihm herzlich zu diesem wichtigen Meilenstein 
+        und wünschen viele schöne, sichere Flüge!`,
+          images: [
+            'pic022',
+            'pic023',
+            'pic024',
+            'pic025'
+          ]
+        },
                 {
           
       id: "20250817",
