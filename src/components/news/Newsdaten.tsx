@@ -9,8 +9,7 @@
           description: `Am Samstag hat unser Vereinsmitglied Uwe erfolgreich seinen Prüfungsflug absolviert 
         und damit die Segelflugpilotenlizenz erworben. 🎉
 
-        Wir gratulieren ihm herzlich zu diesem wichtigen Meilenstein 
-        und wünschen viele schöne, sichere Flüge!`,
+ Wir gratulieren ihm herzlich zum bestandenen Prüfungsflug und wünschen viele schöne, sichere Flüge!`,
           images: [
             'pic022',
             'pic023',
