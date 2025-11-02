@@ -11,7 +11,7 @@ Bei strahlendem Herbstwetter nutzten unsere Piloten Ende Oktober
 die letzten warmen Tage für einige schöne Flüge. 
 
 Ein besonderes Highlight war ein Alpenflug mit beeindruckender Sicht 
-auf die Gebirgszüge. 
+auf die Gebirgszüge. 🏔️
 
 Auch wenn die Flugsaison 2025 nun offiziell zu Ende geht, 
 hoffen wir noch auf einige schöne Herbsttage, 
@@ -24,7 +24,8 @@ und freuen uns schon auf den Start im nächsten Frühjahr!
         images: [
           'pic028',
           'pic029',
-          'pic030'
+          'pic030',
+          'pic031'
         ]
     },
         {
