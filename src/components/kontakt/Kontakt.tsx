@@ -21,8 +21,8 @@ function Kontakt() {
             <br/>
             <h3 className="text-black-50">Vertretungsberechtigte</h3>
             <p className='fw-light'>Der Verein wird vertreten durch den 1. oder 2. Vorsitzenden:<br/>
-            1. Vorsitzender: Carsten Rothhan<br/>
-            2. Vorsitzender: Johannes Kern</p>
+            1. Vorsitzender: Lukas Hasselbacher<br/>
+            2. Vorsitzender: Michel Roeder</p>
             <br/>
             <h3 className="text-black-50">Gutscheinverkauf</h3>
             <p className='fw-light'>Details auf unserer Seite für <a href={ROUTES.GUTSCHEINE}>Rundflüge</a></p>

@@ -2,24 +2,23 @@
 
   
   const smallNewsDaten =  [
-        {
-          id: "20250906",
-          title: "Glückwunsch an Uwe!",
-          date: "06.09.2025",
-          description: `Am Samstag hat unser Vereinsmitglied Uwe erfolgreich seinen Prüfungsflug absolviert 
-        und damit die Segelflugpilotenlizenz erworben. 🎉
-
-        Wir gratulieren ihm herzlich zum bestandenen Prüfungsflug und wünschen viele schöne, sichere Flüge!`,
-          images: []
-        },
+    
    {
-      id: "20250817",
-      title: "Fluglager 2025",
-      date: "17.08.2025",
-      description: 'Die Flugtage waren geprägt von unvergesslichen Erlebnissen und strahlendem Sonnenschein. Highlights waren Sunrise-Segelflug, Pilot für einen Tag und gemeinsamen Ausflügen mit unseren Flugzeugen.',
+      id: "20251031",
+      title: "Saisonabschluss 2025",
+      date: "31.10.2025",
+      description: 'Bei strahlendem Herbstwetter nutzten unsere Piloten im Oktober die letzten Tage für einige schöne Flüge. Auch wenn die Flugsaison 2025 nun offiziell zu Ende geht, hoffen wir noch auf einige schöne Herbsttage zum Fliegen...',
         images: [
         ]
-    }
+    },
+        {
+          id: "20251019",
+          title: "Neue Vorstandschaft!",
+          date: "19.10.2025",
+          description: `Im Rahmen unserer außerordentlichen Mitgliederversammlung wurde ein neuer Vorstand des Flugsportvereins Gunzenhausen gewählt. Vier Mitglieder haben sich für eine Blockwahl aufstellen lassen und wurden gewählt...
+`,
+          images: []
+        }
 
   ];
 

@@ -2,6 +2,67 @@
   // This file contains the chronik data for the FSV Gunzenhausen website
   
   const newsDaten =  [
+       {
+      id: "20251031",
+      title: "Saisonabschluss 2025",
+      date: "31.10.2025",
+      description: `
+Bei strahlendem Herbstwetter nutzten unsere Piloten Ende Oktober 
+die letzten warmen Tage für einige schöne Flüge. 
+
+Ein besonderes Highlight war ein Alpenflug mit beeindruckender Sicht 
+auf die Gebirgszüge. 
+
+Auch wenn die Flugsaison 2025 nun offiziell zu Ende geht, 
+hoffen wir noch auf einige schöne Herbsttage, 
+an denen vereinzelt geflogen werden kann. 
+
+Wir blicken auf eine erfolgreiche Saison zurück 
+und freuen uns schon auf den Start im nächsten Frühjahr!
+`,
+      
+        images: [
+          'pic028',
+          'pic029',
+          'pic030'
+        ]
+    },
+        {
+          id: "20251019",
+          title: "Neue Vorstandschaft!",
+          date: "19.10.2025",
+          description:   `
+Am 19. Oktober 2025 wurde im Rahmen unserer außerordentlichen Mitgliederversammlung 
+ein neuer Vorstand des Flugsportvereins Gunzenhausen gewählt.
+
+Vier Mitglieder haben sich für eine Blockwahl aufstellen lassen 
+und wurden von den Mitgliedern gewählt. 
+
+Der neue Vorstand setzt sich wie folgt zusammen:
+
+Lukas Hasselbacher – 1. Vorsitzender  
+
+Michel Roeder – 2. Vorsitzende  
+
+Uwe Müller de Vries – Kassier  
+
+
+Der neue Vorstand bedankt sich herzlich für das entgegengebrachte Vertrauen 
+und freut sich darauf, den Verein mit frischen Ideen, Motivation 
+und Engagement weiterzuführen.
+
+Wir bedanken uns herzlich bei den scheidenden Vorstandsmitgliedern 
+für ihre langjährige Arbeit und ihr Engagement im Verein.
+
+Wir sind überzeugt, dass der neue Vorstand den Flugsportverein Gunzenhausen 
+erfolgreich in die Zukunft führen wird und freuen uns 
+auf die Zusammenarbeit mit allen Mitgliedern und Unterstützern des Vereins.
+`,
+          images: [
+            'pic026',
+            'pic027'
+          ]
+        },
             {
           id: "20250906",
   title: "Erfolgreicher Prüfungsflug –\nGlückwunsch an Uwe!",
