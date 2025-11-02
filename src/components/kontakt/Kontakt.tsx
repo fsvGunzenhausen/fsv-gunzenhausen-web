@@ -20,9 +20,10 @@ function Kontakt() {
             <p className='fw-light'>Die Flugsportvereinigung "Gelbe Bürg" Gunzenhausen e.V. ist im Vereinsregister des Amtsgerichts Ansbach unter der Nummer VR 30236 eingetragen.</p>
             <br/>
             <h3 className="text-black-50">Vertretungsberechtigte</h3>
-            <p className='fw-light'>Der Verein wird vertreten durch den 1. oder 2. Vorsitzenden:<br/>
-            1. Vorsitzender: Carsten Rothhan<br/>
-            2. Vorsitzender: Johannes Kern</p>
+            <p className='fw-light'>Der Verein wird nach § 26 Abs. II BGB vertreten durch den Vorstand:<br/>
+            1. Vorsitzender: Lukas Hasselbacher<br/>
+            2. Vorsitzender: Michel Roeder<br/>
+            Kassier: Uwe Müller de Vries</p>
             <br/>
             <h3 className="text-black-50">Gutscheinverkauf</h3>
             <p className='fw-light'>Details auf unserer Seite für <a href={ROUTES.GUTSCHEINE}>Rundflüge</a></p>

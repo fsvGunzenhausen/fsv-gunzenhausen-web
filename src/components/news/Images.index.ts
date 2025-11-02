@@ -40,6 +40,18 @@ import pic24 from '../../assets/components/news/03-24.jpg';
 import pic24Prev from '../../assets/components/news/03-24_prev.jpg';
 import pic25 from '../../assets/components/news/03-25.jpg';
 import pic25Prev from '../../assets/components/news/03-25_prev.jpg';
+import pic26 from '../../assets/components/news/03-26.jpg';
+import pic26Prev from '../../assets/components/news/03-26_prev.jpg';
+import pic27 from '../../assets/components/news/03-27.jpg';
+import pic27Prev from '../../assets/components/news/03-27_prev.jpg';
+import pic28 from '../../assets/components/news/03-28.jpg';
+import pic28Prev from '../../assets/components/news/03-28_prev.jpg';
+import pic29 from '../../assets/components/news/03-29.jpg';
+import pic29Prev from '../../assets/components/news/03-29_prev.jpg';
+import pic30 from '../../assets/components/news/03-30.jpg';
+import pic30Prev from '../../assets/components/news/03-30_prev.jpg';
+import pic31 from '../../assets/components/news/03-31.jpg';
+import pic31Prev from '../../assets/components/news/03-31_prev.jpg';
 
 const imageStore = {
   // Image store with full and preview images}
@@ -64,6 +76,12 @@ const imageStore = {
   pic023: { full: pic23, preview: pic23Prev },
   pic024: { full: pic24, preview: pic24Prev },
   pic025: { full: pic25, preview: pic25Prev },
+  pic026: { full: pic26, preview: pic26Prev },
+  pic027: { full: pic27, preview: pic27Prev },
+  pic028: { full: pic28, preview: pic28Prev },
+  pic029: { full: pic29, preview: pic29Prev },
+  pic030: { full: pic30, preview: pic30Prev },
+  pic031: { full: pic31, preview: pic31Prev },
 };
 
 export default imageStore;

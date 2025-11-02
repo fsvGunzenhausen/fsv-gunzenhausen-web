@@ -25,6 +25,7 @@ export const ROUTES = {
     WEBCAM_OST: '/webcam-ost',
     WEBCAM_SUED: '/webcam-sued',
     NEWS: '/news',
+    INTERNAL_AZF: '/azf-trainer',
     NEWS_DETAIL: (id: string) => `/news#${id}`,
   };
   
