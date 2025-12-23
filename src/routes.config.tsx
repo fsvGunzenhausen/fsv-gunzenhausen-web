@@ -21,7 +21,8 @@ import Home from './components/home/Home';
 import Webcam, { WebcamDirection } from './components/webcam/Webcam';
 import Landegebuehren from './components/landegebuehren/Landegebuehren';
 import News from './components/news/News';
-import AZFApp from './components/azf/Azf';
+import { NewsProvider } from "./components/news/NewsContext";
+import { NewsSubHeader } from './components/news/NewsSubHeader';
 
 
 // Define types for the route content
@@ -38,7 +39,7 @@ export const ROUTE_CONFIG: Array<{path:string; routeContent: RouteContent}> =
   {
     path: ROUTES.HOME,
     routeContent: {   
-            title: 'Flugsportvereinigung "Gelbe Bürg" e.V.', 
+            title: 'Willkommen beim FSV Gunzenhausen', 
              subHeader: undefined,
             component: <Home />
     },
@@ -51,14 +52,14 @@ export const ROUTE_CONFIG: Array<{path:string; routeContent: RouteContent}> =
         component: <Flugplatzinformationen />
       },
     },
-        {
+/*     {
       path: ROUTES.INTERNAL_AZF,
       routeContent: {   
         title: 'AZF Fragenkatalog Trainer',
         subHeader: undefined,
         component: <AZFApp />
       },
-    },
+    }, */
     {
       path: ROUTES.LANDEGEBUEHREN,
       routeContent: {   
@@ -169,10 +170,18 @@ export const ROUTE_CONFIG: Array<{path:string; routeContent: RouteContent}> =
     },
     {
       path: ROUTES.NEWS,
-      routeContent: {   
-        title: 'Aktuelles',
-        subHeader:undefined,
-        component: <News />
+      routeContent: {
+        title: "Aktuelles",
+        subHeader: (
+          <NewsProvider>
+            <NewsSubHeader />
+          </NewsProvider>
+        ),
+        component: (
+          <NewsProvider>
+            <News />
+          </NewsProvider>
+        )
       },
     },
     {
