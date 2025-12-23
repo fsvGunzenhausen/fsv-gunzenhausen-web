@@ -1,5 +1,6 @@
 import Betriebszeiten from "./Betriebszeiten";
 import Platzrunde from "./Platzrunde";
+import PPR from "./PPR";
 
 
 const flugplatzdaten = [
@@ -65,13 +66,7 @@ const flugplatzdaten = [
         </>
     ],
     ['Flugleitung/Turm', 'Apt OPS', '+49 9831 2728'],
-    ['PPR Anfragen', 'PPR Requests',
-      <>
-        +49 9831 881304<br />
-        +49 9831 9207<br />
-        +49 151 21684903
-      </>
-    ],
+    ['PPR Anfragen', 'PPR Requests', <PPR />],
     ['Kraftstoff', 'Fuel',
       <>
         AvGas 100LL<br />

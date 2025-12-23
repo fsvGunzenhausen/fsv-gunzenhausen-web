@@ -1,4 +1,4 @@
-import trafficPattern from '../../assets/components/flugplatzinformationen/Platzrunde.png';
+import trafficPattern from '../../assets/components/flugplatzinformationen/Platzrunde_Hinweis.png';
 
 function Platzrunde() {
   
@@ -55,6 +55,9 @@ function Platzrunde() {
                   </p>
               </div>
               <div className='row-lg-6'>
+                            <p className='mb-1' style={{ fontSize: '0.85em', color: '#444' }}>
+                  Überflüge des Kreiskrankenhauses am westlichen Platzende sind möglichst zu vermeiden.
+                </p>
                 <p className='mb-0' style={{ fontSize: '0.85em', color: '#444' }}>
                   Diese Darstellung dient ausschließlich zu Informationszwecken und darf nicht für Navigationszwecke verwendet werden.
                 </p>
@@ -96,7 +99,8 @@ function Platzrunde() {
 
       {/* Non-navigational info */}
       <div className="mt-5" style={{ fontSize: '0.95em', color: '#444' }}>
-        <p>Diese Darstellung dient ausschließlich zu Informationszwecken und darf nicht für Navigationszwecke verwendet werden.</p>
+        <p>Überflüge des Kreiskrankenhauses am westlichen Platzende sind möglichst zu vermeiden.</p>
+        <p className='fw-normal text-muted'>Diese Darstellung dient ausschließlich zu Informationszwecken und darf nicht für Navigationszwecke verwendet werden.</p>
         <p className='fw-normal text-muted mb-0'>This depiction is for informational purposes only and must not be used for navigation.</p>
       </div>
     </div>

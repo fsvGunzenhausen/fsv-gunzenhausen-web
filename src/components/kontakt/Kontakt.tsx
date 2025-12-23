@@ -6,7 +6,7 @@ function Kontakt() {
   return (
         <div className="container text-md-left font-weight-light">
             <h3 className="text-black-50">Verantwortlich im Sinne des Presserechts für den Inhalt der Seiten</h3>
-            <p className='fw-light'>Flugsportvereinigung "Gelbe Bürg" e.V. Gunzenhausen<br/>
+            <p className='fw-light'>Flugsportvereinigung "Gelbe Bürg" Gunzenhausen e.V.<br/>
             Albert-Schweitzer-Str. 93<br/>
             91710 Gunzenhausen<br/>
             Telefon (Flugplatz): 09831 / 2728 (Besetzt Samstags ab 13:00, Sonn- und Feiertags ab 10:00)<br/>
