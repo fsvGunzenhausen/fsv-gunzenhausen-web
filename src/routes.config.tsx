@@ -21,7 +21,6 @@ import Home from './components/home/Home';
 import Webcam, { WebcamDirection } from './components/webcam/Webcam';
 import Landegebuehren from './components/landegebuehren/Landegebuehren';
 import News from './components/news/News';
-import AZFApp from './components/azf/Azf';
 import { NewsProvider } from "./components/news/NewsContext";
 import { NewsSubHeader } from './components/news/NewsSubHeader';
 

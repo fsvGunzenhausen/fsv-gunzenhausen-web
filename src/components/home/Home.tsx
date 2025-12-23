@@ -1,7 +1,6 @@
 
 import Carousel from "./Carousel";
 import Navigation from './Navigation';
-import SmallNews from "./SmallNews";
 import WebcamGrid from "./WebcamGrid";
 import SocialMedia from "./SocialMedia";
 
