@@ -11,8 +11,11 @@ const [form, setForm] = useState({
   date: "",
   eta: "",
   departure: "",
+  departureDate: "",
+  etd: "",
   notes: "",
 });
+
   const [loading, setLoading] = useState(false);
   const [message, setMessage] = useState<string | null>(null);
 
@@ -30,7 +33,9 @@ const [form, setForm] = useState({
       form.aircraftType.trim() !== "" &&
       form.date.trim() !== "" &&
       form.eta.trim() !== "" &&
-      form.departure.trim() !== ""
+      form.departure.trim() !== "" &&
+      form.departureDate.trim() !== "" &&
+      form.etd.trim() !== ""
     );
   };
 
@@ -44,10 +49,53 @@ const [form, setForm] = useState({
         body: JSON.stringify(form),
       });
       const data = await res.json();
-      if (data.success) setMessage("PPR-Anfrage erfolgreich gesendet!");
-      else setMessage("Ihre Anfrage konnten nicht gesendet werden. Bitte konaktieren Sie uns direkt per E-Mail an vorstand@fsv-gunzenhausen.de");
-    } catch (err) {
+      if (data.success){
+        setMessage("PPR-Anfrage erfolgreich gesendet!");
+          setForm({
+              pilotName: "",
+              email: "",
+              phone: "",
+              aircraftType: "",
+              aircraftReg: "",
+              date: "",
+              eta: "",
+              departure: "",
+              departureDate: "",
+              etd: "",
+              notes: "",
+            });
+      } 
+      else {
+        setMessage("Ihre Anfrage konnten nicht gesendet werden. Bitte konaktieren Sie uns direkt per E-Mail an vorstand@fsv-gunzenhausen.de");
+               setForm({
+              pilotName: "",
+              email: "",
+              phone: "",
+              aircraftType: "",
+              aircraftReg: "",
+              date: "",
+              eta: "",
+              departure: "",
+              departureDate: "",
+              etd: "",
+              notes: "",
+            });
+      }
+      } catch (err) {
       setMessage("Ihre Anfrage konnten nicht gesendet werden. Bitte konaktieren Sie uns direkt per E-Mail an vorstand@fsv-gunzenhausen.de");
+                   setForm({
+              pilotName: "",
+              email: "",
+              phone: "",
+              aircraftType: "",
+              aircraftReg: "",
+              date: "",
+              eta: "",
+              departure: "",
+              departureDate: "",
+              etd: "",
+              notes: "",
+            });
     } finally {
       setLoading(false);
     }
@@ -64,10 +112,9 @@ const [form, setForm] = useState({
       <div
         className="modal fade"
         id="pprModal"
-        tabIndex={-1}
         aria-labelledby="pprModalLabel"
         aria-hidden="true"  >
-        <div className="modal-dialog modal-lg modal-dialog-centered" style={{ maxWidth: "500px" }}>
+        <div className="modal-dialog modal-lg modal-dialog-centered max-h-80" >
           <div className="modal-content">
             <div className="modal-header d-flex align-items-center"
         style={{ backgroundColor: "#2c384e", color: "white" }}>
@@ -80,9 +127,9 @@ const [form, setForm] = useState({
                 className="btn-close btn-close-white ms-auto" data-bs-dismiss="modal" aria-label="Schließen" />
             </div>
 
-            <div className="modal-body">
-              <div className="mb-3">
-                <label>Name</label>
+            <div className="modal-body"style={{ display:'contents'}} >
+              <div className="m-3">
+                <label>Name<span className="text-danger">*</span></label>
                 <input
                   name="pilotName"
                   placeholder="Pilot Name"
@@ -91,7 +138,7 @@ const [form, setForm] = useState({
                   className="form-control mb-2"
                 />
 
-                <label>E-Mail</label>
+                <label>E-Mail<span className="text-danger">*</span></label>
                 <input
                   name="email"
                   type="email"
@@ -102,7 +149,7 @@ const [form, setForm] = useState({
                   autoComplete="email"
                 />
 
-                <label>Telefonnummer / Phone</label>
+                <label>Telefonnummer / Phone<span className="text-danger">*</span></label>
                 <input
                   name="phone"
                   type="tel"
@@ -112,10 +159,9 @@ const [form, setForm] = useState({
                   className="form-control mb-2"
                 />
 
-
                 <div className="row g-3 mb-2">
                     <div className="col-md-6">
-                      <label>Flugzeugtyp / Aircraft Type</label>
+                      <label>Flugzeugtyp / Aircraft Type<span className="text-danger">*</span></label>
                         <input
                         name="aircraftType"
                         placeholder="Flugzeugtyp / Aircraft Type"
@@ -125,10 +171,10 @@ const [form, setForm] = useState({
                         />
                     </div>
                     <div className="col-md-6">
-                        <label>Kennzeichen / Registration</label>
+                        <label>Kennzeichen / Registration<span className="text-danger">*</span></label>
                         <input
                         name="aircraftReg"
-                        placeholder="D-EXXX"
+                        placeholder="D-XXXX"
                         value={form.aircraftReg}
                         onChange={handleChange}
                         className="form-control"
@@ -136,25 +182,7 @@ const [form, setForm] = useState({
                     </div>
                     </div>    
 
-                <label>Datum / Date</label>
-                <input
-                  name="date"
-                  type="date"
-                  value={form.date}
-                  onChange={handleChange}
-                  className="form-control mb-2"
-                />
-
-                <label>Voraussichtliche Ankunftszeit (ETA)</label>
-                <input
-                  name="eta"
-                  type="time"
-                  value={form.eta}
-                  onChange={handleChange}
-                  className="form-control mb-2"
-                />
-
-                <label>Abflughafen / Departure Aerodrome</label>
+                <label>Abflughafen / Departure Aerodrome<span className="text-danger">*</span></label>
                 <input
                   name="departure"
                   placeholder="ICAO Code oder Name / ICAO code or name"
@@ -162,6 +190,52 @@ const [form, setForm] = useState({
                   onChange={handleChange}
                   className="form-control mb-2"
                 />
+                <label>Voraussichtliche Ankunftszeit (ETA)<span className="text-danger">*</span></label>
+                <div className="row g-3 mb-2">
+                    <div className="col-md-6">
+                        <input
+                          name="eta"
+                          type="time"
+                          value={form.eta}
+                          onChange={handleChange}
+                          className="form-control mb-2"
+                        />
+                    </div>
+                    <div className="col-md-6">
+                                            <input
+                        name="date"
+                        type="date"
+                        value={form.date}
+                        onChange={handleChange}
+                        className="form-control mb-2"
+                      />
+
+                    </div>
+                    </div>    
+
+                <label>Voraussichtliche Abflugzeit (ETD)<span className="text-danger">*</span></label>
+                <div className="row g-3 mb-2">
+                    <div className="col-md-6">
+                      <input
+                          name="etd"
+                          type="time"
+                          value={form.etd}
+                          onChange={handleChange}
+                          className="form-control mb-2"
+                        />
+                    </div>
+                    <div className="col-md-6">
+                                          <input
+                      name="departureDate"
+                      type="date"
+                      required
+                      value={form.departureDate}
+                      onChange={handleChange}
+                      className="form-control"
+                    />
+  
+                    </div>
+                    </div>    
 
                 <label>Zusätzliche Hinweise / Additional Notes</label>
                 <textarea
@@ -170,6 +244,7 @@ const [form, setForm] = useState({
                   onChange={handleChange}
                   className="form-control"
                 />
+                <p className="mt-2 mb-0"><span className="text-danger">*</span> Pflichtfelder / required fields</p>
               </div>
 
               {message && <p className="mt-2">{message}</p>}
@@ -181,10 +256,9 @@ const [form, setForm] = useState({
               </button>
               <button
                 type="button"
-                className="btn btn-primary"
+                className={`btn ${!isFormValid() || loading ? "btn-secondary" : "btn-primary"}`}
                 onClick={handleSubmit}
-                disabled={!isFormValid() || loading}
-              >
+                disabled={!isFormValid() || loading}>
                 {loading ? "Senden..." : "PPR-Anfrage senden"}
               </button>
             </div>
