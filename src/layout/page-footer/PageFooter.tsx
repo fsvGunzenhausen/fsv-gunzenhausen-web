@@ -23,7 +23,7 @@ function PageFooter() {
       <div className="collapse navbar-collapse justify-content-md-center small" id="navbarCollapse2">
         <ul className="navbar-nav">
           <li className="nav-link disabled">
-            &copy; 2025 Flugsportvereinigung "Gelbe Bürg" Gunzenhausen e.V.
+            &copy; 2026 Flugsportvereinigung "Gelbe Bürg" Gunzenhausen e.V.
           </li>
           <li className="nav-item">
             <Link

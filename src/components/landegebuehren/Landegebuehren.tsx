@@ -102,7 +102,7 @@ function Landegebuehren() {
               )}
 
               {/* Sound Protection Selector */}
-                              {(type !== 'Segelflugzeuge' && type!== 'Segelflugzeuge mit Motor (nicht Selbststarter)') && (
+                              {(type !== 'Segelflugzeuge' && type!== 'Segelflugzeuge mit Motor (nicht Selbststarter)' && type !== 'UL-Flugzeuge') && (
               <div className="mb-3">
                 <label htmlFor="sound" className="form-label fw-bold">Schallschutz</label>
                 <select

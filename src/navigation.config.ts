@@ -7,6 +7,7 @@ export const NAV_ITEMS = [
       routes: [
         { path: ROUTES.INFORMATIONEN, label: 'Informationen' },
         {path: ROUTES.LANDEGEBUEHREN, label: 'Landegebühren' },
+        {path: ROUTES.PPR, label: 'PPR Anfrage' },
         { path: ROUTES.WEBCAM_OST, label: 'Webcam Ost' },
         { path: ROUTES.WEBCAM_SUED, label: 'Webcam Süd' },
       ],
