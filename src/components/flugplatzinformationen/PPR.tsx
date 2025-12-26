@@ -92,6 +92,7 @@ export default function PPR() {
 
       if (data.success) {
         setIsSuccess(true);
+        setShowModal(true);
         setForm({
           pilotName: "",
           email: "",
