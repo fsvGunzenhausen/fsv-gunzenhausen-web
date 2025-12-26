@@ -1,6 +1,7 @@
 export const ROUTES = {
     HOME: '/',
     NOTFOUND: '*',
+    PPR: '/ppr',
     LANDEGEBUEHREN: '/landeguehren',
     INFORMATIONEN: '/informationen',
     FLUGAUSBILDUNG: '/flugausbildung',

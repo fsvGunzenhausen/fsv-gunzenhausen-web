@@ -23,6 +23,7 @@ import Landegebuehren from './components/landegebuehren/Landegebuehren';
 import News from './components/news/News';
 import { NewsProvider } from "./components/news/NewsContext";
 import { NewsSubHeader } from './components/news/NewsSubHeader';
+import PPR from './components/flugplatzinformationen/PPR';
 
 
 // Define types for the route content
@@ -39,7 +40,7 @@ export const ROUTE_CONFIG: Array<{path:string; routeContent: RouteContent}> =
   {
     path: ROUTES.HOME,
     routeContent: {   
-            title: 'Willkommen beim FSV Gunzenhausen', 
+            title: 'Flugsportvereinigung "Gelbe Bürg" Gunzenhausen e.V.', 
              subHeader: undefined,
             component: <Home />
     },
@@ -50,6 +51,14 @@ export const ROUTE_CONFIG: Array<{path:string; routeContent: RouteContent}> =
         title: 'Flugplatz\u00ADinformationen',
         subHeader: undefined,
         component: <Flugplatzinformationen />
+      },
+    },
+        {
+      path: ROUTES.PPR,
+      routeContent: {   
+        title: 'PPR Anfrage',
+        subHeader: undefined,
+        component: <PPR />
       },
     },
 /*     {

@@ -3,7 +3,7 @@ function ChronikSubHeader() {
 
     return (
         <>
-        <h4 className="text-black-50">1951-2025 - 74 Jahre Flugsportvereinigung "Gelbe Bürg"</h4>
+        <h5 className="text-black-50">1951-2026 - 75 Jahre Flugsportvereinigung "Gelbe Bürg" Gunzenhausen</h5>
         </>
     );
   }

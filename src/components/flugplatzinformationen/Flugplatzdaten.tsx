@@ -1,6 +1,7 @@
+import { Link } from "react-router-dom";
 import Betriebszeiten from "./Betriebszeiten";
 import Platzrunde from "./Platzrunde";
-import PPR from "./PPR";
+import { ROUTES } from "../../routes";
 
 
 const flugplatzdaten = [
@@ -66,7 +67,10 @@ const flugplatzdaten = [
         </>
     ],
     ['Flugleitung/Turm', 'Apt OPS', '+49 9831 2728'],
-    ['PPR Anfragen', 'PPR Requests', <PPR />],
+    ['PPR Anfragen', 'PPR Requests',
+     <Link to={ROUTES.PPR} className="mt-auto mb-4">
+                PPR Anfrage
+              </Link>],
     ['Kraftstoff', 'Fuel',
       <>
         AvGas 100LL<br />

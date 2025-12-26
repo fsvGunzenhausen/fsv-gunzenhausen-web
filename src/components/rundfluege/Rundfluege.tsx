@@ -40,7 +40,7 @@ function Rundfluege() {
         <Angebote />
         {/* Maschinengesamtpreise Section */}
         <div className="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
-          <h1 className="display-4 word-wrap">Maschinengesamtpreise</h1>
+          <h2 className="display-4 word-wrap">Maschinengesamtpreise</h2>
           <p className="lead">
             Bei Flügen über einer Stunde zu ihrem Wunschziel berechnen wir auf Basis der voraussichtlichen Gesamtflugzeit einen von der Anzahl der Personen unabhängigen Maschinengesamtpreis.
           </p>
@@ -48,7 +48,7 @@ function Rundfluege() {
         <Flugzeugekarten />
         {/* Flugroutenvorschläge */}
         <div className="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
-          <h1 className="display-4 word-wrap">Flugroutenvorschläge</h1>
+          <h2 className="display-4 word-wrap">Flugroutenvorschläge</h2>
           <p className="lead">
             Touren von mehr als einer Stunde Flugdauer nach terminlicher Absprache.
           </p>
@@ -59,7 +59,7 @@ function Rundfluege() {
         <section className="container mb-4" id="gutscheine" />
         <div className="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
           <a id="Gutscheine">
-            <h1 className="display-4 word-wrap">Gutscheine</h1>
+            <h2 className="display-4 word-wrap">Gutscheine</h2>
           </a>
         </div>
 
