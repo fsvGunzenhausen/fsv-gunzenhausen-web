@@ -75,20 +75,20 @@ function Rundfluege() {
             <tr>
               <td className="text-center fw-light">
                 Informationen zu Rundflügen und Gutscheinverkauf bekommen Sie an Wochenenden<br />
-                auf dem Flugplatz (09831-2728 Samstags ab 13:00, Sonn- und Feiertags ab 10:00),<br />
-                unter Telefonnummer 09831-881304 oder per E-Mail unter{" "}
+                auf dem Flugplatz (09831-2728 Samstags ab 13:00, Sonn- und Feiertags ab 10:00)<br />
+                oder per E-Mail unter{" "}
                 <a href="mailto:gutscheine@fsv-gunzenhausen.de">gutscheine@fsv-gunzenhausen.de</a>
               </td>
             </tr>
           </tbody>
         </table>
 
-        <small>
-          <p className="text-muted text-center mt-5">
+
+          <p className="text-muted text-center mt-2">
             Alle Flugpreise verstehen sich als Selbstkostenpreise mit dem Ziel, Ihnen unseren Sport näher zu bringen.<br />
             Gerne informieren wir Sie über eine Mitgliedschaft und die Ausbildungsmöglichkeiten in unserem Verein.
           </p>
-        </small>
+
       </div>
     </>
   );

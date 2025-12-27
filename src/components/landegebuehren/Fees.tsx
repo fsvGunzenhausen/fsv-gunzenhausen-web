@@ -43,6 +43,7 @@ export const fees: Record<FlightSubType, FeeMatrix> = {
       'Segelflugzeuge mit Motor (nicht Selbststarter)': 0,
     },
     'ohne erhöhten Schallschutz': {
+      'UL-Flugzeuge': 5,
       'Motorsegler (alle Gewichtsklassen)': 7,
       'Motorflugzeuge': {
         'bis 1000kg': 7,
@@ -69,6 +70,7 @@ export const fees: Record<FlightSubType, FeeMatrix> = {
     'ohne erhöhten Schallschutz': {
       Schulflüge: {
         Motorsegler: 4,
+        UL: 3,
         Motorflugzeug: {
           'bis 1000kg': 4,
           'über 1000kg - 1600kg': 6,
