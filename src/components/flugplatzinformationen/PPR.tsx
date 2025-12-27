@@ -160,7 +160,7 @@ export default function PPR() {
 
                 <div className="col-md-6">
                   <label className="form-label">
-                    Telefon / Phone <span className="text-danger">*</span>
+                    Telefon / Phone: <span className="text-danger">*</span>
                   </label>
                   <input
                     placeholder="Telefon / Phone"
@@ -190,7 +190,7 @@ export default function PPR() {
 
                 <div className="col-md-6">
                   <label className="form-label">
-                    Kennzeichen / Registration <span className="text-danger">*</span>
+                    Kennzeichen / Registration: <span className="text-danger">*</span>
                   </label>
                   <input
                     placeholder="z.B. D-MXXX"
@@ -208,7 +208,7 @@ export default function PPR() {
                   Abflughafen / Departure Aerodrome: <span className="text-danger">*</span>
                 </label>
                 <input
-                   placeholder="ICAO Code oder Name / ICAO code or name"
+                   placeholder="ICAO Code oder Name"
                   name="departure"
                   value={form.departure}
                   onChange={handleChange}
@@ -220,7 +220,7 @@ export default function PPR() {
               <div className="row g-3 mb-3">
                 <div className="col-md-6">
                   <label className="form-label">
-                   Voraussichtliche Ankunftszeit (ETA): <span className="text-danger">*</span>
+                   Voraussichtliche Ankunftszeit UTC (ETA): <span className="text-danger">*</span>
                   </label>
                   <input
                     type="time"
@@ -249,7 +249,7 @@ export default function PPR() {
               <div className="row g-3 mb-3">
                 <div className="col-md-6">
                   <label className="form-label">
-                    Voraussichtliche Abflugzeit (ETD): <span className="text-danger">*</span>
+                    Voraussichtliche Abflugzeit UTC (ETD): <span className="text-danger">*</span>
                   </label>
                   <input
                     type="time"
