@@ -326,7 +326,7 @@ Starte jetzt deine Segelflugausbildung und werde Teil einer Gemeinschaft, die da
                      </p>
                       <p className=' lead fw-light'>
                       Mit dem Erwerb der Segelflugpilotenlizenz
-                      genießt Du die Freiheit, selbständig Luftsportgeräte zu steuern
+                      genießt Du die Freiheit, selbständig Segelflugzeuge zu steuern
                       und wunderschöne Landschaften aus der Vogelperspektive zu
                       erleben.
                       </p>
