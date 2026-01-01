@@ -1,6 +1,7 @@
 import { useNews } from "./NewsContext";
 import { YearSelector } from "./YearSelector";
 import newsDaten from "./Newsdaten";
+import { useEffect } from "react";
 
 export function NewsSubHeader() {
   const { selectedYear, setSelectedYear } = useNews();
@@ -11,15 +12,24 @@ const availableYears = Array.from(
 ).sort((a, b) => b - a);
 
 
-  // Ensure selectedYear is always valid
-  const yearToShow = availableYears.includes(selectedYear)
-    ? selectedYear
-    : availableYears[0] || new Date().getFullYear();
+  useEffect(() => {
+    if (availableYears.length === 0) return;
+
+    if (!availableYears.includes(selectedYear)) {
+      const closestPreviousYear =
+        availableYears.find(year => year < selectedYear) ??
+        availableYears[0];
+
+      setSelectedYear(closestPreviousYear);
+    }
+  }, [availableYears, selectedYear, setSelectedYear]);
+
+
 
   return (
     <YearSelector
-      selectedYear={yearToShow}
-      availableYears={availableYears.length > 0 ? availableYears : [new Date().getFullYear()]}
+      selectedYear={selectedYear}
+      availableYears={availableYears}
       onChange={setSelectedYear}
     />
   );

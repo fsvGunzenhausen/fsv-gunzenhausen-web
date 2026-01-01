@@ -220,7 +220,7 @@ export default function PPR() {
               <div className="row g-3 mb-3">
                 <div className="col-md-6">
                   <label className="form-label">
-                   Voraussichtliche Ankunftszeit UTC (ETA): <span className="text-danger">*</span>
+                   Voraussichtliche Ankunftszeit (UTC): <span className="text-danger">*</span>
                   </label>
                   <input
                     type="time"
@@ -249,7 +249,7 @@ export default function PPR() {
               <div className="row g-3 mb-3">
                 <div className="col-md-6">
                   <label className="form-label">
-                    Voraussichtliche Abflugzeit UTC (ETD): <span className="text-danger">*</span>
+                    Voraussichtliche Abflugzeit (UTC): <span className="text-danger">*</span>
                   </label>
                   <input
                     type="time"
