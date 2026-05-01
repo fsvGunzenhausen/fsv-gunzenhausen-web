@@ -14,7 +14,12 @@ function convertToParagraphs(text: string): React.ReactNode[] {
   return text
     .trim()
     .split(/\n\s*\n/)
-    .map((para, idx) => <p key={idx}>{para.trim()}</p>);
+    .map((para, idx) => (
+      <p
+        key={idx}
+        dangerouslySetInnerHTML={{ __html: para.trim() }}
+      />
+    ));
 }
 function Newskarte(  { date, title, description, images, expanded, setExpanded, openModal }: Timeline) {
     const era = { date, title, description, images };
