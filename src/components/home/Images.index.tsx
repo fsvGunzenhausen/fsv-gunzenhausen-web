@@ -19,6 +19,7 @@ import carousel_008 from '../../assets/components/home/carousel_008.jpg';
 import carousel_009 from '../../assets/components/home/carousel_009.jpg';
 import carousel_010 from '../../assets/components/home/carousel_010.jpg';
 import carousel_011 from '../../assets/components/home/carousel_011.jpg';
+import carousel_012 from '../../assets/components/home/carousel_012.png';
 
 import facebookIcon from '../../assets/components/home/socialMedia/facebook.svg';
 import instagramIcon from '../../assets/components/home/socialMedia/instagram.png';
@@ -47,7 +48,8 @@ const homeImages = {
         carousel_008,
         carousel_009,
         carousel_010,
-        carousel_011
+        carousel_011,
+        carousel_012
     ],
     carouselVideo: introVideo,
     socialMediaIcons: {

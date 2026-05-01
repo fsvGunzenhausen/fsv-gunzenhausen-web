@@ -3,7 +3,7 @@ import imageStore from './Images.index';
 import { useLocation } from 'react-router-dom';
 
 const PilottagModal = () => {
-const imgSrc = 'plakatPilot';    
+const imgSrc = 'plakatPilotSechs';    
 const imageFromStore = imageStore[imgSrc as keyof typeof imageStore].full;
   const location = useLocation();
 
@@ -82,7 +82,7 @@ const imageFromStore = imageStore[imgSrc as keyof typeof imageStore].full;
 
             <div className="modal-footer justify-content-center">
    <a
-    href="mailto:vorstand@fsv-gunzenhausen.de?subject=Anmeldung%20zum%20Pilot%20für%20ein%20Tag&body=Hallo%20FSV-Team%2C%0A%0Aich%20möchte%20mich%20für%20den%20Pilot%20für%20ein%20Tag%20anmelden.%0A%0AMit%20freundlichen%20Grüßen"
+href="mailto:vorstand@fsv-gunzenhausen.de?subject=Anmeldung%20zum%20Pilot%20für%20ein%20Tag&body=Hallo%20FSV-Team%2C%0A%0Aich%20möchte%20mich%20für%20den%20Pilot%20für%20ein%20Tag%20anmelden.%0A%0AName%3A%20%0AAuswahl%20(Segelflug%20oder%20UL)%3A%20%0A%0AMit%20freundlichen%20Grüßen"
     className="btn btn-primary fw-bold"
     style={{ fontSize: '1.1rem' }}
   >
