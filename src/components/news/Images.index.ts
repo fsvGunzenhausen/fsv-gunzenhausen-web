@@ -52,6 +52,8 @@ import pic30 from '../../assets/components/news/03-30.jpg';
 import pic30Prev from '../../assets/components/news/03-30_prev.jpg';
 import pic31 from '../../assets/components/news/03-31.jpg';
 import pic31Prev from '../../assets/components/news/03-31_prev.jpg';
+import pic40Prev from '../../assets/components/news/04-01_prev.jpg';
+import pic40 from '../../assets/components/news/04-01.jpg';
 
 const imageStore = {
   // Image store with full and preview images}
@@ -82,6 +84,7 @@ const imageStore = {
   pic029: { full: pic29, preview: pic29Prev },
   pic030: { full: pic30, preview: pic30Prev },
   pic031: { full: pic31, preview: pic31Prev },
+  pic040: { full: pic40, preview: pic40Prev },
 };
 
 export default imageStore;

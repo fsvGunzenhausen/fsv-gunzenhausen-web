@@ -307,7 +307,7 @@ Starte jetzt deine Segelflugausbildung und werde Teil einer Gemeinschaft, die da
                                   </div>
                                 </li>               
                               </ul>
-                              <p className="mx-3 mb-4">Nach einer entsprechenden Umschulung kannst Du auch unsere Utraleichtflugzeuge fliegen.</p>
+                              <p className="mx-3 mb-4">Nach einer entsprechenden Umschulung kannst Du auch unsere Ultraleichtflugzeuge fliegen.</p>
                               <p className="mx-3 mb-4">👉 Die komplette Flotte findest Du <a href={ROUTES.FLUGZEUGE}>hier</a>.</p>
                             </div>
                 </div>
