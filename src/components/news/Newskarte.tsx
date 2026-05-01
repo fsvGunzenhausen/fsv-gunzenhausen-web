@@ -63,7 +63,7 @@ function Newskarte(  { date, title, description, images, expanded, setExpanded, 
                     src={imageFromStore.preview}
                     alt={`Era ${era.date} image ${idx + 1}`}
                     className="img-fluid rounded"
-                    style={{ objectFit: 'cover', height: '150px', width: '100%',   cursor: 'pointer'  }}
+                    style={{ objectFit: 'contain',   cursor: 'pointer'  }}
                     onClick={() => openModal(imageFromStore.full)}
                   />
                 </div>
