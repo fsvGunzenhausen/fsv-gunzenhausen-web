@@ -15,13 +15,13 @@ const imageFromStore = imageStore[imgSrc as keyof typeof imageStore].full;
       return;
     }
 
-    const countStr = localStorage.getItem('plakatModalCount');
+    const countStr = localStorage.getItem('newPlakatCount');
     let count = countStr ? parseInt(countStr, 10) : 0;
 
     if (count < 10) {
       setIsOpen(true);
       count += 1;
-      localStorage.setItem('plakatModalCount', count.toString());
+      localStorage.setItem('newPlakatCount', count.toString());
     } else {
       setIsOpen(false);
     }
