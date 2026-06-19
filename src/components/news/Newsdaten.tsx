@@ -6,19 +6,16 @@
   
   const newsDaten =  [
     {
-      id: "20260501",
+      id: "20260523",
       title: "Pilot für einen Tag 2026",
-      date: "01.05.2026",
+      date: "23.05.2026",
 description: `
-Am 23. Mai 2026 findet unser beliebtes Event „Pilot für einen Tag“ statt, bei dem zahlreiche Teilnehmer die Möglichkeit haben, selbst ins Cockpit zu steigen.
+Am 23. Mai 2026 fand unser beliebtes Event „Pilot für einen Tag“ statt, bei dem zahlreiche Teilnehmer die Möglichkeit hatten, selbst ins Cockpit zu steigen.
 
-Anmelden können sich alle Interessierten beim <a href="mailto:vorstand@fsv-gunzenhausen.de?subject=Anmeldung%20zum%20Pilot%20für%20ein%20Tag&body=Hallo%20FSV-Team%2C%0A%0Aich%20möchte%20mich%20für%20den%20Pilot%20für%20ein%20Tag%20anmelden.%0A%0AName%3A%20%0AAuswahl%20(Segelflug%20oder%20UL)%3A%20%0A%0AMit%20freundlichen%20Grüßen">Vorstand</a>. 
+Unter Anleitung erfahrener Fluglehrer konnten die Teilnehmer sowohl im Segelflugzeug als auch im Ultraleichtflugzeug abheben und die Faszination des Fliegens hautnah erleben. Die Begeisterung war groß, und viele strahlende Gesichter zeigten, wie viel Freude das Fliegen bereitet.
 
-Wir freuen uns auf viele neue Gesichter und spannende Flugerlebnisse! ✈️
-`,
-      images: [ 
-     'pic040'
-      ]
+Wir möchten uns herzlich bei allen Teilnehmern, Helfern und Fluglehrern bedanken, die diesen Tag zu einem unvergesslichen Erlebnis gemacht haben! Wir freuen uns schon auf das nächste Jahr und viele weitere spannende Flugabenteuer! ✈️✨
+`
     },
        {
       id: "20251031",

@@ -7,7 +7,7 @@ export function NewsSubHeader() {
   const { selectedYear, setSelectedYear } = useNews();
 
   // Get only valid years from newsDaten
-const availableYears = [2026];
+const availableYears = [2025,2026];
 
 
   useEffect(() => {
