@@ -21,7 +21,6 @@ import Home from './components/home/Home';
 import Webcam, { WebcamDirection } from './components/webcam/Webcam';
 import Landegebuehren from './components/landegebuehren/Landegebuehren';
 import News from './components/news/News';
-import { NewsProvider } from "./components/news/NewsContext";
 import { NewsSubHeader } from './components/news/NewsSubHeader';
 import PPR from './components/flugplatzinformationen/PPR';
 
@@ -182,14 +181,10 @@ export const ROUTE_CONFIG: Array<{path:string; routeContent: RouteContent}> =
       routeContent: {
         title: "Aktuelles",
         subHeader: (
-          <NewsProvider>
-            <NewsSubHeader />
-          </NewsProvider>
+          <NewsSubHeader />
         ),
         component: (
-          <NewsProvider>
-            <News />
-          </NewsProvider>
+          <News />
         )
       },
     },

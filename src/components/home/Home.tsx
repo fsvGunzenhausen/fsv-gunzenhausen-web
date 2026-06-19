@@ -3,7 +3,6 @@ import Carousel from "./Carousel";
 import Navigation from './Navigation';
 import WebcamGrid from "./WebcamGrid";
 import SocialMedia from "./SocialMedia";
-import SmallNews from "./SmallNews";
 
 function Home() {
 
@@ -19,11 +18,11 @@ function Home() {
                 </div>         
 
           {/* News */}
-           <SmallNews/>
+           {/* <SmallNews/> */}
                   {/* Divider */}
-               <div className="container">
+{/*                <div className="container">
                         <hr className="mt-4 mb-4" />
-                </div>        
+                </div>    */}     
 
           {/* Social Media */}
           <SocialMedia />

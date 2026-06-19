@@ -54,7 +54,7 @@ function News() {
                 date={era.date}
                 title={era.title}
                 description={era.description}
-                images={era.images}
+                images={era.images ?? []}
                 expanded={expanded}
                 setExpanded={setExpanded}
                 openModal={openModal}
