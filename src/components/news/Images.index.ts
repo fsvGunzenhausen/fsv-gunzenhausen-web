@@ -54,6 +54,12 @@ import pic31 from '../../assets/components/news/03-31.jpg';
 import pic31Prev from '../../assets/components/news/03-31_prev.jpg';
 import pic40Prev from '../../assets/components/news/04-01_prev.jpg';
 import pic40 from '../../assets/components/news/04-01.jpg';
+import pic41Prev from '../../assets/components/news/04-02_prev.jpg';
+import pic41 from '../../assets/components/news/04_02.jpg';
+import pic42Prev from '../../assets/components/news/04-03_prev.jpg';
+import pic42 from '../../assets/components/news/04-03.jpg';
+import pic43Prev from '../../assets/components/news/04-04_prev.jpg';
+import pic43 from '../../assets/components/news/04-04.jpg';
 
 const imageStore = {
   // Image store with full and preview images}
@@ -85,6 +91,9 @@ const imageStore = {
   pic030: { full: pic30, preview: pic30Prev },
   pic031: { full: pic31, preview: pic31Prev },
   pic040: { full: pic40, preview: pic40Prev },
+  pic041: { full: pic41, preview: pic41Prev },
+  pic042: { full: pic42, preview: pic42Prev },
+  pic043: { full: pic43, preview: pic43Prev },
 };
 
 export default imageStore;

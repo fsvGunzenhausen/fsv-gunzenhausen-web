@@ -1,6 +1,20 @@
-import React, { useState } from "react";
+import React, {  useEffect, useState  } from "react";
+import FlyinModal from "../plakat/FlyIn";
+
 
 export default function PPR() {
+
+  const [showBratwurst, setShowBratwurstModal] = useState(false);
+
+  useEffect(() => {
+    const today = new Date();
+    const cutoffDate = new Date("2026-08-02");
+
+    if (today < cutoffDate) {
+      setShowBratwurstModal(true);
+    }
+  }, []);
+  
   const [form, setForm] = useState({
     pilotName: "",
     email: "",
@@ -120,7 +134,10 @@ export default function PPR() {
   };
 
   return (
-    <>   <div className="container pb-4">
+    <>  
+       {showBratwurst && <FlyinModal />}
+
+     <div className="container pb-4">
       <p className="lead mb-5">
         Bitte füllen Sie das folgende Formular aus, um eine PPR-Anfrage (Prior Permission Required) für den Sonderlandeplatz Gunzenhausen-Reutberg zu stellen. Wir werden Ihre Anfrage so schnell wie möglich bearbeiten. Bitte beachten 
         Sie, dass eine PPR-Anfrage mindestens 24 Stunden vor dem geplanten Ankunftszeitpunkt eingereicht werden sollte. Das reine absenden dieses Formulars stellt keine Genehmigung zum Landen dar.
