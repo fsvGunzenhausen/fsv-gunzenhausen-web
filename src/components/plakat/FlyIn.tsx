@@ -3,27 +3,27 @@ import './rundflugtag.css';
 import imageStore from './Images.index';
 import { useLocation } from 'react-router-dom';
 
-const RundflugtagModal = () => {
-  const imgSrc = 'plakatRundflugtag_2026';  
+const FlyinModal = () => {
+  const imgSrc = 'flyin';  
   const imageFromStore = imageStore[imgSrc as keyof typeof imageStore];
   const location = useLocation();
 
   const [isOpen, setIsOpen] = useState(false);
 
   useEffect(() => {
-    if (location.pathname !== '/') {
+    if (location.pathname !== '/ppr') {
       setIsOpen(false);
       return;
     }
 
     // Check if user has already seen the modal
-    const countStr = localStorage.getItem('newRundflugtagTwentySixCount');
-    let count = countStr ? parseInt(countStr, 10) : 0;
+    const countStr = localStorage.getItem('newFlyInCount');
+    let count = countStr ? parseInt(countStr, 6) : 0;
 
-    if (count < 10) {
+    if (count < 6) {
       setIsOpen(true);
       count += 1;
-      localStorage.setItem('newRundflugtagTwentySixCount', count.toString());
+      localStorage.setItem('newFlyInCount', count.toString());
     } else {
       setIsOpen(false);
     }
@@ -44,22 +44,12 @@ const RundflugtagModal = () => {
         <button className="close-button" onClick={handleClose}>×</button>
         <img 
           src={imageFromStore.preview}
-          alt="Rundflugtag Gunzenhausen" 
+          alt="Bratwurst Fly-in Gunzenhausen" 
           className="rundflug-image" 
         />
-        <div className="modal-footer">
-          <a 
-            href="https://www.facebook.com/events/1821700308811530/" 
-            target="_blank" 
-            rel="noopener noreferrer"
-            className="facebook-button"
-          >
-           Jetzt vormerken auf Facebook
-          </a>
-        </div>
       </div>
     </div>
   );
 };
 
-export default RundflugtagModal;
+export default FlyinModal;
