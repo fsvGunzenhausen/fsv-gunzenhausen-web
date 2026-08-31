@@ -9,16 +9,11 @@ import informationIcon from '../../assets/components/home/icons/piloteninformati
 
 import introVideo from '../../assets/components/home/carousel_000.mp4';
 import carousel_001 from '../../assets/components/home/carousel_001.png';
-import carousel_002 from '../../assets/components/home/carousel_002.jpg';
-import carousel_003 from '../../assets/components/home/carousel_003.jpg';
-import carousel_004 from '../../assets/components/home/carousel_004.jpg';
-import carousel_005 from '../../assets/components/home/carousel_005.jpg';
-import carousel_006 from '../../assets/components/home/carousel_006.jpg';
 import carousel_007 from '../../assets/components/home/carousel_007.jpg';
 import carousel_008 from '../../assets/components/home/carousel_008.jpg';
 import carousel_009 from '../../assets/components/home/carousel_009.jpg';
 import carousel_010 from '../../assets/components/home/carousel_010.jpg';
-import carousel_011 from '../../assets/components/home/carousel_011.jpg';
+
 import carousel_012 from '../../assets/components/home/carousel_012.png';
 
 import facebookIcon from '../../assets/components/home/socialMedia/facebook.svg';
