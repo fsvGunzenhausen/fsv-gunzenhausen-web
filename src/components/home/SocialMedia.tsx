@@ -14,7 +14,7 @@ import homeImages from "./Images.index";
       <div className="container">
             {/* Social Media Title */}
         <div className="text-center fw-light mb-3">
-          <p className='lead fw-lead'>Folge uns auch auf Facebook und Instagram!</p>
+          <p className='lead fw-lead'>Folge uns auch auf unseren Social Media Kanälen!</p>
         </div>
   
         {/* Social Media Grid */}
