@@ -39,17 +39,12 @@ const homeImages = {
       },
     carouselImages:[
         carousel_001,
-        carousel_002,
-        carousel_003,
-        carousel_004,
-        carousel_005,
-        carousel_006,
+        carousel_012,
         carousel_007,
         carousel_008,
         carousel_009,
-        carousel_010,
-        carousel_011,
-        carousel_012
+        carousel_010
+      
     ],
     carouselVideo: introVideo,
     socialMediaIcons: {
