@@ -1,19 +1,9 @@
-import React, {  useEffect, useState  } from "react";
-import FlyinModal from "../plakat/FlyIn";
+import React, {   useState  } from "react";
 
 
 export default function PPR() {
 
-  const [showBratwurst, setShowBratwurstModal] = useState(false);
 
-  useEffect(() => {
-    const today = new Date();
-    const cutoffDate = new Date("2026-08-02");
-
-    if (today < cutoffDate) {
-      setShowBratwurstModal(true);
-    }
-  }, []);
   
   const [form, setForm] = useState({
     pilotName: "",
@@ -135,7 +125,6 @@ export default function PPR() {
 
   return (
     <>  
-       {showBratwurst && <FlyinModal />}
 
      <div className="container pb-4">
       <p className="lead mb-5">
